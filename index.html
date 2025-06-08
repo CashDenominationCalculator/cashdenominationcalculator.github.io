@@ -1,0 +1,671 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Indian Cash Denomination Calculator | Count Currency Notes & Coins Online</title>
+    <meta name="description" content="Free online Indian cash denomination calculator to count currency notes and coins. Calculate total amount from ₹2000, ₹500, ₹200, ₹100, ₹50, ₹20, ₹10 notes and coins instantly.">
+    <meta name="keywords" content="indian cash calculator, denomination counter, currency calculator india, note counting calculator, indian rupee calculator, cash counting tool, money counter online, denomination calculator">
+    <meta name="author" content="Indian Cash Calculator">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Free Indian Cash Denomination Calculator | Count Currency Notes & Coins">
+    <meta property="og:description" content="Calculate total cash amount from Indian currency denominations. Free online tool for counting ₹2000, ₹500, ₹200, ₹100 notes and coins.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Indian Cash Denomination Calculator - Free Online Tool">
+    <meta name="twitter:description" content="Count Indian currency notes and coins instantly. Professional cash counting calculator for business and personal use.">
+    <link rel="canonical" href="">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Indian Cash Denomination Calculator",
+        "description": "Free online calculator to count Indian currency denominations and calculate total cash amount",
+        "url": "",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "Indian Cash Calculator"
+        }
+    }
+    </script>
+    
+    <!-- Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .calc-input { transition: all 0.3s ease; }
+        .calc-input:focus { transform: scale(1.02); box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
+        .denomination-card { transition: all 0.3s ease; }
+        .denomination-card:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .pulse-animation { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+        .feature-icon { transition: transform 0.3s ease; }
+        .feature-icon:hover { transform: scale(1.1) rotate(5deg); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="gradient-bg text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                <i class="fas fa-calculator mr-3"></i>
+                Indian Cash Denomination Calculator
+            </h1>
+            <p class="text-xl md:text-2xl mb-6 opacity-90">
+                Free Online Tool to Count Indian Currency Notes & Coins Instantly
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full">
+                    <i class="fas fa-money-bill mr-1"></i>All Indian Denominations
+                </span>
+                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full">
+                    <i class="fas fa-mobile-alt mr-1"></i>Mobile Friendly
+                </span>
+                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full">
+                    <i class="fas fa-bolt mr-1"></i>Instant Results
+                </span>
+                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full">
+                    <i class="fas fa-shield-alt mr-1"></i>100% Free
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Calculator -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        
+        <!-- Calculator Section -->
+        <section class="bg-white rounded-2xl shadow-2xl p-6 md:p-8 mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">
+                    <i class="fas fa-coins text-yellow-500 mr-2"></i>
+                    Currency Denomination Counter
+                </h2>
+                <p class="text-gray-600 text-lg">Enter the quantity of each denomination to calculate total amount</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Notes Section -->
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 border-b-2 border-green-500 pb-2 mb-4">
+                        <i class="fas fa-money-bill-wave text-green-500 mr-2"></i>
+                        Currency Notes
+                    </h3>
+                    
+                    <div class="denomination-card bg-purple-50 border-l-4 border-purple-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-purple-700">₹2000 Notes</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="notes-2000" class="calc-input w-20 p-2 border border-purple-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-purple-600" id="amount-2000">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="denomination-card bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-blue-700">₹500 Notes</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="notes-500" class="calc-input w-20 p-2 border border-blue-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-blue-600" id="amount-500">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="denomination-card bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-yellow-700">₹200 Notes</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="notes-200" class="calc-input w-20 p-2 border border-yellow-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-yellow-600" id="amount-200">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="denomination-card bg-green-50 border-l-4 border-green-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-green-700">₹100 Notes</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="notes-100" class="calc-input w-20 p-2 border border-green-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-green-600" id="amount-100">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="denomination-card bg-pink-50 border-l-4 border-pink-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-pink-700">₹50 Notes</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="notes-50" class="calc-input w-20 p-2 border border-pink-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-pink-600" id="amount-50">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="denomination-card bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-indigo-700">₹20 Notes</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="notes-20" class="calc-input w-20 p-2 border border-indigo-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-indigo-600" id="amount-20">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="denomination-card bg-red-50 border-l-4 border-red-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-red-700">₹10 Notes</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="notes-10" class="calc-input w-20 p-2 border border-red-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-red-600" id="amount-10">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coins Section -->
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 border-b-2 border-orange-500 pb-2 mb-4">
+                        <i class="fas fa-coins text-orange-500 mr-2"></i>
+                        Coins
+                    </h3>
+                    
+                    <div class="denomination-card bg-gray-50 border-l-4 border-gray-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-gray-700">₹10 Coins</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="coins-10" class="calc-input w-20 p-2 border border-gray-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-gray-600" id="amount-coins-10">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="denomination-card bg-orange-50 border-l-4 border-orange-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-orange-700">₹5 Coins</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="coins-5" class="calc-input w-20 p-2 border border-orange-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-orange-600" id="amount-coins-5">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="denomination-card bg-teal-50 border-l-4 border-teal-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-teal-700">₹2 Coins</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="coins-2" class="calc-input w-20 p-2 border border-teal-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-teal-600" id="amount-coins-2">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="denomination-card bg-amber-50 border-l-4 border-amber-500 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <label class="text-lg font-medium text-amber-700">₹1 Coins</label>
+                            <div class="flex items-center space-x-3">
+                                <input type="number" id="coins-1" class="calc-input w-20 p-2 border border-amber-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <span class="text-lg font-bold text-amber-600" id="amount-coins-1">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Total Amount Display -->
+                    <div class="bg-gradient-to-r from-green-500 to-blue-600 text-white p-6 rounded-xl mt-8">
+                        <h3 class="text-2xl font-bold mb-2 text-center">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Total Amount
+                        </h3>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold pulse-animation" id="total-amount">₹0</div>
+                            <p class="text-sm opacity-90 mt-2">Indian Rupees</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="flex space-x-3 mt-6">
+                        <button onclick="clearAll()" class="flex-1 bg-red-500 hover:bg-red-600 text-white py-3 px-4 rounded-lg font-semibold transition-colors">
+                            <i class="fas fa-trash mr-2"></i>Clear All
+                        </button>
+                        <button onclick="fillExample()" class="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold transition-colors">
+                            <i class="fas fa-magic mr-2"></i>Example
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Use Tutorial -->
+        <section class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                <i class="fas fa-graduation-cap text-blue-500 mr-2"></i>
+                How to Use Indian Cash Denomination Calculator
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6 bg-blue-50 rounded-lg">
+                    <div class="feature-icon text-4xl text-blue-500 mb-4">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Step 1: Enter Quantity</h3>
+                    <p class="text-gray-600">Enter the number of pieces for each denomination you have</p>
+                </div>
+                
+                <div class="text-center p-6 bg-green-50 rounded-lg">
+                    <div class="feature-icon text-4xl text-green-500 mb-4">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Step 2: Auto Calculate</h3>
+                    <p class="text-gray-600">Each denomination amount calculates automatically in real-time</p>
+                </div>
+                
+                <div class="text-center p-6 bg-yellow-50 rounded-lg">
+                    <div class="feature-icon text-4xl text-yellow-500 mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Step 3: View Results</h3>
+                    <p class="text-gray-600">See individual amounts and total sum displayed clearly</p>
+                </div>
+                
+                <div class="text-center p-6 bg-purple-50 rounded-lg">
+                    <div class="feature-icon text-4xl text-purple-500 mb-4">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Step 4: Use Results</h3>
+                    <p class="text-gray-600">Use the calculated total for your cash management needs</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-2xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                <i class="fas fa-star mr-2"></i>
+                Why Choose Our Indian Currency Calculator?
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-rupee-sign text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Complete Indian Currency Support</h3>
+                    <p>Supports all current Indian denominations including ₹2000, ₹500, ₹200, ₹100, ₹50, ₹20, ₹10 notes and all coins</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-bolt text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Instant Real-time Calculation</h3>
+                    <p>Get immediate results as you type. No need to click calculate - amounts update automatically</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-mobile-alt text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Mobile Responsive Design</h3>
+                    <p>Works perfectly on smartphones, tablets, and desktops. Count cash anywhere, anytime</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-shield-alt text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">100% Free & Secure</h3>
+                    <p>Completely free to use with no registration required. Your data stays private</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-users text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Business & Personal Use</h3>
+                    <p>Perfect for shop owners, bank tellers, accountants, and personal cash management</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-chart-line text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Professional Accuracy</h3>
+                    <p>Handles large amounts with precision. Trusted by businesses across India</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                <i class="fas fa-briefcase text-green-500 mr-2"></i>
+                Popular Use Cases for Indian Cash Calculator
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 border-b-2 border-blue-500 pb-2">Business Applications</h3>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-store text-2xl text-blue-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Retail Shop Management</h4>
+                            <p class="text-gray-600">Count daily sales, manage cash registers, and reconcile end-of-day collections</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-university text-2xl text-green-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Banking Operations</h4>
+                            <p class="text-gray-600">ATM cash loading, branch operations, customer deposits, and cash verification</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-utensils text-2xl text-orange-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Restaurant & Hospitality</h4>
+                            <p class="text-gray-600">Daily cash collection, tip management, and shift-wise cash reconciliation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-gas-pump text-2xl text-red-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Petrol Pumps & Service Stations</h4>
+                            <p class="text-gray-600">Fuel sale collections, shift handovers, and daily cash management</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 border-b-2 border-purple-500 pb-2">Personal & Professional Use</h3>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-piggy-bank text-2xl text-pink-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Personal Savings</h4>
+                            <p class="text-gray-600">Count piggy bank savings, organize cash for expenses, and track personal finances</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-heart text-2xl text-red-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Wedding & Events</h4>
+                            <p class="text-gray-600">Count cash gifts, manage event collections, and organize wedding expenses</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-hands-helping text-2xl text-teal-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Charity & Donations</h4>
+                            <p class="text-gray-600">Calculate donation collections, fundraising amounts, and community contributions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-graduation-cap text-2xl text-indigo-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Educational Purposes</h4>
+                            <p class="text-gray-600">Teach children about money, financial literacy, and basic math calculations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="bg-gray-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                Frequently Asked Questions
+            </h2>
+            
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">How accurate is the Indian cash denomination calculator?</h3>
+                    <p class="text-gray-600">Our calculator is 100% accurate and uses precise mathematical calculations. It handles all current Indian currency denominations and can calculate amounts up to crores without any errors.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Which Indian currency denominations are supported?</h3>
+                    <p class="text-gray-600">The calculator supports all current Indian currency: Notes - ₹2000, ₹500, ₹200, ₹100, ₹50, ₹20, ₹10 and Coins - ₹10, ₹5, ₹2, ₹1. Old discontinued notes are not included.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Is this cash calculator free to use?</h3>
+                    <p class="text-gray-600">Yes, our Indian cash denomination calculator is completely free to use. No registration, no hidden charges, no ads. Just enter your cash counts and get instant results.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Can I use this calculator on my mobile phone?</h3>
+                    <p class="text-gray-600">Absolutely! The calculator is fully mobile responsive and works perfectly on smartphones, tablets, and desktop computers. You can count cash anywhere, anytime.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">How do I count mixed currency notes and coins?</h3>
+                    <p class="text-gray-600">Simply enter the quantity for each denomination you have. For example, if you have 5 pieces of ₹500 notes and 10 pieces of ₹100 notes, enter 5 in the ₹500 field and 10 in the ₹100 field. The calculator will show individual amounts and total.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Is my data secure when using this calculator?</h3>
+                    <p class="text-gray-600">Yes, your data is completely secure. The calculator works entirely in your browser and doesn't send any information to external servers. Your cash counting data remains private.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Can businesses use this calculator for commercial purposes?</h3>
+                    <p class="text-gray-600">Yes, businesses of all sizes can use this calculator free of charge for commercial purposes including retail shops, restaurants, banks, and other cash-handling businesses.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">What's the maximum amount this calculator can handle?</h3>
+                    <p class="text-gray-600">The calculator can handle very large amounts up to several crores. There's no practical limit for regular business or personal use cases.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                Pro Tips for Cash Management in India
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold">Organize by Denomination</h4>
+                            <p class="text-gray-600">Keep different denominations separate for faster counting and verification</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold">Double Check Large Amounts</h4>
+                            <p class="text-gray-600">For significant sums, count twice and verify with the calculator for accuracy</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold">Bundle Notes in Groups</h4>
+                            <p class="text-gray-600">Group notes in bundles of 10 or 100 for easier handling and counting</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold">Keep Calculator Handy</h4>
+                            <p class="text-gray-600">Bookmark this page for quick access during cash handling operations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-exclamation-triangle text-orange-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold">Check for Authenticity</h4>
+                            <p class="text-gray-600">Always verify notes for security features before counting large amounts</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-exclamation-triangle text-orange-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold">Secure Storage</h4>
+                            <p class="text-gray-600">Keep counted cash in secure locations and maintain proper records</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-exclamation-triangle text-orange-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold">Regular Reconciliation</h4>
+                            <p class="text-gray-600">For businesses, reconcile cash daily with sales records and bank deposits</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-exclamation-triangle text-orange-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold">Digital Backup</h4>
+                            <p class="text-gray-600">Consider digital payment options as backup to reduce heavy cash handling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-4">Indian Cash Denomination Calculator</h3>
+            <p class="text-gray-300 mb-6">Free online tool for counting Indian currency notes and coins. Perfect for businesses, banks, and personal use.</p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-6 text-sm">
+                <span>✓ All Indian Denominations</span>
+                <span>✓ Instant Calculations</span>
+                <span>✓ Mobile Friendly</span>
+                <span>✓ 100% Free</span>
+                <span>✓ No Registration</span>
+                <span>✓ Secure & Private</span>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6">
+                <p class="text-gray-400 text-sm">
+                    © 2024 Indian Cash Calculator. All rights reserved. | 
+                    Made with ❤️ for Indian users | 
+                    <span class="text-green-400">🇮🇳 Proudly Indian</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Denomination values
+        const denominations = {
+            'notes-2000': 2000,
+            'notes-500': 500,
+            'notes-200': 200,
+            'notes-100': 100,
+            'notes-50': 50,
+            'notes-20': 20,
+            'notes-10': 10,
+            'coins-10': 10,
+            'coins-5': 5,
+            'coins-2': 2,
+            'coins-1': 1
+        };
+
+        // Add event listeners to all inputs
+        Object.keys(denominations).forEach(id => {
+            const input = document.getElementById(id);
+            input.addEventListener('input', calculateAmounts);
+        });
+
+        function calculateAmounts() {
+            let total = 0;
+            
+            Object.keys(denominations).forEach(id => {
+                const input = document.getElementById(id);
+                const quantity = parseInt(input.value) || 0;
+                const denomination = denominations[id];
+                const amount = quantity * denomination;
+                
+                // Update individual amount display
+                const amountId = id.replace('notes-', 'amount-').replace('coins-', 'amount-coins-');
+                const amountElement = document.getElementById(amountId);
+                amountElement.textContent = `₹${amount.toLocaleString('en-IN')}`;
+                
+                total += amount;
+            });
+            
+            // Update total amount
+            document.getElementById('total-amount').textContent = `₹${total.toLocaleString('en-IN')}`;
+        }
+
+        function clearAll() {
+            Object.keys(denominations).forEach(id => {
+                document.getElementById(id).value = '';
+            });
+            calculateAmounts();
+        }
+
+        function fillExample() {
+            // Example values
+            const examples = {
+                'notes-2000': 2,
+                'notes-500': 5,
+                'notes-200': 3,
+                'notes-100': 10,
+                'notes-50': 8,
+                'notes-20': 15,
+                'notes-10': 20,
+                'coins-10': 10,
+                'coins-5': 20,
+                'coins-2': 25,
+                'coins-1': 50
+            };
+            
+            Object.keys(examples).forEach(id => {
+                document.getElementById(id).value = examples[id];
+            });
+            calculateAmounts();
+        }
+
+        // Initialize calculator
+        calculateAmounts();
+
+        // Add smooth scroll behavior for better UX
+        document.documentElement.style.scrollBehavior = 'smooth';
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease-in-out';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+
+</body>
+</html>
+    
