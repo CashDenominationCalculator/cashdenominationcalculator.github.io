@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Cash Calculator">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
     <title>Free Indian Cash Denomination Calculator | Count Currency Notes & Coins Online</title>
     <meta name="description" content="Free online Indian cash denomination calculator to count currency notes and coins. Calculate total amount from ₹2000, ₹500, ₹200, ₹100, ₹50, ₹20, ₹10 notes and coins instantly.">
     <meta name="keywords" content="indian cash calculator, denomination counter, currency calculator india, note counting calculator, indian rupee calculator, cash counting tool, money counter online, denomination calculator">
@@ -110,20 +116,132 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .calc-input { transition: all 0.3s ease; }
-        .calc-input:focus { transform: scale(1.02); box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
+        body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
+        
+        /* Mobile-optimized inputs */
+        .calc-input { 
+            transition: all 0.3s ease; 
+            font-size: 16px !important; /* Prevents iOS zoom on focus */
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+        }
+        .calc-input::-webkit-outer-spin-button,
+        .calc-input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .calc-input:focus { 
+            transform: scale(1.02); 
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); 
+            outline: none;
+        }
+        
+        /* Denomination cards */
         .denomination-card { transition: all 0.3s ease; }
-        .denomination-card:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        @media (hover: hover) {
+            .denomination-card:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        }
+        .denomination-card:active { transform: scale(0.98); }
+        
         .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
         .pulse-animation { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .7; } }
         .feature-icon { transition: transform 0.3s ease; }
-        .feature-icon:hover { transform: scale(1.1) rotate(5deg); }
+        @media (hover: hover) {
+            .feature-icon:hover { transform: scale(1.1) rotate(5deg); }
+        }
         .faq-item { border-bottom: 1px solid #e5e7eb; }
         .faq-item:last-child { border-bottom: none; }
-        .content-section { scroll-margin-top: 80px; }
+        .content-section { scroll-margin-top: 70px; }
         html { scroll-behavior: smooth; }
+        
+        /* Sticky mobile total bar */
+        .mobile-total-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #059669 0%, #2563eb 100%);
+            color: white;
+            padding: 12px 16px;
+            z-index: 100;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .mobile-total-bar { display: flex; }
+            body { padding-bottom: 70px; }
+            .content-section { scroll-margin-top: 60px; }
+        }
+        
+        /* Mobile menu animation */
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu.open {
+            max-height: 300px;
+        }
+        
+        /* Touch-friendly buttons */
+        button, .btn {
+            min-height: 44px;
+            min-width: 44px;
+        }
+        
+        /* Mobile navigation */
+        .nav-link {
+            padding: 12px 16px;
+            display: block;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+        }
+        .nav-link:active {
+            background-color: rgba(124, 58, 237, 0.1);
+        }
+        
+        /* Mobile-friendly table */
+        .mobile-table-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 0 -1rem;
+            padding: 0 1rem;
+        }
+        @media (max-width: 640px) {
+            .mobile-table-container table {
+                font-size: 14px;
+            }
+            .mobile-table-container th,
+            .mobile-table-container td {
+                padding: 8px 12px;
+                white-space: nowrap;
+            }
+        }
+        
+        /* Improve tap targets on mobile */
+        @media (max-width: 768px) {
+            .denomination-card {
+                padding: 16px;
+            }
+            .calc-input {
+                width: 70px;
+                padding: 10px 8px;
+                font-size: 16px;
+            }
+            h1 { font-size: 1.75rem !important; }
+            h2 { font-size: 1.5rem !important; }
+            h3 { font-size: 1.25rem !important; }
+        }
+        
+        /* Hide scrollbar but allow scroll */
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -143,33 +261,33 @@
                     <a href="#about" class="text-gray-600 hover:text-purple-600 transition-colors">About</a>
                     <a href="privacy.html" class="text-gray-600 hover:text-purple-600 transition-colors">Privacy</a>
                 </div>
-                <button class="md:hidden text-gray-600" onclick="toggleMobileMenu()">
-                    <i class="fas fa-bars text-xl"></i>
+                <button class="md:hidden text-gray-600 p-2 -mr-2" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-xl menu-toggle-icon"></i>
                 </button>
             </div>
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 space-y-3">
-                <a href="#calculator" class="block text-gray-600 hover:text-purple-600">Calculator</a>
-                <a href="#how-to-use" class="block text-gray-600 hover:text-purple-600">How to Use</a>
-                <a href="#currency-guide" class="block text-gray-600 hover:text-purple-600">Currency Guide</a>
-                <a href="#faq" class="block text-gray-600 hover:text-purple-600">FAQ</a>
-                <a href="#about" class="block text-gray-600 hover:text-purple-600">About</a>
-                <a href="privacy.html" class="block text-gray-600 hover:text-purple-600">Privacy Policy</a>
+            <div id="mobileMenu" class="mobile-menu md:hidden mt-4 pb-4 space-y-1">
+                <a href="#calculator" class="nav-link text-gray-600 hover:text-purple-600">Calculator</a>
+                <a href="#how-to-use" class="nav-link text-gray-600 hover:text-purple-600">How to Use</a>
+                <a href="#currency-guide" class="nav-link text-gray-600 hover:text-purple-600">Currency Guide</a>
+                <a href="#faq" class="nav-link text-gray-600 hover:text-purple-600">FAQ</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-purple-600">About</a>
+                <a href="privacy.html" class="nav-link text-gray-600 hover:text-purple-600">Privacy Policy</a>
             </div>
         </div>
     </nav>
 
     <!-- Header -->
-    <header class="gradient-bg text-white py-12 px-4">
+    <header class="gradient-bg text-white py-8 md:py-12 px-4">
         <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">
-                <i class="fas fa-calculator mr-3"></i>
-                Indian Cash Denomination Calculator
+            <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
+                <i class="fas fa-calculator mr-2 md:mr-3"></i>
+                <span class="inline">Indian Cash</span> <span class="inline">Denomination Calculator</span>
             </h1>
             <p class="text-xl md:text-2xl mb-6 opacity-90">
                 Free Online Tool to Count Indian Currency Notes & Coins Instantly
             </p>
-            <div class="flex flex-wrap justify-center gap-4 text-sm">
+            <div class="flex flex-wrap justify-center gap-2 md:gap-4 text-xs md:text-sm">
                 <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full">
                     <i class="fas fa-money-bill mr-1"></i>All Indian Denominations
                 </span>
@@ -229,7 +347,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-purple-700">₹2000 Notes</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="notes-2000" class="calc-input w-20 p-2 border border-purple-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="notes-2000" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-purple-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-purple-600" id="amount-2000">₹0</span>
                             </div>
                         </div>
@@ -239,7 +357,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-blue-700">₹500 Notes</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="notes-500" class="calc-input w-20 p-2 border border-blue-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="notes-500" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-blue-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-blue-600" id="amount-500">₹0</span>
                             </div>
                         </div>
@@ -249,7 +367,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-yellow-700">₹200 Notes</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="notes-200" class="calc-input w-20 p-2 border border-yellow-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="notes-200" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-yellow-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-yellow-600" id="amount-200">₹0</span>
                             </div>
                         </div>
@@ -259,7 +377,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-green-700">₹100 Notes</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="notes-100" class="calc-input w-20 p-2 border border-green-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="notes-100" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-green-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-green-600" id="amount-100">₹0</span>
                             </div>
                         </div>
@@ -269,7 +387,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-pink-700">₹50 Notes</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="notes-50" class="calc-input w-20 p-2 border border-pink-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="notes-50" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-pink-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-pink-600" id="amount-50">₹0</span>
                             </div>
                         </div>
@@ -279,7 +397,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-indigo-700">₹20 Notes</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="notes-20" class="calc-input w-20 p-2 border border-indigo-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="notes-20" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-indigo-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-indigo-600" id="amount-20">₹0</span>
                             </div>
                         </div>
@@ -289,7 +407,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-red-700">₹10 Notes</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="notes-10" class="calc-input w-20 p-2 border border-red-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="notes-10" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-red-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-red-600" id="amount-10">₹0</span>
                             </div>
                         </div>
@@ -307,7 +425,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-gray-700">₹10 Coins</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="coins-10" class="calc-input w-20 p-2 border border-gray-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="coins-10" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-gray-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-gray-600" id="amount-coins-10">₹0</span>
                             </div>
                         </div>
@@ -317,7 +435,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-orange-700">₹5 Coins</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="coins-5" class="calc-input w-20 p-2 border border-orange-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="coins-5" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-orange-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-orange-600" id="amount-coins-5">₹0</span>
                             </div>
                         </div>
@@ -327,7 +445,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-teal-700">₹2 Coins</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="coins-2" class="calc-input w-20 p-2 border border-teal-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="coins-2" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-teal-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-teal-600" id="amount-coins-2">₹0</span>
                             </div>
                         </div>
@@ -337,7 +455,7 @@
                         <div class="flex items-center justify-between">
                             <label class="text-lg font-medium text-amber-700">₹1 Coins</label>
                             <div class="flex items-center space-x-3">
-                                <input type="number" id="coins-1" class="calc-input w-20 p-2 border border-amber-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
+                                <input type="number" id="coins-1" inputmode="numeric" pattern="[0-9]*" class="calc-input w-16 md:w-20 p-2 border border-amber-300 rounded-lg text-center font-semibold" min="0" placeholder="0">
                                 <span class="text-lg font-bold text-amber-600" id="amount-coins-1">₹0</span>
                             </div>
                         </div>
@@ -521,7 +639,7 @@
                     Indian Currency Notes
                 </h3>
                 
-                <div class="overflow-x-auto">
+                <div class="mobile-table-container overflow-x-auto">
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="bg-gray-100">
@@ -868,12 +986,28 @@
         </div>
     </footer>
 
+    <!-- Mobile Sticky Total Bar -->
+    <div class="mobile-total-bar" id="mobileTotalBar">
+        <div class="flex justify-between items-center w-full">
+            <div class="flex items-center">
+                <i class="fas fa-rupee-sign mr-2"></i>
+                <span class="font-semibold">Total:</span>
+            </div>
+            <div class="text-2xl font-bold" id="mobile-total-amount">₹0</div>
+        </div>
+    </div>
+
     <!-- JavaScript -->
     <script>
-        // Mobile menu toggle
+        // Mobile menu toggle with animation
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
+            const icon = document.querySelector('.menu-toggle-icon');
+            menu.classList.toggle('open');
+            if (icon) {
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            }
         }
 
         // Denomination values
@@ -914,8 +1048,13 @@
                 total += amount;
             });
             
-            // Update total amount
-            document.getElementById('total-amount').textContent = `₹${total.toLocaleString('en-IN')}`;
+            // Update total amount (both desktop and mobile)
+            const formattedTotal = `₹${total.toLocaleString('en-IN')}`;
+            document.getElementById('total-amount').textContent = formattedTotal;
+            const mobileTotal = document.getElementById('mobile-total-amount');
+            if (mobileTotal) {
+                mobileTotal.textContent = formattedTotal;
+            }
         }
 
         function clearAll() {
@@ -953,7 +1092,31 @@
         // Close mobile menu when clicking on links
         document.querySelectorAll('#mobileMenu a').forEach(link => {
             link.addEventListener('click', () => {
-                document.getElementById('mobileMenu').classList.add('hidden');
+                document.getElementById('mobileMenu').classList.remove('open');
+                const icon = document.querySelector('.menu-toggle-icon');
+                if (icon) {
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            });
+        });
+
+        // Prevent zoom on double tap for iOS
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', function(event) {
+            const now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
+
+        // Handle input focus scroll on mobile
+        document.querySelectorAll('.calc-input').forEach(input => {
+            input.addEventListener('focus', function() {
+                setTimeout(() => {
+                    this.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 300);
             });
         });
     </script>
