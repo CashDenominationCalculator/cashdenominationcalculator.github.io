@@ -2,196 +2,272 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disclaimer | Indian Cash Denomination Calculator</title>
-    <meta name="description" content="Disclaimer for Indian Cash Denomination Calculator. Important information about using our free cash counting tool.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Disclaimer &mdash; CashCalc | Indian Cash Denomination Calculator</title>
+    <meta name="description" content="Disclaimer for CashCalc. Content is for informational purposes only, not professional financial or legal advice. Verify with official sources like RBI.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cashdenominationcalculator.github.io/disclaimer.html">
-    
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800">
+    <meta property="og:title" content="Disclaimer &mdash; CashCalc">
+    <meta property="og:description" content="Disclaimer for CashCalc. Content is for informational purposes only, not professional financial or legal advice. Verify with official sources like RBI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cashdenominationcalculator.github.io/disclaimer.html">
+    <meta name="theme-color" content="#1a73e8">
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <a href="/" class="text-xl font-bold text-purple-600">
-                    <i class="fas fa-calculator mr-2"></i>Cash Calculator
-                </a>
-                <a href="/" class="text-gray-600 hover:text-purple-600 transition-colors">
-                    <i class="fas fa-arrow-left mr-2"></i>Back to Calculator
-                </a>
+    <!-- Favicon & PWA -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cashdenominationcalculator.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "Disclaimer", "item": "https://cashdenominationcalculator.github.io/disclaimer.html" }
+        ]
+    }
+    </script>
+
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Disclaimer — CashCalc",
+        "url": "https://cashdenominationcalculator.github.io/disclaimer.html",
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-02-08",
+        "inLanguage": "en",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "CashCalc",
+            "url": "https://cashdenominationcalculator.github.io/"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Disclaimer",
+            "description": "CashCalc content is for informational purposes only, not professional financial, legal, or tax advice. Verify with official sources like RBI."
+        }
+    }
+    </script>
+
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <header class="site-header" role="banner">
+        <nav class="nav-inner" aria-label="Primary navigation">
+            <a href="/" class="logo" aria-label="CashCalc Home">
+                <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                <span>Cash<span class="logo-text-accent">Calc</span>.in</span>
+            </a>
+            <div class="nav-links" role="menubar">
+                <a href="/" class="nav-link" role="menuitem">Home</a>
+                <a href="/tools/" class="nav-link" role="menuitem">Tools</a>
+                <a href="/indian-currency/" class="nav-link" role="menuitem">Indian Currency</a>
+                <a href="/banking/" class="nav-link" role="menuitem">Banking</a>
+                <a href="/accounting/" class="nav-link" role="menuitem">Accounting</a>
+                <a href="/blog/" class="nav-link" role="menuitem">Blog</a>
+                <a href="/about/" class="nav-link" role="menuitem">About</a>
+                <a href="/contact.html" class="nav-link" role="menuitem">Contact</a>
             </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="icon-moon" aria-hidden="true">&#9790;</span>
+                    <span class="icon-sun" aria-hidden="true">&#9728;&#65039;</span>
+                </button>
+                <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                    <span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <div class="mobile-nav-links">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="/tools/" class="mobile-nav-link">Tools</a>
+            <a href="/indian-currency/" class="mobile-nav-link">Indian Currency</a>
+            <a href="/banking/" class="mobile-nav-link">Banking</a>
+            <a href="/accounting/" class="mobile-nav-link">Accounting</a>
+            <a href="/blog/" class="mobile-nav-link">Blog</a>
+            <a href="/about/" class="mobile-nav-link">About</a>
+            <a href="/contact.html" class="mobile-nav-link">Contact</a>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="gradient-bg text-white py-12 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">
-                <i class="fas fa-exclamation-triangle mr-3"></i>Disclaimer
-            </h1>
-            <p class="text-xl opacity-90">Important information about our service</p>
-            <p class="text-sm opacity-75 mt-2">Last Updated: January 28, 2025</p>
-        </div>
-    </header>
+    <main id="main-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="padding:var(--space-md) 0 0;">
+            <div class="container">
+                <a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <span>Disclaimer</span>
+            </div>
+        </nav>
 
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-4 py-8">
-        
-        <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-8">
-            
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">General Disclaimer</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    The information provided by Indian Cash Denomination Calculator ("we," "us," or "our") on cashdenominationcalculator.github.io (the "Site") is for general informational and educational purposes only. All information on the Site is provided in good faith; however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
-                </p>
-                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
-                    <p class="text-yellow-800">
-                        <strong>Important:</strong> Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the Site or reliance on any information provided on the Site. Your use of the Site and your reliance on any information on the Site is solely at your own risk.
-                    </p>
+        <section class="section" style="padding-top:var(--space-lg);">
+            <div class="container">
+                <div class="section-card content-block">
+
+                    <h1>Disclaimer</h1>
+
+                    <div class="content-meta" style="margin-bottom:var(--space-lg);">
+                        <span class="content-meta-item">
+                            <span class="content-meta-label">Last updated:</span>
+                            <time datetime="2026-02-08">8 February 2026</time>
+                        </span>
+                    </div>
+
+                    <p>Please read this Disclaimer carefully before using CashCalc (<a href="https://cashdenominationcalculator.github.io/">cashdenominationcalculator.github.io</a>). By using the Site, you acknowledge and agree to the terms set out below.</p>
+
+                    <h2>1. Informational Purposes Only</h2>
+                    <p>All content on CashCalc &mdash; including articles, guides, denomination data, calculation results, and reference material &mdash; is provided <strong>for informational and educational purposes only</strong>. The content does not constitute:</p>
+                    <ul>
+                        <li>Professional financial advice</li>
+                        <li>Legal advice or legal opinion</li>
+                        <li>Tax advice or tax planning guidance</li>
+                        <li>Accounting or auditing advice</li>
+                        <li>Investment advice or recommendation</li>
+                    </ul>
+                    <p>You should always consult a qualified professional &mdash; such as a Chartered Accountant (CA), Company Secretary (CS), tax consultant, or licensed financial adviser &mdash; before making financial decisions based on information found on this website.</p>
+
+                    <h2>2. No Professional Relationship</h2>
+                    <p>Use of CashCalc does not create a professional-client relationship between you and CashCalc, Vikram Mehta, Omprakash, or any other person associated with this website. The information provided is general in nature and may not apply to your specific financial, legal, or tax situation.</p>
+
+                    <h2>3. Accuracy of Information</h2>
+                    <p>We make every effort to ensure the accuracy of information on CashCalc. Our content is:</p>
+                    <ul>
+                        <li>Sourced from official publications of the Reserve Bank of India (RBI), Indian legislative databases, and the Institute of Chartered Accountants of India (ICAI)</li>
+                        <li>Reviewed by Omprakash, a senior banker with 12+ years of experience in cash operations</li>
+                        <li>Updated within 30 days of known RBI policy changes</li>
+                    </ul>
+                    <p>However, we <strong>cannot guarantee</strong> that all information is complete, current, or error-free at all times. RBI policies, legislative provisions, and banking procedures may change without notice. <strong>Always verify critical information against the original source</strong>:</p>
+                    <ul>
+                        <li><strong>RBI:</strong> <a href="https://www.rbi.org.in" rel="nofollow noopener" target="_blank">rbi.org.in</a></li>
+                        <li><strong>Indian legislation:</strong> <a href="https://www.indiacode.nic.in" rel="nofollow noopener" target="_blank">indiacode.nic.in</a></li>
+                        <li><strong>Income Tax:</strong> <a href="https://www.incometax.gov.in" rel="nofollow noopener" target="_blank">incometax.gov.in</a></li>
+                        <li><strong>ICAI:</strong> <a href="https://www.icai.org" rel="nofollow noopener" target="_blank">icai.org</a></li>
+                    </ul>
+
+                    <h2>4. Calculator Disclaimer</h2>
+                    <p>The CashCalc denomination calculator is a convenience tool. While the arithmetic is straightforward (multiplication and addition), please note:</p>
+                    <ul>
+                        <li>The calculator depends on the accuracy of the numbers <strong>you</strong> enter. If you miscount notes, the output will be incorrect.</li>
+                        <li>The &ldquo;amount in words&rdquo; feature follows standard Indian English conventions but may not match the exact phrasing preferred by your specific bank branch.</li>
+                        <li>Printed denomination sheets are convenience documents generated by your browser. They are not official bank forms and acceptance depends on the individual bank or branch.</li>
+                        <li>The tool excludes the &#8377;2000 denomination because it was withdrawn from active circulation on 19 May 2023. If you need to count &#8377;2000 notes for exchange purposes, you will need to add that denomination separately.</li>
+                    </ul>
+
+                    <h2>5. No Liability</h2>
+                    <p>To the maximum extent permitted under applicable Indian law (including the Information Technology Act, 2000 and the Indian Contract Act, 1872), CashCalc and its creators shall not be liable for:</p>
+                    <ul>
+                        <li>Any errors, omissions, or inaccuracies in the content or calculation results</li>
+                        <li>Financial losses or damages arising from your reliance on information provided on this website</li>
+                        <li>Loss of business, profits, data, or goodwill</li>
+                        <li>Decisions made based on denomination counts, printed sheets, or reference content from this website</li>
+                        <li>The actions, policies, or content of third-party websites linked from CashCalc</li>
+                    </ul>
+
+                    <h2>6. Third-Party Links</h2>
+                    <p>CashCalc contains links to external websites, including government sites (RBI.org.in, indiacode.nic.in), professional bodies (ICAI.org), and third-party services (Google, Formspree). These links are provided for convenience and reference. We do not control, endorse, or take responsibility for the content, privacy practices, or availability of these external sites.</p>
+
+                    <h2>7. Affiliate &amp; Advertising Disclosure</h2>
+                    <p>CashCalc is a free tool supported by advertising revenue from Google AdSense. We display advertisements to cover hosting, development, and content costs. Currently:</p>
+                    <ul>
+                        <li>We <strong>do not</strong> have affiliate relationships with any bank, financial institution, or financial product</li>
+                        <li>We <strong>do not</strong> accept paid content, sponsored articles, or paid product reviews</li>
+                        <li>We <strong>do not</strong> receive compensation for mentioning any specific bank, software, or financial service in our content</li>
+                    </ul>
+                    <p>If we establish affiliate relationships in the future, we will clearly disclose them in the relevant content with labels such as &ldquo;Affiliate link&rdquo; or &ldquo;Sponsored.&rdquo; This section will be updated accordingly.</p>
+
+                    <h2>8. RBI Affiliation Disclaimer</h2>
+                    <p>CashCalc is <strong>not affiliated with, endorsed by, or connected to the Reserve Bank of India (RBI)</strong>, the Government of India, or any nationalised or private bank. References to RBI publications, circulars, and data are made for informational accuracy and citation purposes only. The use of terms like &ldquo;RBI-recognised denominations&rdquo; refers to publicly available information about legal tender as published by the RBI.</p>
+
+                    <h2>9. Changes to This Disclaimer</h2>
+                    <p>We may update this Disclaimer from time to time. Changes will be posted on this page with an updated date. Your continued use of CashCalc after changes constitutes acceptance.</p>
+
+                    <h2>10. Contact</h2>
+                    <p>If you have questions about this Disclaimer, contact us at <a href="mailto:contact@cashcalc.in">contact@cashcalc.in</a> or via our <a href="/contact.html">contact page</a>.</p>
+
+                    <p style="margin-top:var(--space-xl);padding-top:var(--space-md);border-top:1px solid var(--color-border);font-size:var(--font-size-sm);color:var(--color-text-secondary);">This Disclaimer was last reviewed and updated on 8 February 2026.</p>
+
                 </div>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Calculator Accuracy Disclaimer</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    While we strive to provide accurate calculations through our cash denomination calculator, please note:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                    <li>The calculator performs mathematical operations based on the quantities you enter</li>
-                    <li>The accuracy of results depends entirely on the correctness of your input</li>
-                    <li>We recommend double-checking all calculations manually, especially for important financial matters</li>
-                    <li>This tool should be used as an aid, not as the sole method of cash verification</li>
-                    <li>We are not responsible for any financial losses resulting from calculator errors or incorrect user input</li>
-                </ul>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Not Financial Advice</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    The Site does not provide financial, investment, legal, or tax advice. The calculator is a simple tool for counting currency denominations and should not be considered as:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                    <li>Professional financial advice</li>
-                    <li>Accounting or bookkeeping services</li>
-                    <li>Tax preparation assistance</li>
-                    <li>Legal or regulatory guidance</li>
-                    <li>Investment recommendations</li>
-                </ul>
-                <p class="text-gray-600 leading-relaxed mt-4">
-                    For professional financial advice, please consult a qualified accountant, financial advisor, or relevant professional.
-                </p>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Currency Information Disclaimer</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Information about Indian currency denominations, security features, and RBI policies provided on this Site is for educational purposes only:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                    <li>Currency regulations and policies may change without notice</li>
-                    <li>Always refer to the official Reserve Bank of India (RBI) website for the most current information</li>
-                    <li>We are not affiliated with, endorsed by, or connected to the Reserve Bank of India</li>
-                    <li>Information about ₹2000 notes and other denominations reflects our understanding at the time of writing</li>
-                    <li>For official currency-related queries, contact your bank or RBI directly</li>
-                </ul>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">External Links Disclaimer</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    The Site may contain links to external websites that are not provided or maintained by us. We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorsement of the views expressed within them.
-                </p>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Advertisements Disclaimer</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    The Site may display advertisements provided by third-party advertising networks, including Google AdSense. We do not endorse or guarantee any products, services, or information advertised on our Site. The presence of advertisements does not constitute an endorsement or recommendation. Users should exercise their own judgment when interacting with advertisements.
-                </p>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Technical Disclaimer</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    We make no guarantees regarding:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                    <li>Continuous, uninterrupted access to the Site</li>
-                    <li>Freedom from viruses, bugs, or other harmful components</li>
-                    <li>Compatibility with all devices, browsers, or operating systems</li>
-                    <li>The correction of any errors or defects in the Site</li>
-                    <li>The security of data transmitted through the Site</li>
-                </ul>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">User Responsibility</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    By using this Site, you acknowledge and agree that you are solely responsible for:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4 mt-2">
-                    <li>Verifying the accuracy of any calculations performed using our tool</li>
-                    <li>Ensuring the quantities you enter are correct</li>
-                    <li>Using the calculator appropriately for your intended purpose</li>
-                    <li>Complying with all applicable laws and regulations</li>
-                    <li>Protecting your own devices and data when using the Site</li>
-                </ul>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Changes to This Disclaimer</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    We reserve the right to modify this disclaimer at any time. Changes will be effective immediately upon posting to the Site. Your continued use of the Site after any changes constitutes your acceptance of the new disclaimer. We encourage you to review this disclaimer periodically.
-                </p>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    If you have any questions about this Disclaimer, please contact us:
-                </p>
-                <div class="bg-purple-50 rounded-lg p-4">
-                    <p class="text-gray-700"><strong>Email:</strong> disclaimer@cashdenominationcalculator.github.io</p>
-                    <p class="text-gray-700"><strong>Website:</strong> cashdenominationcalculator.github.io</p>
-                </div>
-            </section>
-
-        </div>
-
-        <!-- Back to Calculator -->
-        <div class="text-center">
-            <a href="/" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
-                <i class="fas fa-calculator mr-2"></i>Back to Calculator
-            </a>
-        </div>
-
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 px-4 mt-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <p class="text-gray-400 text-sm mb-4">
-                © 2024-2025 Indian Cash Denomination Calculator. All rights reserved.
-            </p>
-            <div class="flex justify-center space-x-6 text-sm">
-                <a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a>
-                <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-                <a href="terms.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-                <a href="disclaimer.html" class="text-gray-400 hover:text-white transition-colors">Disclaimer</a>
-                <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo" style="color:#fff;">
+                        <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                        <span>Cash<span style="color:#8ab4f8;">Calc</span>.in</span>
+                    </a>
+                    <p>Free online tools for Indian cash counting and currency denomination calculations.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="/" class="footer-link">Home</a>
+                        <a href="/about/" class="footer-link">About</a>
+                        <a href="/contact.html" class="footer-link">Contact</a>
+                        <a href="/blog/" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+                        <a href="/terms.html" class="footer-link">Terms of Use</a>
+                        <a href="/disclaimer.html" class="footer-link">Disclaimer</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Categories</h3>
+                    <div class="footer-links">
+                        <a href="/tools/" class="footer-link">Tools</a>
+                        <a href="/indian-currency/" class="footer-link">Indian Currency</a>
+                        <a href="/banking/" class="footer-link">Banking</a>
+                        <a href="/accounting/" class="footer-link">Accounting</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CashCalc. All rights reserved.</p>
+                <p class="disclaimer">Not affiliated with the Reserve Bank of India (RBI) or any government body.</p>
             </div>
         </div>
     </footer>
 
+    <script>
+    window.toggleTheme = function() {
+        var c = document.documentElement.getAttribute('data-theme');
+        var n = c === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', n);
+        localStorage.setItem('cashcalc_theme', n);
+    };
+    (function() {
+        var s = localStorage.getItem('cashcalc_theme');
+        if (s) document.documentElement.setAttribute('data-theme', s);
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+            document.documentElement.setAttribute('data-theme', 'dark');
+        var h = document.getElementById('hamburger-btn');
+        var m = document.getElementById('mobile-nav');
+        if (h && m) h.addEventListener('click', function() {
+            var o = m.classList.toggle('is-open');
+            h.classList.toggle('is-active');
+            h.setAttribute('aria-expanded', o);
+            document.body.classList.toggle('nav-open', o);
+        });
+    })();
+    </script>
 </body>
 </html>

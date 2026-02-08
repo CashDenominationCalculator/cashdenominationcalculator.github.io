@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>How to Use the Cash Denomination Calculator | CashCalc</title>
+    <meta name="description" content="Step-by-step guide to using the Indian Cash Denomination Calculator. Learn every feature: counting, printing slips, PDF export, history, and mobile tips.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://cashdenominationcalculator.github.io/articles/how-to-use-indian-cash-denomination-calculator.html">
+    <meta property="og:title" content="How to Use the Indian Cash Denomination Calculator">
+    <meta property="og:description" content="Step-by-step guide to using the Indian Cash Denomination Calculator. Learn every feature with practical examples.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cashdenominationcalculator.github.io/articles/how-to-use-indian-cash-denomination-calculator.html">
+    <meta property="og:image" content="https://cashdenominationcalculator.github.io/images/calculator-mobile-use.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Use the Indian Cash Denomination Calculator">
+    <meta name="twitter:description" content="Step-by-step guide with practical examples for the Indian Cash Denomination Calculator.">
+    <meta name="theme-color" content="#1a73e8">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cashdenominationcalculator.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cashdenominationcalculator.github.io/blog/" },
+            { "@type": "ListItem", "position": 3, "name": "How to Use the Denomination Calculator", "item": "https://cashdenominationcalculator.github.io/articles/how-to-use-indian-cash-denomination-calculator.html" }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Use the Indian Cash Denomination Calculator — Complete Step-by-Step Guide",
+        "description": "Step-by-step guide to using the Indian Cash Denomination Calculator with practical examples and tips.",
+        "author": { "@type": "Person", "name": "Vikram Mehta", "url": "https://cashdenominationcalculator.github.io/about/#vikram" },
+        "reviewer": { "@type": "Person", "name": "Omprakash", "url": "https://cashdenominationcalculator.github.io/about/#omprakash" },
+        "publisher": { "@type": "Organization", "name": "CashCalc", "url": "https://cashdenominationcalculator.github.io/" },
+        "datePublished": "2026-02-08",
+        "dateModified": "2026-02-08",
+        "mainEntityOfPage": "https://cashdenominationcalculator.github.io/articles/how-to-use-indian-cash-denomination-calculator.html",
+        "image": "https://cashdenominationcalculator.github.io/images/calculator-mobile-use.png",
+        "wordCount": 2100
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            { "@type": "Question", "name": "Do I need to download anything to use CashCalc?", "acceptedAnswer": { "@type": "Answer", "text": "No. CashCalc is a web-based tool that runs entirely in your browser. There is no app to download, no software to install, and no registration required. Just open the website and start entering your denomination counts." } },
+            { "@type": "Question", "name": "Can I save my calculation history?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. CashCalc automatically stores your last 10 calculations in your browser's localStorage. This history stays on your device and is never sent to any server. You can review past counts or clear the history at any time." } },
+            { "@type": "Question", "name": "Does the printed denomination sheet work at all banks?", "acceptedAnswer": { "@type": "Answer", "text": "The denomination sheet follows the standard format used by most Indian banks. It lists denomination, count, and subtotal for each denomination, plus the grand total in figures and words. Most bank branches accept this format, though some may also require you to fill their specific form." } },
+            { "@type": "Question", "name": "What happens if I enter a wrong number?", "acceptedAnswer": { "@type": "Answer", "text": "Simply correct the number in the input field. All subtotals and the grand total update instantly in real time. The calculator does not lock any values — you can edit any denomination count at any time." } },
+            { "@type": "Question", "name": "Can I use CashCalc without an internet connection?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. After the first page load, CashCalc works completely offline. All calculations happen in your browser using JavaScript. You can count cash even when you have no mobile data or Wi-Fi." } }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <header class="site-header" role="banner">
+        <nav class="nav-inner" aria-label="Primary navigation">
+            <a href="/" class="logo" aria-label="CashCalc Home"><span class="logo-icon" aria-hidden="true">&#8377;</span><span>Cash<span class="logo-text-accent">Calc</span>.in</span></a>
+            <div class="nav-links" role="menubar">
+                <a href="/" class="nav-link" role="menuitem">Home</a>
+                <a href="/tools/" class="nav-link" role="menuitem">Tools</a>
+                <a href="/indian-currency/" class="nav-link" role="menuitem">Indian Currency</a>
+                <a href="/banking/" class="nav-link" role="menuitem">Banking</a>
+                <a href="/accounting/" class="nav-link" role="menuitem">Accounting</a>
+                <a href="/blog/" class="nav-link active" role="menuitem">Blog</a>
+                <a href="/about/" class="nav-link" role="menuitem">About</a>
+                <a href="/contact.html" class="nav-link" role="menuitem">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode"><span class="icon-moon" aria-hidden="true">&#9790;</span><span class="icon-sun" aria-hidden="true">&#9728;&#65039;</span></button>
+                <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav"><span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span></button>
+            </div>
+        </nav>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><div class="mobile-nav-links"><a href="/" class="mobile-nav-link">Home</a><a href="/tools/" class="mobile-nav-link">Tools</a><a href="/indian-currency/" class="mobile-nav-link">Indian Currency</a><a href="/banking/" class="mobile-nav-link">Banking</a><a href="/accounting/" class="mobile-nav-link">Accounting</a><a href="/blog/" class="mobile-nav-link">Blog</a><a href="/about/" class="mobile-nav-link">About</a><a href="/contact.html" class="mobile-nav-link">Contact</a></div></nav>
+
+    <main id="main-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="padding:var(--space-md) 0 0;">
+            <div class="container">
+                <a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span>
+                <a href="/blog/">Blog</a> <span aria-hidden="true">&rsaquo;</span>
+                <span>How to Use the Denomination Calculator</span>
+            </div>
+        </nav>
+
+        <section class="section" style="padding-top:var(--space-lg);">
+            <div class="article-layout">
+                <article class="section-card content-block">
+
+                    <div class="article-header">
+                        <a href="/blog/" class="article-category-tag">Tutorial</a>
+                        <h1>How to Use the Indian Cash Denomination Calculator &mdash; Complete Step-by-Step Guide</h1>
+                        <div class="article-meta">
+                            <span class="article-meta-item">By <a href="/about/#vikram">Vikram Mehta</a></span>
+                            <span class="article-meta-item"><time datetime="2026-02-08">8 February 2026</time></span>
+                            <span class="article-meta-item">12 min read</span>
+                            <span class="reviewed-by">&#10003; Reviewed by <a href="/about/#omprakash">Omprakash</a></span>
+                        </div>
+                    </div>
+
+                    <div class="toc-mobile" id="toc-mobile">
+                        <button class="toc-mobile-toggle" onclick="this.parentElement.classList.toggle('is-open')">Table of Contents <span>&#9662;</span></button>
+                        <div class="toc-mobile-content"><ul class="toc-list" id="toc-list-mobile"></ul></div>
+                    </div>
+
+                    <p>This guide walks you through every feature of the <a href="/">CashCalc Indian Cash Denomination Calculator</a> &mdash; from the first step of sorting your cash to printing a bank-ready denomination sheet. Whether you are a shopkeeper closing your register, a cashier reconciling your drawer, or an individual preparing a bank deposit, this tutorial will show you exactly how to use each feature with practical examples.</p>
+
+                    <h2 id="before-you-start">Before You Start: Preparing Your Cash</h2>
+
+                    <p>Before you open the calculator, spend 3&ndash;5 minutes preparing your cash. This preparation step is what separates a 2-minute count from a 15-minute one.</p>
+
+                    <h3 id="sort-by-denomination">Sort Notes by Denomination</h3>
+
+                    <p>Separate all your currency into piles by denomination: all &#8377;500 notes in one pile, all &#8377;200 notes in another, and so on. Sort coins separately. Place each pile face-up and facing the same direction. This makes counting faster and helps you spot notes that do not belong &mdash; for example, a &#8377;200 note (yellow-green) accidentally mixed into the &#8377;50 pile (fluorescent blue), which can happen under warm artificial lighting.</p>
+
+                    <h3 id="bundle-large-counts">Bundle Large Counts</h3>
+
+                    <p>If you have more than 20 notes of a single denomination, bundle them in groups of 10 or 25. Bank cashiers typically use bundles of 100, but for daily shop counting, groups of 10 work well. This reduces miscounting caused by losing your place in a large stack. New, crisp notes from ATMs tend to stick together &mdash; flip through each bundle to separate stuck notes before counting.</p>
+
+                    <h2 id="step-1-enter">Step 1: Enter the Count for Each Denomination</h2>
+
+                    <p>Open the <a href="/">CashCalc calculator</a>. You will see input fields for each of the nine active Indian currency denominations, listed from highest to lowest: &#8377;500, &#8377;200, &#8377;100, &#8377;50, &#8377;20, &#8377;10, &#8377;5, &#8377;2, &#8377;1.</p>
+
+                    <p>Tap or click the input field next to the denomination you want to enter and type the number of notes or coins. On mobile devices, a numeric keypad appears automatically. The calculator accepts only positive whole numbers &mdash; it strips out decimals, negative signs, and non-numeric characters automatically.</p>
+
+                    <div class="example-box">
+                        <strong>Example:</strong> A kirana store owner closing the register counts: 28 notes of &#8377;500, 12 notes of &#8377;200, 45 notes of &#8377;100, 20 notes of &#8377;50, 15 notes of &#8377;20, 30 coins of &#8377;10, 8 coins of &#8377;5, and 5 coins of &#8377;1. He enters each number into the corresponding field.
+                    </div>
+
+                    <h2 id="step-2-review">Step 2: Review Per-Denomination Subtotals</h2>
+
+                    <p>As you enter each count, the calculator instantly shows the subtotal for that denomination. For the example above:</p>
+
+                    <ul>
+                        <li>28 &times; &#8377;500 = <strong>&#8377;14,000</strong></li>
+                        <li>12 &times; &#8377;200 = <strong>&#8377;2,400</strong></li>
+                        <li>45 &times; &#8377;100 = <strong>&#8377;4,500</strong></li>
+                        <li>20 &times; &#8377;50 = <strong>&#8377;1,000</strong></li>
+                        <li>15 &times; &#8377;20 = <strong>&#8377;300</strong></li>
+                        <li>30 &times; &#8377;10 = <strong>&#8377;300</strong></li>
+                        <li>8 &times; &#8377;5 = <strong>&#8377;40</strong></li>
+                        <li>5 &times; &#8377;1 = <strong>&#8377;5</strong></li>
+                    </ul>
+
+                    <p>These real-time subtotals are your first line of defence against errors. If you accidentally typed 280 instead of 28 for the &#8377;500 field, the subtotal would show &#8377;1,40,000 instead of &#8377;14,000 &mdash; an obvious error that prompts an immediate correction. Without per-denomination subtotals, this mistake would only surface at the grand total, and you would have to recheck every denomination to find it.</p>
+
+                    <h2 id="step-3-total">Step 3: Check the Grand Total and Amount in Words</h2>
+
+                    <p>The grand total appears automatically: <strong>&#8377;22,545</strong> (Twenty-Two Thousand Five Hundred and Forty-Five Rupees Only). The total is displayed in the <strong>Indian numbering system</strong> (with commas at the thousand, lakh, and crore positions), not the Western system. The amount-in-words output follows the standard required on bank deposit slips, cheques, and financial documents under the Negotiable Instruments Act, 1881.</p>
+
+                    <div class="example-box">
+                        <strong>Common mistake to avoid:</strong> When writing totals by hand, people often mix Indian and Western number formatting. For example, writing &#8377;1,234,567 (Western) instead of &#8377;12,34,567 (Indian). Banks use Indian numbering, and mismatches between figures and words can cause deposit slips to be rejected. CashCalc always formats both consistently.
+                    </div>
+
+                    <h2 id="step-4-export">Step 4: Print, Download, or Share</h2>
+
+                    <p>CashCalc provides four export options, each designed for a specific use case:</p>
+
+                    <h3 id="print">Print Denomination Sheet</h3>
+
+                    <p>Click the <strong>Print</strong> button to generate a bank-counter-ready denomination sheet. This sheet lists every denomination, its count, the per-row subtotal, and the grand total in both figures and words. The format matches what most Indian banks (SBI, PNB, Bank of Baroda, HDFC, ICICI) expect when you submit a cash deposit. It opens your browser&rsquo;s print dialog &mdash; you can print directly or save as PDF.</p>
+
+                    <h3 id="pdf">Download PDF</h3>
+
+                    <p>Click <strong>Download PDF</strong> to save a timestamped denomination sheet as a PDF file. This is useful for record-keeping, accounting, and tax documentation. Under the Income Tax Act (Section 44AA), businesses with turnover above &#8377;25 lakh (professionals) or &#8377;2 crore (others) must maintain books of accounts that include cash-book entries. A date-stamped denomination PDF serves as supporting documentation for these entries.</p>
+
+                    <h3 id="copy">Copy Summary</h3>
+
+                    <p>Click <strong>Copy</strong> to copy a text summary of your denomination count to the clipboard. You can paste this into WhatsApp messages, emails, Google Sheets, or Tally narration fields. The summary includes all denomination counts, subtotals, and the grand total.</p>
+
+                    <h3 id="share">Share</h3>
+
+                    <p>On mobile devices, the <strong>Share</strong> button uses the Web Share API to share the calculator link directly via WhatsApp, Telegram, SMS, or email. This is useful for recommending the tool to colleagues, employees, or shop staff.</p>
+
+                    <h2 id="history-feature">Using the Calculation History Feature</h2>
+
+                    <p>CashCalc automatically saves your last 10 calculations in your browser&rsquo;s localStorage. This history stays entirely on your device &mdash; no data is ever sent to any server. You can use this feature to:</p>
+
+                    <ul>
+                        <li><strong>Track daily cash counts:</strong> Compare today&rsquo;s closing cash with yesterday&rsquo;s to spot trends or discrepancies</li>
+                        <li><strong>Review past counts:</strong> If a customer disputes a transaction, check the day&rsquo;s denomination breakdown</li>
+                        <li><strong>Quick resume:</strong> If you are interrupted during counting, your last entry is preserved</li>
+                    </ul>
+
+                    <p>To clear the history, use the &ldquo;Clear History&rdquo; option in the calculator. This permanently deletes all saved calculations from your device.</p>
+
+                    <h2 id="tips">Tips for Faster and More Accurate Counting</h2>
+
+                    <p>These tips come from observing how experienced bank cashiers count cash. They apply whether you are using CashCalc or any other counting method:</p>
+
+                    <p><strong>1. Sort face-up, same direction:</strong> Turn all notes face-up and in the same orientation. This lets you spot wrong denominations by colour and design at a glance rather than reading the number on each note.</p>
+
+                    <p><strong>2. Count in batches of 10:</strong> Instead of counting notes one by one, count 10, set aside, count 10, set aside. Then count how many batches you have. 3 batches of 10 = 30 notes. This is the technique bank cashiers call &ldquo;fan-and-count&rdquo;.</p>
+
+                    <p><strong>3. Watch for stuck notes:</strong> New notes from ATMs or fresh currency packs stick together, especially during humid weather (monsoon season, coastal areas). Flip through each pile before counting to separate stuck notes. Our reviewer Omprakash notes that stuck notes are the single most common cause of miscounts at bank counters.</p>
+
+                    <p><strong>4. Count high-value denominations first:</strong> Start with &#8377;500 and work down. Errors in high-value notes have the largest financial impact, and you are most focused at the start of counting (before vigilance decrement sets in).</p>
+
+                    <p><strong>5. Enter counts as you go:</strong> Enter each denomination count into CashCalc as soon as you finish counting that pile, rather than writing all counts on paper first. This reduces transcription errors.</p>
+
+                    <h2 id="worked-example">Worked Example: Shopkeeper Closing the Register</h2>
+
+                    <p>Let us walk through a complete real-world scenario.</p>
+
+                    <p><strong>Scenario:</strong> Meena runs a medical shop in Varanasi. It is 9:30 PM and she is closing the register after a busy day. She started with a &#8377;5,000 float (opening cash) and her POS system shows &#8377;18,200 in cash sales today. She needs to verify the total cash in the drawer.</p>
+
+                    <p><strong>Step 1 &mdash; Sort:</strong> Meena removes all cash from the register, sorts it by denomination, and counts each pile:</p>
+
+                    <ul>
+                        <li>&#8377;500 notes: 32</li>
+                        <li>&#8377;200 notes: 5</li>
+                        <li>&#8377;100 notes: 22</li>
+                        <li>&#8377;50 notes: 14</li>
+                        <li>&#8377;20 notes: 8</li>
+                        <li>&#8377;10 coins: 18</li>
+                        <li>&#8377;5 coins: 6</li>
+                        <li>&#8377;2 coins: 3</li>
+                        <li>&#8377;1 coins: 4</li>
+                    </ul>
+
+                    <p><strong>Step 2 &mdash; Enter into CashCalc:</strong> She opens CashCalc on her phone and enters each count.</p>
+
+                    <p><strong>Step 3 &mdash; Verify:</strong> CashCalc shows:</p>
+
+                    <ul>
+                        <li>32 &times; &#8377;500 = &#8377;16,000</li>
+                        <li>5 &times; &#8377;200 = &#8377;1,000</li>
+                        <li>22 &times; &#8377;100 = &#8377;2,200</li>
+                        <li>14 &times; &#8377;50 = &#8377;700</li>
+                        <li>8 &times; &#8377;20 = &#8377;160</li>
+                        <li>18 &times; &#8377;10 = &#8377;180</li>
+                        <li>6 &times; &#8377;5 = &#8377;30</li>
+                        <li>3 &times; &#8377;2 = &#8377;6</li>
+                        <li>4 &times; &#8377;1 = &#8377;4</li>
+                    </ul>
+
+                    <p><strong>Grand Total: &#8377;20,280</strong> (Twenty Thousand Two Hundred and Eighty Rupees Only)</p>
+
+                    <p><strong>Step 4 &mdash; Reconcile:</strong> Opening float &#8377;5,000 + cash sales &#8377;18,200 = expected &#8377;23,200. Actual count &#8377;20,280. Difference: &#8377;2,920 short. Meena checks and realises she paid &#8377;2,800 to a medicine supplier in cash (documented in her cash book) and gave &#8377;120 in change to a customer who paid with a &#8377;500 note for a &#8377;380 purchase. Mystery solved.</p>
+
+                    <p><strong>Step 5 &mdash; Record:</strong> She downloads the PDF for her daily cash record and prints a copy for her weekly bank deposit at Punjab National Bank.</p>
+
+                    <h2 id="mobile">Using CashCalc on Mobile Devices</h2>
+
+                    <p>CashCalc is designed mobile-first. On smartphones:</p>
+
+                    <ul>
+                        <li>Input fields automatically trigger the <strong>numeric keypad</strong>, so you do not need to switch between letter and number keyboards</li>
+                        <li>The layout stacks vertically for easy one-thumb navigation</li>
+                        <li>The Print and PDF features use your phone&rsquo;s native print/share functionality</li>
+                        <li>After the first load, the calculator works <strong>completely offline</strong> &mdash; no mobile data or Wi-Fi needed</li>
+                        <li>The tool can be added to your home screen as a Progressive Web App (PWA) for instant access</li>
+                    </ul>
+
+                    <h2 id="common-mistakes">Common Mistakes and How the Calculator Prevents Them</h2>
+
+                    <p><strong>Denomination confusion:</strong> The &#8377;200 (yellow-green) and &#8377;50 (fluorescent blue) notes can look similar under warm lighting. Old Mahatma Gandhi Series &#8377;100 notes and new &#8377;200 notes also have overlapping colour tones. The calculator prevents this by forcing you to sort first and count each denomination separately.</p>
+
+                    <p><strong>Mental arithmetic errors:</strong> Multiplying 37 &times; 200 or 83 &times; 50 in your head while simultaneously holding other subtotals in memory is error-prone. The calculator handles all arithmetic instantly.</p>
+
+                    <p><strong>Carry-forward mistakes:</strong> When you write subtotals on paper and then add them, carry errors (adding a column of numbers incorrectly) are common. The calculator computes the total directly from all subtotals with zero rounding error.</p>
+
+                    <p><strong>Figures-to-words mismatch:</strong> Writing &ldquo;Twelve Lakh&rdquo; when the figure shows &#8377;12,00,000 but the actual calculated amount was &#8377;12,30,000 (&ldquo;Twelve Lakh Thirty Thousand&rdquo;). The calculator generates words directly from the computed total, so they always match.</p>
+
+                    <h2 id="faq">Frequently Asked Questions</h2>
+
+                    <div class="faq-list">
+                        <div class="faq-item"><button class="faq-question" onclick="this.parentElement.classList.toggle('is-open')">Do I need to download anything to use CashCalc? <span class="faq-icon">&#9662;</span></button><div class="faq-answer"><p>No. CashCalc is a web-based tool that runs entirely in your browser. There is no app to download, no software to install, and no registration required. Just open the website and start entering your denomination counts.</p></div></div>
+                        <div class="faq-item"><button class="faq-question" onclick="this.parentElement.classList.toggle('is-open')">Can I save my calculation history? <span class="faq-icon">&#9662;</span></button><div class="faq-answer"><p>Yes. CashCalc automatically stores your last 10 calculations in your browser&rsquo;s localStorage. This history stays on your device and is never sent to any server. You can review past counts or clear the history at any time.</p></div></div>
+                        <div class="faq-item"><button class="faq-question" onclick="this.parentElement.classList.toggle('is-open')">Does the printed denomination sheet work at all banks? <span class="faq-icon">&#9662;</span></button><div class="faq-answer"><p>The denomination sheet follows the standard format used by most Indian banks. It lists denomination, count, and subtotal for each denomination, plus the grand total in figures and words. Most bank branches accept this format, though some may also require you to fill their specific form.</p></div></div>
+                        <div class="faq-item"><button class="faq-question" onclick="this.parentElement.classList.toggle('is-open')">What happens if I enter a wrong number? <span class="faq-icon">&#9662;</span></button><div class="faq-answer"><p>Simply correct the number in the input field. All subtotals and the grand total update instantly in real time. The calculator does not lock any values &mdash; you can edit any denomination count at any time.</p></div></div>
+                        <div class="faq-item"><button class="faq-question" onclick="this.parentElement.classList.toggle('is-open')">Can I use CashCalc without an internet connection? <span class="faq-icon">&#9662;</span></button><div class="faq-answer"><p>Yes. After the first page load, CashCalc works completely offline. All calculations happen in your browser using JavaScript. You can count cash even when you have no mobile data or Wi-Fi.</p></div></div>
+                    </div>
+
+                    <div style="margin-top:var(--space-2xl);padding-top:var(--space-md);border-top:1px solid var(--color-border-light);font-size:var(--font-size-xs);color:var(--color-text-muted);">
+                        <p><strong>Sources:</strong></p>
+                        <p>[1] RBI Master Direction &mdash; Currency Distribution &amp; Exchange Directions, 2024 &mdash; <a href="https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=11510" rel="nofollow noopener" target="_blank">rbi.org.in</a></p>
+                        <p>[2] The Negotiable Instruments Act, 1881 &mdash; <a href="https://www.indiacode.nic.in/handle/123456789/2187" rel="nofollow noopener" target="_blank">indiacode.nic.in</a></p>
+                        <p>[3] Income Tax Act, 1961 (Section 44AA) &mdash; <a href="https://www.incometax.gov.in/iec/foportal" rel="nofollow noopener" target="_blank">incometax.gov.in</a></p>
+                    </div>
+
+                    <div class="share-bar">
+                        <span class="share-label">Share this guide:</span>
+                        <a href="https://twitter.com/intent/tweet?text=How%20to%20Use%20the%20Indian%20Cash%20Denomination%20Calculator&url=https://cashdenominationcalculator.github.io/articles/how-to-use-indian-cash-denomination-calculator.html" target="_blank" rel="noopener" class="share-btn share-btn--twitter">Twitter</a>
+                        <a href="https://api.whatsapp.com/send?text=How%20to%20Use%20the%20Indian%20Cash%20Denomination%20Calculator%20https://cashdenominationcalculator.github.io/articles/how-to-use-indian-cash-denomination-calculator.html" target="_blank" rel="noopener" class="share-btn share-btn--whatsapp">WhatsApp</a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://cashdenominationcalculator.github.io/articles/how-to-use-indian-cash-denomination-calculator.html" target="_blank" rel="noopener" class="share-btn share-btn--linkedin">LinkedIn</a>
+                        <button class="share-btn" onclick="navigator.clipboard.writeText(window.location.href).then(()=>this.textContent='Copied!')">Copy Link</button>
+                    </div>
+
+                    <div class="author-bio-box">
+                        <div class="author-bio-avatar">VM</div>
+                        <div>
+                            <div class="author-bio-name">Vikram Mehta</div>
+                            <div class="author-bio-role">Lead Content Editor &amp; Developer, CashCalc</div>
+                            <p class="author-bio-text">Vikram has spent 6+ years writing about Indian banking, RBI policy, and personal finance. He built CashCalc to make denomination counting faster and error-free for every Indian.</p>
+                            <a href="/about/#vikram" class="author-bio-link">Read full bio &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="related-articles">
+                        <h2>Related Articles</h2>
+                        <div class="related-grid">
+                            <a href="/articles/what-is-cash-denomination-calculator.html" class="related-card"><div class="related-card-title">What Is a Cash Denomination Calculator?</div><div class="related-card-desc">Definition, history, types, and why denomination calculators matter in India.</div></a>
+                            <a href="/articles/why-cashiers-need-denomination-calculator.html" class="related-card"><div class="related-card-title">Why Every Cashier Needs a Denomination Calculator</div><div class="related-card-desc">How denomination calculators save time and prevent errors for retail workers.</div></a>
+                            <a href="/articles/cash-denomination-calculator-bank-deposits.html" class="related-card"><div class="related-card-title">Denomination Calculator for Bank Cash Deposits</div><div class="related-card-desc">Complete guide to using denomination calculators for bank deposit preparation.</div></a>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="toc-sidebar">
+                    <div class="toc-card">
+                        <div class="toc-title">Table of Contents</div>
+                        <ul class="toc-list">
+                            <li><a href="#before-you-start">Before You Start</a></li>
+                            <li class="toc-h3"><a href="#sort-by-denomination">Sort by Denomination</a></li>
+                            <li class="toc-h3"><a href="#bundle-large-counts">Bundle Large Counts</a></li>
+                            <li><a href="#step-1-enter">Step 1: Enter Counts</a></li>
+                            <li><a href="#step-2-review">Step 2: Review Subtotals</a></li>
+                            <li><a href="#step-3-total">Step 3: Grand Total</a></li>
+                            <li><a href="#step-4-export">Step 4: Export Options</a></li>
+                            <li class="toc-h3"><a href="#print">Print</a></li>
+                            <li class="toc-h3"><a href="#pdf">Download PDF</a></li>
+                            <li class="toc-h3"><a href="#copy">Copy Summary</a></li>
+                            <li class="toc-h3"><a href="#share">Share</a></li>
+                            <li><a href="#history-feature">Calculation History</a></li>
+                            <li><a href="#tips">Counting Tips</a></li>
+                            <li><a href="#worked-example">Worked Example</a></li>
+                            <li><a href="#mobile">Mobile Usage</a></li>
+                            <li><a href="#common-mistakes">Common Mistakes</a></li>
+                            <li><a href="#faq">FAQs</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="/" class="logo" style="color:#fff;"><span class="logo-icon" aria-hidden="true">&#8377;</span><span>Cash<span style="color:#8ab4f8;">Calc</span>.in</span></a><p>Free online tools for Indian cash counting and currency denomination calculations.</p></div><div><h3 class="footer-heading">Quick Links</h3><div class="footer-links"><a href="/" class="footer-link">Home</a><a href="/about/" class="footer-link">About</a><a href="/contact.html" class="footer-link">Contact</a><a href="/blog/" class="footer-link">Blog</a></div></div><div><h3 class="footer-heading">Legal</h3><div class="footer-links"><a href="/privacy.html" class="footer-link">Privacy Policy</a><a href="/terms.html" class="footer-link">Terms of Use</a><a href="/disclaimer.html" class="footer-link">Disclaimer</a></div></div><div><h3 class="footer-heading">Categories</h3><div class="footer-links"><a href="/tools/" class="footer-link">Tools</a><a href="/indian-currency/" class="footer-link">Indian Currency</a><a href="/banking/" class="footer-link">Banking</a><a href="/accounting/" class="footer-link">Accounting</a></div></div></div><div class="footer-bottom"><p>&copy; 2025 CashCalc. All rights reserved.</p><p class="disclaimer">Not affiliated with the Reserve Bank of India (RBI) or any government body.</p></div></div></footer>
+
+    <script>
+    window.toggleTheme=function(){const c=document.documentElement.getAttribute('data-theme');const n=c==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('cashcalc_theme',n)};
+    (function(){const s=localStorage.getItem('cashcalc_theme');if(s)document.documentElement.setAttribute('data-theme',s);else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.setAttribute('data-theme','dark');const h=document.getElementById('hamburger-btn');const m=document.getElementById('mobile-nav');if(h&&m)h.addEventListener('click',()=>{const o=m.classList.toggle('is-open');h.classList.toggle('is-active');h.setAttribute('aria-expanded',o);document.body.classList.toggle('nav-open',o)})})();
+    </script>
+</body>
+</html>

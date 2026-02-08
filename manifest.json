@@ -1,0 +1,31 @@
+{
+  "name": "CashCalc — Indian Cash Denomination Calculator",
+  "short_name": "CashCalc",
+  "description": "Free online Indian cash denomination calculator. Count currency notes and coins instantly with print, PDF export, and bank-deposit sheets.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a73e8",
+  "orientation": "any",
+  "lang": "en-IN",
+  "categories": ["finance", "utilities"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

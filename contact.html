@@ -2,192 +2,266 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Indian Cash Denomination Calculator</title>
-    <meta name="description" content="Contact the Indian Cash Denomination Calculator team. Get in touch with us for questions, feedback, or support.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Contact Us &mdash; CashCalc | Indian Cash Denomination Calculator</title>
+    <meta name="description" content="Contact the CashCalc team. Report bugs, suggest features, flag content errors, or send business inquiries. We respond within 48 hours.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cashdenominationcalculator.github.io/contact.html">
-    
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800">
+    <meta property="og:title" content="Contact Us &mdash; CashCalc">
+    <meta property="og:description" content="Contact the CashCalc team. Report bugs, suggest features, flag content errors, or send business inquiries. We respond within 48 hours.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cashdenominationcalculator.github.io/contact.html">
+    <meta name="theme-color" content="#1a73e8">
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <a href="/" class="text-xl font-bold text-purple-600">
-                    <i class="fas fa-calculator mr-2"></i>Cash Calculator
-                </a>
-                <a href="/" class="text-gray-600 hover:text-purple-600 transition-colors">
-                    <i class="fas fa-arrow-left mr-2"></i>Back to Calculator
-                </a>
+    <!-- Favicon & PWA -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cashdenominationcalculator.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://cashdenominationcalculator.github.io/contact.html" }
+        ]
+    }
+    </script>
+
+    <!-- ContactPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Us — CashCalc",
+        "url": "https://cashdenominationcalculator.github.io/contact.html",
+        "dateModified": "2026-02-08",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "CashCalc",
+            "url": "https://cashdenominationcalculator.github.io/",
+            "email": "contact@cashcalc.in",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "contact@cashcalc.in",
+                "contactType": "customer support",
+                "availableLanguage": ["English", "Hindi"],
+                "url": "https://cashdenominationcalculator.github.io/contact.html"
+            }
+        }
+    }
+    </script>
+
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <header class="site-header" role="banner">
+        <nav class="nav-inner" aria-label="Primary navigation">
+            <a href="/" class="logo" aria-label="CashCalc Home">
+                <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                <span>Cash<span class="logo-text-accent">Calc</span>.in</span>
+            </a>
+            <div class="nav-links" role="menubar">
+                <a href="/" class="nav-link" role="menuitem">Home</a>
+                <a href="/tools/" class="nav-link" role="menuitem">Tools</a>
+                <a href="/indian-currency/" class="nav-link" role="menuitem">Indian Currency</a>
+                <a href="/banking/" class="nav-link" role="menuitem">Banking</a>
+                <a href="/accounting/" class="nav-link" role="menuitem">Accounting</a>
+                <a href="/blog/" class="nav-link" role="menuitem">Blog</a>
+                <a href="/about/" class="nav-link" role="menuitem">About</a>
+                <a href="/contact.html" class="nav-link active" role="menuitem">Contact</a>
             </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="icon-moon" aria-hidden="true">&#9790;</span>
+                    <span class="icon-sun" aria-hidden="true">&#9728;&#65039;</span>
+                </button>
+                <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                    <span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <div class="mobile-nav-links">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="/tools/" class="mobile-nav-link">Tools</a>
+            <a href="/indian-currency/" class="mobile-nav-link">Indian Currency</a>
+            <a href="/banking/" class="mobile-nav-link">Banking</a>
+            <a href="/accounting/" class="mobile-nav-link">Accounting</a>
+            <a href="/blog/" class="mobile-nav-link">Blog</a>
+            <a href="/about/" class="mobile-nav-link">About</a>
+            <a href="/contact.html" class="mobile-nav-link">Contact</a>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="gradient-bg text-white py-12 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">
-                <i class="fas fa-envelope mr-3"></i>Contact Us
-            </h1>
-            <p class="text-xl opacity-90">We'd love to hear from you</p>
-        </div>
-    </header>
+    <main id="main-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="padding:var(--space-md) 0 0;">
+            <div class="container">
+                <a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <span>Contact</span>
+            </div>
+        </nav>
 
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-4 py-8">
-        
-        <div class="grid md:grid-cols-2 gap-8">
-            
-            <!-- Contact Information -->
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h2>
-                
-                <p class="text-gray-600 leading-relaxed mb-6">
-                    Have questions about our Indian Cash Denomination Calculator? Want to suggest a new feature or report an issue? We're here to help! Reach out to us through any of the following channels:
-                </p>
-                
-                <div class="space-y-6">
-                    <div class="flex items-start">
-                        <div class="bg-purple-100 p-3 rounded-full mr-4">
-                            <i class="fas fa-envelope text-purple-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800">Email</h3>
-                            <p class="text-gray-600">contact@cashdenominationcalculator.github.io</p>
-                            <p class="text-sm text-gray-500">We typically respond within 24-48 hours</p>
-                        </div>
+        <section class="section" style="padding-top:var(--space-lg);">
+            <div class="container">
+                <div class="section-card content-block">
+
+                    <h1>Contact Us</h1>
+
+                    <div class="content-meta" style="margin-bottom:var(--space-lg);">
+                        <span class="content-meta-item">
+                            <span class="content-meta-label">Response time:</span> Within 48 hours (Mon&ndash;Fri)
+                        </span>
                     </div>
-                    
-                    <div class="flex items-start">
-                        <div class="bg-blue-100 p-3 rounded-full mr-4">
-                            <i class="fab fa-github text-blue-600 text-xl"></i>
-                        </div>
+
+                    <p>Have a question about CashCalc? Found an error in our content? Want to suggest a feature or report a bug? We would love to hear from you. Fill out the form below or email us directly.</p>
+
+                    <div style="display:grid;grid-template-columns:1fr;gap:var(--space-xl);margin-top:var(--space-lg);">
+
+                        <!-- Contact Form -->
                         <div>
-                            <h3 class="font-semibold text-gray-800">GitHub</h3>
-                            <p class="text-gray-600">Report issues or suggest features</p>
-                            <a href="https://github.com/CashDenominationCalculator" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:underline text-sm">Visit our GitHub</a>
+                            <h2>Send Us a Message</h2>
+                            <form action="https://formspree.io/f/xpwzgwqk" method="POST" class="contact-form" id="contact-form">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Your Name <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" required class="form-input" placeholder="e.g. Ravi Sharma">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required class="form-input" placeholder="e.g. ravi@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject <span class="required">*</span></label>
+                                    <select id="subject" name="subject" required class="form-input">
+                                        <option value="" disabled selected>Select a topic&hellip;</option>
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Bug Report">Bug Report</option>
+                                        <option value="Content Suggestion">Content Suggestion</option>
+                                        <option value="Factual Error Report">Factual Error Report</option>
+                                        <option value="Business Inquiry">Business Inquiry</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message <span class="required">*</span></label>
+                                    <textarea id="message" name="message" required class="form-input form-textarea" rows="6" placeholder="Please describe your question, issue, or suggestion in detail. For error reports, include the page URL and the specific claim you believe is incorrect."></textarea>
+                                </div>
+                                <input type="hidden" name="_subject" value="CashCalc Contact Form Submission">
+                                <input type="text" name="_gotcha" style="display:none">
+                                <button type="submit" class="form-submit">Send Message</button>
+                            </form>
+                            <p style="margin-top:var(--space-sm);font-size:var(--font-size-sm);color:var(--color-text-secondary);">This form is powered by <a href="https://formspree.io" rel="nofollow noopener" target="_blank">Formspree</a>. Your submission is sent directly to our team via email. We do not store form data on any server.</p>
                         </div>
-                    </div>
-                    
-                    <div class="flex items-start">
-                        <div class="bg-green-100 p-3 rounded-full mr-4">
-                            <i class="fas fa-clock text-green-600 text-xl"></i>
-                        </div>
+
+                        <!-- Contact Info -->
                         <div>
-                            <h3 class="font-semibold text-gray-800">Response Time</h3>
-                            <p class="text-gray-600">Monday - Friday: 9 AM - 6 PM IST</p>
-                            <p class="text-sm text-gray-500">Weekend queries answered on Monday</p>
+                            <h2>Other Ways to Reach Us</h2>
+
+                            <div class="contact-info-block">
+                                <h3>&#9993; Email</h3>
+                                <p><a href="mailto:contact@cashcalc.in">contact@cashcalc.in</a></p>
+                                <p style="font-size:var(--font-size-sm);color:var(--color-text-secondary);">We typically respond within 24&ndash;48 hours on business days (Monday&ndash;Friday, 9 AM &ndash; 6 PM IST). Weekend queries are answered on Monday.</p>
+                            </div>
+
+                            <div class="contact-info-block">
+                                <h3>&#128187; GitHub</h3>
+                                <p>Report bugs or suggest features on our <a href="https://github.com/CashDenominationCalculator" rel="noopener" target="_blank">GitHub repository</a>.</p>
+                            </div>
+
+                            <div class="contact-info-block">
+                                <h3>&#128221; Content Corrections</h3>
+                                <p>If you believe any factual claim on CashCalc is incorrect, please use the form above with the subject &ldquo;Factual Error Report&rdquo; and include:</p>
+                                <ul style="padding-left:var(--space-lg);margin:var(--space-sm) 0;">
+                                    <li>The page URL where the error appears</li>
+                                    <li>The specific claim you believe is wrong</li>
+                                    <li>A link to the authoritative source (e.g. RBI circular, legislation)</li>
+                                </ul>
+                                <p>We verify and correct confirmed errors within 48 hours.</p>
+                            </div>
                         </div>
+
                     </div>
+
                 </div>
             </div>
-            
-            <!-- FAQ Quick Links -->
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6">Before You Contact Us</h2>
-                
-                <p class="text-gray-600 leading-relaxed mb-6">
-                    Check if your question is already answered in our FAQ section or browse common topics below:
-                </p>
-                
-                <div class="space-y-4">
-                    <div class="bg-gray-50 rounded-lg p-4">
-                        <h3 class="font-semibold text-gray-800 mb-2">
-                            <i class="fas fa-question-circle text-purple-500 mr-2"></i>How do I use the calculator?
-                        </h3>
-                        <p class="text-gray-600 text-sm">Simply enter the quantity of each denomination and the total is calculated instantly.</p>
-                        <a href="index.html#how-to-use" class="text-purple-600 hover:underline text-sm">Read full guide →</a>
-                    </div>
-                    
-                    <div class="bg-gray-50 rounded-lg p-4">
-                        <h3 class="font-semibold text-gray-800 mb-2">
-                            <i class="fas fa-shield-alt text-green-500 mr-2"></i>Is my data safe?
-                        </h3>
-                        <p class="text-gray-600 text-sm">Yes! All calculations happen locally in your browser. We don't store any data.</p>
-                        <a href="privacy.html" class="text-purple-600 hover:underline text-sm">Read privacy policy →</a>
-                    </div>
-                    
-                    <div class="bg-gray-50 rounded-lg p-4">
-                        <h3 class="font-semibold text-gray-800 mb-2">
-                            <i class="fas fa-rupee-sign text-yellow-500 mr-2"></i>About ₹2000 notes
-                        </h3>
-                        <p class="text-gray-600 text-sm">₹2000 notes remain legal tender but can only be exchanged at select RBI offices.</p>
-                        <a href="/#currency-guide" class="text-purple-600 hover:underline text-sm">Read currency guide →</a>
-                    </div>
-                    
-                    <div class="bg-gray-50 rounded-lg p-4">
-                        <h3 class="font-semibold text-gray-800 mb-2">
-                            <i class="fas fa-mobile-alt text-blue-500 mr-2"></i>Mobile compatibility
-                        </h3>
-                        <p class="text-gray-600 text-sm">Yes, the calculator works perfectly on all devices including smartphones and tablets.</p>
-                    </div>
-                </div>
-                
-                <div class="mt-6 text-center">
-                    <a href="index.html#faq" class="inline-block bg-purple-100 text-purple-700 font-semibold py-2 px-6 rounded-lg hover:bg-purple-200 transition-colors">
-                        View All FAQs
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-        
-        <!-- Feedback Section -->
-        <div class="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl shadow-lg p-6 md:p-8 mt-8 text-white">
-            <div class="text-center">
-                <h2 class="text-2xl font-bold mb-4">
-                    <i class="fas fa-star mr-2"></i>Love Our Calculator?
-                </h2>
-                <p class="opacity-90 mb-6 max-w-2xl mx-auto">
-                    If you find our Indian Cash Denomination Calculator helpful, please share it with your friends, family, and colleagues. Your support helps us continue providing this free tool to millions of Indians!
-                </p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20free%20Indian%20Cash%20Denomination%20Calculator!%20Super%20useful%20for%20counting%20currency%20notes%20and%20coins.&url=https://cashdenominationcalculator.github.io" target="_blank" rel="noopener noreferrer" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition-colors">
-                        <i class="fab fa-twitter mr-2"></i>Share on Twitter
-                    </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://cashdenominationcalculator.github.io" target="_blank" rel="noopener noreferrer" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition-colors">
-                        <i class="fab fa-facebook mr-2"></i>Share on Facebook
-                    </a>
-                    <a href="https://wa.me/?text=Check%20out%20this%20free%20Indian%20Cash%20Denomination%20Calculator!%20https://cashdenominationcalculator.github.io" target="_blank" rel="noopener noreferrer" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition-colors">
-                        <i class="fab fa-whatsapp mr-2"></i>Share on WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Back to Calculator -->
-        <div class="text-center mt-8">
-            <a href="/" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
-                <i class="fas fa-calculator mr-2"></i>Back to Calculator
-            </a>
-        </div>
-
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 px-4 mt-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <p class="text-gray-400 text-sm mb-4">
-                © 2024-2025 Indian Cash Denomination Calculator. All rights reserved.
-            </p>
-            <div class="flex justify-center space-x-6 text-sm">
-                <a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a>
-                <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-                <a href="terms.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-                <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo" style="color:#fff;">
+                        <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                        <span>Cash<span style="color:#8ab4f8;">Calc</span>.in</span>
+                    </a>
+                    <p>Free online tools for Indian cash counting and currency denomination calculations.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="/" class="footer-link">Home</a>
+                        <a href="/about/" class="footer-link">About</a>
+                        <a href="/contact.html" class="footer-link">Contact</a>
+                        <a href="/blog/" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+                        <a href="/terms.html" class="footer-link">Terms of Use</a>
+                        <a href="/disclaimer.html" class="footer-link">Disclaimer</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Categories</h3>
+                    <div class="footer-links">
+                        <a href="/tools/" class="footer-link">Tools</a>
+                        <a href="/indian-currency/" class="footer-link">Indian Currency</a>
+                        <a href="/banking/" class="footer-link">Banking</a>
+                        <a href="/accounting/" class="footer-link">Accounting</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CashCalc. All rights reserved.</p>
+                <p class="disclaimer">Not affiliated with the Reserve Bank of India (RBI) or any government body.</p>
             </div>
         </div>
     </footer>
 
+    <script>
+    window.toggleTheme = function() {
+        var c = document.documentElement.getAttribute('data-theme');
+        var n = c === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', n);
+        localStorage.setItem('cashcalc_theme', n);
+    };
+    (function() {
+        var s = localStorage.getItem('cashcalc_theme');
+        if (s) document.documentElement.setAttribute('data-theme', s);
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+            document.documentElement.setAttribute('data-theme', 'dark');
+        var h = document.getElementById('hamburger-btn');
+        var m = document.getElementById('mobile-nav');
+        if (h && m) h.addEventListener('click', function() {
+            var o = m.classList.toggle('is-open');
+            h.classList.toggle('is-active');
+            h.setAttribute('aria-expanded', o);
+            document.body.classList.toggle('nav-open', o);
+        });
+    })();
+    </script>
 </body>
 </html>

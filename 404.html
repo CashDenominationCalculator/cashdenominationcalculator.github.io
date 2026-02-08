@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — CashCalc</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+            text-align: center;
+        }
+        .error-container { max-width: 520px; }
+        .error-code {
+            font-size: 6rem;
+            font-weight: 800;
+            color: #1a73e8;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .error-icon { font-size: 3rem; margin-bottom: 1rem; }
+        h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; }
+        p { color: #64748b; line-height: 1.6; margin-bottom: 1.5rem; }
+        .error-links { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+        .error-link {
+            display: inline-block;
+            padding: 0.65rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .error-link-primary {
+            background: #1a73e8;
+            color: #fff;
+        }
+        .error-link-primary:hover { background: #0d47a1; }
+        .error-link-secondary {
+            background: #e8f0fe;
+            color: #1a73e8;
+        }
+        .error-link-secondary:hover { background: #d2e3fc; }
+        .brand {
+            margin-top: 2.5rem;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+        .brand a { color: #1a73e8; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-icon">&#8377;</div>
+        <div class="error-code">404</div>
+        <h1>Page Not Found</h1>
+        <p>The page you are looking for does not exist or may have been moved. Use the links below to find what you need.</p>
+        <div class="error-links">
+            <a href="/" class="error-link error-link-primary">Go to Calculator</a>
+            <a href="/blog/" class="error-link error-link-secondary">Read Blog</a>
+            <a href="/about/" class="error-link error-link-secondary">About Us</a>
+            <a href="/contact.html" class="error-link error-link-secondary">Contact</a>
+        </div>
+        <p class="brand"><a href="/">CashCalc.in</a> &mdash; Free Indian Cash Denomination Calculator</p>
+    </div>
+</body>
+</html>

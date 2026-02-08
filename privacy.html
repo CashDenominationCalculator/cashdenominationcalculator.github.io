@@ -2,224 +2,316 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Indian Cash Denomination Calculator</title>
-    <meta name="description" content="Privacy Policy for Indian Cash Denomination Calculator. Learn how we protect your privacy and handle your data.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Privacy Policy &mdash; CashCalc | Indian Cash Denomination Calculator</title>
+    <meta name="description" content="Privacy Policy for CashCalc. Learn how we protect your data, our zero-collection architecture, cookie usage, and your rights under Indian IT Act and GDPR.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cashdenominationcalculator.github.io/privacy.html">
-    
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800">
+    <meta property="og:title" content="Privacy Policy &mdash; CashCalc">
+    <meta property="og:description" content="Privacy Policy for CashCalc. Learn how we protect your data, our zero-collection architecture, cookie usage, and your rights under Indian IT Act and GDPR.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cashdenominationcalculator.github.io/privacy.html">
+    <meta name="theme-color" content="#1a73e8">
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <a href="/" class="text-xl font-bold text-purple-600">
-                    <i class="fas fa-calculator mr-2"></i>Cash Calculator
-                </a>
-                <a href="/" class="text-gray-600 hover:text-purple-600 transition-colors">
-                    <i class="fas fa-arrow-left mr-2"></i>Back to Calculator
-                </a>
+    <!-- Favicon & PWA -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cashdenominationcalculator.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://cashdenominationcalculator.github.io/privacy.html" }
+        ]
+    }
+    </script>
+
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Privacy Policy — CashCalc",
+        "url": "https://cashdenominationcalculator.github.io/privacy.html",
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-02-08",
+        "inLanguage": "en",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "CashCalc",
+            "url": "https://cashdenominationcalculator.github.io/"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Privacy Policy",
+            "description": "How CashCalc protects user data with zero-collection architecture, compliant with Indian IT Act 2000 and GDPR."
+        }
+    }
+    </script>
+
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <header class="site-header" role="banner">
+        <nav class="nav-inner" aria-label="Primary navigation">
+            <a href="/" class="logo" aria-label="CashCalc Home">
+                <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                <span>Cash<span class="logo-text-accent">Calc</span>.in</span>
+            </a>
+            <div class="nav-links" role="menubar">
+                <a href="/" class="nav-link" role="menuitem">Home</a>
+                <a href="/tools/" class="nav-link" role="menuitem">Tools</a>
+                <a href="/indian-currency/" class="nav-link" role="menuitem">Indian Currency</a>
+                <a href="/banking/" class="nav-link" role="menuitem">Banking</a>
+                <a href="/accounting/" class="nav-link" role="menuitem">Accounting</a>
+                <a href="/blog/" class="nav-link" role="menuitem">Blog</a>
+                <a href="/about/" class="nav-link" role="menuitem">About</a>
+                <a href="/contact.html" class="nav-link" role="menuitem">Contact</a>
             </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="icon-moon" aria-hidden="true">&#9790;</span>
+                    <span class="icon-sun" aria-hidden="true">&#9728;&#65039;</span>
+                </button>
+                <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                    <span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <div class="mobile-nav-links">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="/tools/" class="mobile-nav-link">Tools</a>
+            <a href="/indian-currency/" class="mobile-nav-link">Indian Currency</a>
+            <a href="/banking/" class="mobile-nav-link">Banking</a>
+            <a href="/accounting/" class="mobile-nav-link">Accounting</a>
+            <a href="/blog/" class="mobile-nav-link">Blog</a>
+            <a href="/about/" class="mobile-nav-link">About</a>
+            <a href="/contact.html" class="mobile-nav-link">Contact</a>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="gradient-bg text-white py-12 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">
-                <i class="fas fa-shield-alt mr-3"></i>Privacy Policy
-            </h1>
-            <p class="text-xl opacity-90">Your privacy is important to us</p>
-            <p class="text-sm opacity-75 mt-2">Last Updated: January 28, 2025</p>
-        </div>
-    </header>
+    <main id="main-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="padding:var(--space-md) 0 0;">
+            <div class="container">
+                <a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <span>Privacy Policy</span>
+            </div>
+        </nav>
 
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-4 py-8">
-        
-        <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-8">
-            
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Introduction</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Welcome to the Indian Cash Denomination Calculator ("we," "our," or "us"). We are committed to protecting your privacy and ensuring a safe online experience. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website at cashdenominationcalculator.github.io.
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                    By using our website, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our website.
-                </p>
-            </section>
+        <section class="section" style="padding-top:var(--space-lg);">
+            <div class="container">
+                <div class="section-card content-block">
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Information We Collect</h2>
-                
-                <h3 class="text-xl font-semibold text-gray-800 mb-3">Information You Provide</h3>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Our cash denomination calculator is designed with privacy in mind. <strong>We do not collect, store, or transmit any personal information or the data you enter into the calculator.</strong> All calculations are performed locally in your web browser, and no data is sent to our servers.
-                </p>
-                
-                <h3 class="text-xl font-semibold text-gray-800 mb-3">Automatically Collected Information</h3>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    When you visit our website, certain information may be automatically collected through cookies and similar technologies:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                    <li>Browser type and version</li>
-                    <li>Operating system</li>
-                    <li>Referring website</li>
-                    <li>Pages visited and time spent on pages</li>
-                    <li>Date and time of visit</li>
-                    <li>General geographic location (country/city level)</li>
-                </ul>
-            </section>
+                    <h1>Privacy Policy</h1>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">How We Use Your Information</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    The limited information we collect is used for the following purposes:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                    <li>To improve and optimize our website's performance</li>
-                    <li>To understand how visitors use our calculator</li>
-                    <li>To analyze website traffic and usage patterns</li>
-                    <li>To detect and prevent technical issues</li>
-                    <li>To serve relevant advertisements through Google AdSense</li>
-                </ul>
-            </section>
+                    <div class="content-meta" style="margin-bottom:var(--space-lg);">
+                        <span class="content-meta-item">
+                            <span class="content-meta-label">Effective date:</span>
+                            <time datetime="2024-01-01">1 January 2024</time>
+                        </span>
+                        <span class="content-meta-item">
+                            <span class="content-meta-label">Last updated:</span>
+                            <time datetime="2026-02-08">8 February 2026</time>
+                        </span>
+                    </div>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Cookies and Tracking Technologies</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Our website uses cookies and similar tracking technologies to enhance your experience. Cookies are small data files stored on your device that help us understand how you use our website.
-                </p>
-                
-                <h3 class="text-xl font-semibold text-gray-800 mb-3">Types of Cookies We Use</h3>
-                <div class="bg-gray-50 rounded-lg p-4 mb-4">
-                    <ul class="space-y-3 text-gray-600">
-                        <li><strong>Essential Cookies:</strong> Necessary for the website to function properly.</li>
-                        <li><strong>Analytics Cookies:</strong> Help us understand how visitors interact with our website.</li>
-                        <li><strong>Advertising Cookies:</strong> Used by Google AdSense to display relevant advertisements.</li>
+                    <p>This Privacy Policy explains how <strong>CashCalc</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;), operated at <a href="https://cashdenominationcalculator.github.io/">cashdenominationcalculator.github.io</a>, collects, uses, and protects information when you use our website and tools. We are committed to protecting your privacy in compliance with the <strong>Information Technology Act, 2000</strong> (India), the <strong>Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</strong>, and the <strong>General Data Protection Regulation (GDPR)</strong> for visitors from the European Union.</p>
+
+                    <h2>1. Data Controller</h2>
+                    <p>The data controller for this website is CashCalc, operated by Vikram Mehta and Omprakash from Jaipur, Rajasthan, India. For privacy-related enquiries, contact us at <a href="mailto:contact@cashcalc.in">contact@cashcalc.in</a>.</p>
+
+                    <h2>2. Information We Collect</h2>
+
+                    <h3>2.1 Information We Do NOT Collect</h3>
+                    <p>CashCalc is designed with privacy as a core principle. Our cash denomination calculator:</p>
+                    <ul>
+                        <li>Does <strong>not</strong> collect, transmit, or store any financial data you enter (denomination counts, totals, etc.)</li>
+                        <li>Does <strong>not</strong> require user registration or login</li>
+                        <li>Does <strong>not</strong> collect names, phone numbers, Aadhaar numbers, PAN numbers, or bank account details</li>
+                        <li>Does <strong>not</strong> use server-side databases to store user information</li>
+                        <li>Does <strong>not</strong> sell, rent, or share personal data with any third party</li>
                     </ul>
+                    <p>All calculations happen <strong>entirely in your browser</strong> using client-side JavaScript. No data is sent to our servers or any third-party server during calculator use.</p>
+
+                    <h3>2.2 localStorage (Browser Storage)</h3>
+                    <p>CashCalc uses your browser&rsquo;s <code>localStorage</code> to store:</p>
+                    <ul>
+                        <li><strong>Theme preference:</strong> Your light/dark mode selection</li>
+                        <li><strong>Calculation history:</strong> Your recent denomination calculations (up to 10 entries) for your convenience</li>
+                    </ul>
+                    <p>This data is stored <strong>only on your device</strong>, never transmitted to any server, and can be cleared at any time by clearing your browser data or using the &ldquo;Clear History&rdquo; button in the calculator. We cannot access this data.</p>
+
+                    <h3>2.3 Contact Form Data</h3>
+                    <p>If you use our <a href="/contact.html">contact form</a>, the information you submit (name, email, subject, message) is processed by <a href="https://formspree.io" rel="nofollow noopener" target="_blank">Formspree</a> and delivered to our team via email. Formspree&rsquo;s privacy policy applies to this data. We use this information solely to respond to your enquiry and do not add you to any marketing list.</p>
+
+                    <h2>3. Cookies and Third-Party Services</h2>
+
+                    <h3>3.1 Google AdSense</h3>
+                    <p>We use <strong>Google AdSense</strong> to display advertisements on our website. Google AdSense may use cookies and web beacons to serve ads based on your prior visits to our site or other sites on the internet. Specifically:</p>
+                    <ul>
+                        <li>Google uses the <strong>DoubleClick cookie</strong> to serve ads based on your browsing history</li>
+                        <li>You may opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads" rel="nofollow noopener" target="_blank">Google Ads Settings</a></li>
+                        <li>You may opt out of third-party cookies by visiting the <a href="https://optout.networkadvertising.org/" rel="nofollow noopener" target="_blank">Network Advertising Initiative opt-out page</a></li>
+                    </ul>
+                    <p>For details, see <a href="https://policies.google.com/technologies/ads" rel="nofollow noopener" target="_blank">Google&rsquo;s advertising privacy policy</a>.</p>
+
+                    <h3>3.2 Google Analytics (Planned)</h3>
+                    <p>We plan to implement Google Analytics to understand how visitors use our website (pages visited, time on site, device type, geographic region). Google Analytics uses cookies to collect anonymised usage data. When implemented:</p>
+                    <ul>
+                        <li>We will enable <strong>IP anonymisation</strong> to prevent collection of your full IP address</li>
+                        <li>We will not enable any advertising features or cross-site tracking</li>
+                        <li>You may opt out using the <a href="https://tools.google.com/dlpage/gaoptout" rel="nofollow noopener" target="_blank">Google Analytics Opt-out Browser Add-on</a></li>
+                    </ul>
+
+                    <h3>3.3 Google Fonts</h3>
+                    <p>We load the Inter font from Google Fonts. When you visit our site, your browser makes a request to Google&rsquo;s servers to load the font files. Google&rsquo;s <a href="https://policies.google.com/privacy" rel="nofollow noopener" target="_blank">privacy policy</a> applies to this request.</p>
+
+                    <h2>4. Legal Basis for Processing (GDPR &mdash; EU Visitors)</h2>
+                    <p>For visitors from the European Economic Area (EEA), our legal basis for processing data is:</p>
+                    <ul>
+                        <li><strong>Legitimate interest:</strong> Operating and improving a free public tool (calculator functionality, analytics)</li>
+                        <li><strong>Consent:</strong> For non-essential cookies (advertising, analytics) &mdash; we will implement a cookie consent banner when Google Analytics is activated</li>
+                        <li><strong>Contractual necessity:</strong> Processing contact form submissions to respond to your enquiries</li>
+                    </ul>
+
+                    <h2>5. Your Rights</h2>
+
+                    <h3>5.1 Under Indian Law (IT Act, 2000)</h3>
+                    <p>Under the Information Technology Act and its rules, you have the right to:</p>
+                    <ul>
+                        <li>Request access to any personal data we hold about you</li>
+                        <li>Request correction of inaccurate data</li>
+                        <li>Withdraw consent for data processing at any time</li>
+                    </ul>
+                    <p>Since we do not collect personal data through the calculator, these rights primarily apply to contact form submissions.</p>
+
+                    <h3>5.2 Under GDPR (EU Visitors)</h3>
+                    <p>If you are located in the EU/EEA, you additionally have the right to:</p>
+                    <ul>
+                        <li><strong>Access:</strong> Request a copy of any personal data we hold</li>
+                        <li><strong>Rectification:</strong> Request correction of inaccurate data</li>
+                        <li><strong>Erasure:</strong> Request deletion of your personal data (&ldquo;right to be forgotten&rdquo;)</li>
+                        <li><strong>Restriction:</strong> Request restriction of processing</li>
+                        <li><strong>Portability:</strong> Request your data in a portable format</li>
+                        <li><strong>Object:</strong> Object to processing based on legitimate interest</li>
+                        <li><strong>Complaint:</strong> Lodge a complaint with your local data protection authority</li>
+                    </ul>
+                    <p>To exercise any of these rights, email <a href="mailto:contact@cashcalc.in">contact@cashcalc.in</a>. We will respond within 30 days.</p>
+
+                    <h2>6. Data Security</h2>
+                    <p>We implement reasonable security measures as required under the IT Act, 2000 (Section 43A) and the Reasonable Security Practices Rules, 2011. Since we do not collect or store personal data on any server, the primary security measure is our zero-data-collection architecture. The website is served over HTTPS via GitHub Pages, ensuring encrypted transmission.</p>
+
+                    <h2>7. Children&rsquo;s Privacy</h2>
+                    <p>CashCalc is a general-purpose calculation tool and is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has submitted personal information through our contact form, please contact us and we will delete it promptly.</p>
+
+                    <h2>8. Data Retention</h2>
+                    <ul>
+                        <li><strong>Calculator data:</strong> Not retained (never collected)</li>
+                        <li><strong>localStorage data:</strong> Retained on your device until you clear it</li>
+                        <li><strong>Contact form data:</strong> Retained in our email for up to 12 months, then deleted</li>
+                        <li><strong>Server logs:</strong> GitHub Pages may retain standard web server logs; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="nofollow noopener" target="_blank">GitHub&rsquo;s privacy statement</a></li>
+                    </ul>
+
+                    <h2>9. International Data Transfers</h2>
+                    <p>Our website is hosted on GitHub Pages (servers in the United States). If you access the site from outside the US, your connection data may be transferred internationally. Google AdSense and Google Analytics also process data on servers located outside India. These services are covered by their respective privacy policies and data processing agreements.</p>
+
+                    <h2>10. Changes to This Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated &ldquo;Last updated&rdquo; date. We encourage you to review this page periodically. Continued use of CashCalc after changes constitutes acceptance of the updated policy.</p>
+
+                    <h2>11. Contact Us</h2>
+                    <p>For privacy-related enquiries, requests to exercise your rights, or complaints:</p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:contact@cashcalc.in">contact@cashcalc.in</a></li>
+                        <li><strong>Form:</strong> <a href="/contact.html">Contact page</a></li>
+                        <li><strong>Response time:</strong> Within 48 hours (business days)</li>
+                    </ul>
+
+                    <p style="margin-top:var(--space-xl);padding-top:var(--space-md);border-top:1px solid var(--color-border);font-size:var(--font-size-sm);color:var(--color-text-secondary);">This Privacy Policy was last reviewed and updated on 8 February 2026. It complies with the Information Technology Act, 2000 (India), the IT (Reasonable Security Practices) Rules, 2011, and the General Data Protection Regulation (EU) 2016/679.</p>
+
                 </div>
-                
-                <p class="text-gray-600 leading-relaxed">
-                    You can control cookies through your browser settings. However, disabling certain cookies may affect your experience on our website.
-                </p>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Third-Party Services</h2>
-                
-                <h3 class="text-xl font-semibold text-gray-800 mb-3">Google AdSense</h3>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    We use Google AdSense to display advertisements on our website. Google AdSense may use cookies and web beacons to collect information about your visits to this and other websites to provide relevant advertisements. You can learn more about Google's privacy practices at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:underline">Google Privacy Policy</a>.
-                </p>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:underline">Google Ads Settings</a>.
-                </p>
-
-                <h3 class="text-xl font-semibold text-gray-800 mb-3">Google Analytics</h3>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    We may use Google Analytics to analyze website traffic. Google Analytics uses cookies to collect anonymous information about how visitors use our website. This information helps us improve our website and user experience. You can learn more at <a href="https://support.google.com/analytics/answer/6004245" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:underline">Google Analytics Privacy</a>.
-                </p>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Data Security</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    We take reasonable measures to protect the information collected through our website. However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee its absolute security.
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                    Since our calculator performs all operations locally in your browser and we do not collect or store your calculation data, your financial information remains on your device and is not at risk of being compromised through our servers.
-                </p>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Children's Privacy</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    Our website is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us, and we will take steps to delete such information.
-                </p>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Your Rights</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Depending on your location, you may have certain rights regarding your personal information:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                    <li>The right to access information we hold about you</li>
-                    <li>The right to request correction of inaccurate information</li>
-                    <li>The right to request deletion of your information</li>
-                    <li>The right to opt-out of certain data processing activities</li>
-                    <li>The right to withdraw consent where applicable</li>
-                </ul>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Links to Other Websites</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to review the privacy policies of any third-party websites you visit.
-                </p>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Changes to This Privacy Policy</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the new Privacy Policy on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically.
-                </p>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    If you have any questions about this Privacy Policy or our privacy practices, please contact us:
-                </p>
-                <div class="bg-purple-50 rounded-lg p-4">
-                    <p class="text-gray-700"><strong>Email:</strong> privacy@cashdenominationcalculator.github.io</p>
-                    <p class="text-gray-700"><strong>Website:</strong> cashdenominationcalculator.github.io</p>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Consent</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    By using our website, you hereby consent to our Privacy Policy and agree to its terms. If you do not agree with this policy, please do not use our website.
-                </p>
-            </section>
-
-        </div>
-
-        <!-- Back to Calculator -->
-        <div class="text-center">
-            <a href="/" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
-                <i class="fas fa-calculator mr-2"></i>Back to Calculator
-            </a>
-        </div>
-
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 px-4 mt-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <p class="text-gray-400 text-sm mb-4">
-                © 2024-2025 Indian Cash Denomination Calculator. All rights reserved.
-            </p>
-            <div class="flex justify-center space-x-6 text-sm">
-                <a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a>
-                <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-                <a href="terms.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-                <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo" style="color:#fff;">
+                        <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                        <span>Cash<span style="color:#8ab4f8;">Calc</span>.in</span>
+                    </a>
+                    <p>Free online tools for Indian cash counting and currency denomination calculations.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="/" class="footer-link">Home</a>
+                        <a href="/about/" class="footer-link">About</a>
+                        <a href="/contact.html" class="footer-link">Contact</a>
+                        <a href="/blog/" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+                        <a href="/terms.html" class="footer-link">Terms of Use</a>
+                        <a href="/disclaimer.html" class="footer-link">Disclaimer</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Categories</h3>
+                    <div class="footer-links">
+                        <a href="/tools/" class="footer-link">Tools</a>
+                        <a href="/indian-currency/" class="footer-link">Indian Currency</a>
+                        <a href="/banking/" class="footer-link">Banking</a>
+                        <a href="/accounting/" class="footer-link">Accounting</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CashCalc. All rights reserved.</p>
+                <p class="disclaimer">Not affiliated with the Reserve Bank of India (RBI) or any government body.</p>
             </div>
         </div>
     </footer>
 
+    <script>
+    window.toggleTheme = function() {
+        var c = document.documentElement.getAttribute('data-theme');
+        var n = c === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', n);
+        localStorage.setItem('cashcalc_theme', n);
+    };
+    (function() {
+        var s = localStorage.getItem('cashcalc_theme');
+        if (s) document.documentElement.setAttribute('data-theme', s);
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+            document.documentElement.setAttribute('data-theme', 'dark');
+        var h = document.getElementById('hamburger-btn');
+        var m = document.getElementById('mobile-nav');
+        if (h && m) h.addEventListener('click', function() {
+            var o = m.classList.toggle('is-open');
+            h.classList.toggle('is-active');
+            h.setAttribute('aria-expanded', o);
+            document.body.classList.toggle('nav-open', o);
+        });
+    })();
+    </script>
 </body>
 </html>
