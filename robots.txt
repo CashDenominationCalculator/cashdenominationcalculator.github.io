@@ -1,4 +1,4 @@
-# CashCalc — Indian Cash Denomination Calculator
+# Cash Denomination Calculator — Free Online Indian Currency Counter
 # https://cashdenominationcalculator.github.io/
 
 User-agent: *
