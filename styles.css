@@ -1697,6 +1697,23 @@ body.nav-open {
 
   a { color: #000 !important; }
   a::after { content: none !important; }
+
+  /* Article-specific print */
+  .share-bar,
+  .toc-mobile,
+  .toc-sidebar,
+  .related-articles {
+    display: none !important;
+  }
+
+  .article-layout {
+    display: block !important;
+  }
+
+  .comparison-table,
+  .credentials-table {
+    font-size: 10pt;
+  }
 }
 
 /* ---------- E-E-A-T Components ---------- */
@@ -2369,6 +2386,7 @@ select.form-input {
 @media (max-width: 600px) {
   .credentials-table td:first-child {
     width: auto;
+    white-space: normal;
   }
 }
 
@@ -2823,6 +2841,345 @@ select.form-input {
   font-size: var(--font-size-xs);
   color: var(--color-success);
   font-weight: 500;
+}
+
+/* ---------- Responsive Table Wrapper ---------- */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: var(--space-md) 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+}
+
+.table-responsive table {
+  margin: 0;
+  border: none;
+  min-width: 480px;
+}
+
+/* ---------- Mobile Optimization — Global ---------- */
+
+/* ── Touch Targets ── */
+/* Ensure all interactive elements meet Google's 48px minimum */
+@media (max-width: 768px) {
+  /* Share buttons — increase tap size */
+  .share-btn {
+    min-height: 44px;
+    min-width: 44px;
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--font-size-sm);
+  }
+
+  /* TOC links on mobile — bigger tap area */
+  .toc-list a {
+    padding: var(--space-sm) var(--space-md);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Mobile TOC toggle — bigger tap area */
+  .toc-mobile-toggle {
+    min-height: 48px;
+    padding: var(--space-sm) 0;
+  }
+
+  /* Theme toggle — ensure 44px */
+  .theme-toggle {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Editorial badges — give breathing room */
+  .editorial-badge {
+    font-size: var(--font-size-sm);
+    padding: var(--space-xs) 0;
+    min-height: 36px;
+  }
+
+  /* FAQ questions — bigger tap target */
+  .faq-question {
+    min-height: 48px;
+    padding: var(--space-md);
+  }
+
+  /* Stats toggle — bigger tap target */
+  .stats-toggle {
+    min-height: 48px;
+  }
+
+  /* History toggle — bigger tap target */
+  .history-toggle {
+    min-height: 48px;
+  }
+
+  /* Related article cards — bigger tap target */
+  .related-card {
+    padding: var(--space-lg);
+  }
+
+  /* Article category tag — bigger tap target */
+  .article-category-tag {
+    padding: var(--space-xs) var(--space-md);
+    min-height: 32px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* ── Font Size Fixes (prevent too-small text on mobile) ── */
+@media (max-width: 768px) {
+  /* Override xs font-size elements to be at least 13px on mobile */
+  .ad-disclosure {
+    font-size: 13px;
+  }
+
+  .ai-disclosure {
+    font-size: var(--font-size-sm);
+  }
+
+  .content-changelog {
+    font-size: var(--font-size-sm);
+  }
+
+  .author-bio-short,
+  .author-role,
+  .reviewer-badge,
+  .reviewed-by {
+    font-size: var(--font-size-sm);
+  }
+
+  .editorial-badge {
+    font-size: var(--font-size-sm);
+  }
+
+  .stat-bar-pct,
+  .stat-item-label {
+    font-size: var(--font-size-sm);
+  }
+
+  .comparison-table {
+    font-size: var(--font-size-sm);
+  }
+
+  .comparison-table th {
+    font-size: var(--font-size-sm);
+  }
+
+  .content-figure figcaption {
+    font-size: var(--font-size-sm);
+  }
+
+  .content-figure figcaption em {
+    font-size: 0.8rem;
+  }
+
+  /* Denom type label — keep xs hidden on small screens (already done at 480px) */
+  .toc-list .toc-h3 {
+    font-size: var(--font-size-sm);
+    padding-left: var(--space-md);
+  }
+}
+
+/* ── Calculator Mobile Enhancements ── */
+@media (max-width: 600px) {
+  /* Make denomination rows single-column on very small screens */
+  .denom-grid-header,
+  .denom-row {
+    grid-template-columns: 1fr 80px auto;
+  }
+
+  .denom-input {
+    max-width: 72px;
+    padding: var(--space-sm);
+    font-size: 16px; /* prevent iOS zoom */
+  }
+
+  .denom-subtotal {
+    font-size: var(--font-size-sm);
+    padding-right: var(--space-sm);
+  }
+
+  /* Action buttons — 2 columns, bigger text */
+  .action-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+
+  .action-btn {
+    font-size: var(--font-size-sm);
+    padding: var(--space-md) var(--space-sm);
+    min-height: 48px;
+  }
+
+  /* Grand total — tighter on mobile */
+  .grand-total {
+    padding: var(--space-lg);
+  }
+
+  .grand-total-amount {
+    font-size: var(--font-size-2xl);
+  }
+
+  /* Stats bar — stack label better */
+  .stat-bar-row {
+    grid-template-columns: 50px 1fr 42px;
+    gap: var(--space-xs);
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* ── Article Mobile Enhancements ── */
+@media (max-width: 768px) {
+  /* Article header — smaller heading on mobile */
+  .article-header h1 {
+    font-size: var(--font-size-2xl);
+    word-break: break-word;
+  }
+
+  /* Article meta — stack vertically */
+  .article-meta {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  /* Author bio box — already stacks at 600px, ensure padding */
+  .author-bio-box {
+    padding: var(--space-md);
+  }
+
+  .author-bio-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: var(--font-size-lg);
+  }
+
+  /* Share bar — wrap nicely */
+  .share-bar {
+    justify-content: center;
+  }
+
+  .share-label {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: var(--space-xs);
+  }
+
+  /* Example boxes — full width */
+  .example-box {
+    padding: var(--space-md);
+    font-size: var(--font-size-sm);
+  }
+
+  /* Expert tip — snug */
+  .expert-tip {
+    padding: var(--space-md);
+  }
+
+  /* Sources list — reduce padding */
+  .sources-list {
+    padding-left: var(--space-md);
+  }
+
+  /* Content block lists — tighter */
+  .content-block ul,
+  .content-block ol {
+    padding-left: var(--space-lg);
+  }
+}
+
+/* ── Header / Logo Mobile Fix ── */
+@media (max-width: 480px) {
+  .logo {
+    font-size: var(--font-size-base);
+    gap: var(--space-xs);
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: var(--font-size-base);
+  }
+
+  /* Nav inner — tighter padding */
+  .nav-inner {
+    padding: 0 var(--space-sm);
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    font-size: var(--font-size-sm);
+  }
+
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* ── Footer Mobile Fix ── */
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+}
+
+/* ── Horizontal Overflow Prevention ── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Ensure images never cause overflow */
+img, video, iframe, embed, object {
+  max-width: 100%;
+}
+
+/* Prevent long words from causing overflow */
+.article-content,
+.content-block,
+.section-intro,
+.faq-answer,
+.author-bio-text {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Prevent long URLs in content from breaking layout */
+.article-content a,
+.content-block a {
+  word-break: break-all;
+}
+
+/* ── Smooth Scroll Offset for Sticky Header ── */
+html {
+  scroll-padding-top: calc(var(--nav-height) + var(--space-md));
+}
+
+/* ── Safe Area Insets (notched phones) ── */
+@supports (padding: max(0px)) {
+  .site-header .nav-inner {
+    padding-left: max(var(--space-md), env(safe-area-inset-left));
+    padding-right: max(var(--space-md), env(safe-area-inset-right));
+  }
+
+  .site-footer {
+    padding-bottom: max(var(--space-xl), env(safe-area-inset-bottom));
+  }
 }
 
 /* ---------- Ad Slots ---------- */
