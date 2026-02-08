@@ -2,219 +2,289 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service | Indian Cash Denomination Calculator</title>
-    <meta name="description" content="Terms of Service for Indian Cash Denomination Calculator. Read our terms and conditions for using the free cash counting tool.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Terms of Use &mdash; CashCalc | Indian Cash Denomination Calculator</title>
+    <meta name="description" content="Terms of Use for CashCalc. Read our terms covering tool usage, intellectual property, limitation of liability, and governing law (India).">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cashdenominationcalculator.github.io/terms.html">
-    
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800">
+    <meta property="og:title" content="Terms of Use &mdash; CashCalc">
+    <meta property="og:description" content="Terms of Use for CashCalc. Read our terms covering tool usage, intellectual property, limitation of liability, and governing law (India).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cashdenominationcalculator.github.io/terms.html">
+    <meta name="theme-color" content="#1a73e8">
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <a href="/" class="text-xl font-bold text-purple-600">
-                    <i class="fas fa-calculator mr-2"></i>Cash Calculator
-                </a>
-                <a href="/" class="text-gray-600 hover:text-purple-600 transition-colors">
-                    <i class="fas fa-arrow-left mr-2"></i>Back to Calculator
-                </a>
+    <!-- Favicon & PWA -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cashdenominationcalculator.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "Terms of Use", "item": "https://cashdenominationcalculator.github.io/terms.html" }
+        ]
+    }
+    </script>
+
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Terms of Use — CashCalc",
+        "url": "https://cashdenominationcalculator.github.io/terms.html",
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-02-08",
+        "inLanguage": "en",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "CashCalc",
+            "url": "https://cashdenominationcalculator.github.io/"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Terms of Use",
+            "description": "Terms governing use of CashCalc Indian Cash Denomination Calculator, including intellectual property, limitation of liability, and governing law (India)."
+        }
+    }
+    </script>
+
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <header class="site-header" role="banner">
+        <nav class="nav-inner" aria-label="Primary navigation">
+            <a href="/" class="logo" aria-label="CashCalc Home">
+                <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                <span>Cash<span class="logo-text-accent">Calc</span>.in</span>
+            </a>
+            <div class="nav-links" role="menubar">
+                <a href="/" class="nav-link" role="menuitem">Home</a>
+                <a href="/tools/" class="nav-link" role="menuitem">Tools</a>
+                <a href="/indian-currency/" class="nav-link" role="menuitem">Indian Currency</a>
+                <a href="/banking/" class="nav-link" role="menuitem">Banking</a>
+                <a href="/accounting/" class="nav-link" role="menuitem">Accounting</a>
+                <a href="/blog/" class="nav-link" role="menuitem">Blog</a>
+                <a href="/about/" class="nav-link" role="menuitem">About</a>
+                <a href="/contact.html" class="nav-link" role="menuitem">Contact</a>
             </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="icon-moon" aria-hidden="true">&#9790;</span>
+                    <span class="icon-sun" aria-hidden="true">&#9728;&#65039;</span>
+                </button>
+                <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                    <span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <div class="mobile-nav-links">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="/tools/" class="mobile-nav-link">Tools</a>
+            <a href="/indian-currency/" class="mobile-nav-link">Indian Currency</a>
+            <a href="/banking/" class="mobile-nav-link">Banking</a>
+            <a href="/accounting/" class="mobile-nav-link">Accounting</a>
+            <a href="/blog/" class="mobile-nav-link">Blog</a>
+            <a href="/about/" class="mobile-nav-link">About</a>
+            <a href="/contact.html" class="mobile-nav-link">Contact</a>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="gradient-bg text-white py-12 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">
-                <i class="fas fa-file-contract mr-3"></i>Terms of Service
-            </h1>
-            <p class="text-xl opacity-90">Please read these terms carefully</p>
-            <p class="text-sm opacity-75 mt-2">Last Updated: January 28, 2025</p>
-        </div>
-    </header>
+    <main id="main-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="padding:var(--space-md) 0 0;">
+            <div class="container">
+                <a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <span>Terms of Use</span>
+            </div>
+        </nav>
 
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-4 py-8">
-        
-        <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-8">
-            
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">1. Acceptance of Terms</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    By accessing and using the Indian Cash Denomination Calculator website (cashdenominationcalculator.github.io), you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to these terms, please do not use our website.
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                    These Terms of Service ("Terms") govern your use of the Indian Cash Denomination Calculator and any related services provided by us. We reserve the right to modify these Terms at any time, and such modifications will be effective immediately upon posting.
-                </p>
-            </section>
+        <section class="section" style="padding-top:var(--space-lg);">
+            <div class="container">
+                <div class="section-card content-block">
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">2. Description of Service</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    The Indian Cash Denomination Calculator is a free online tool that allows users to calculate the total value of Indian currency by entering the quantity of various denomination notes and coins. The calculator performs instant mathematical calculations to help users count cash quickly and accurately.
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                    Our service includes:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4 mt-2">
-                    <li>Cash denomination counting for Indian Rupees</li>
-                    <li>Support for all current Indian currency notes (₹2000, ₹500, ₹200, ₹100, ₹50, ₹20, ₹10)</li>
-                    <li>Support for Indian coins (₹10, ₹5, ₹2, ₹1)</li>
-                    <li>Educational content about Indian currency</li>
-                    <li>Real-time calculation of total amounts</li>
-                </ul>
-            </section>
+                    <h1>Terms of Use</h1>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">3. Free Use and No Warranty</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    This service is provided free of charge. The calculator and all content on this website are provided "as is" without any warranties, express or implied. We do not warrant that:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                    <li>The service will be uninterrupted or error-free</li>
-                    <li>The results will be accurate or reliable</li>
-                    <li>The quality of the service will meet your expectations</li>
-                    <li>Any errors in the service will be corrected</li>
-                </ul>
-                <p class="text-gray-600 leading-relaxed mt-4">
-                    While we strive to provide accurate calculations, you are responsible for verifying the results. Always double-check your cash count manually for important financial matters.
-                </p>
-            </section>
+                    <div class="content-meta" style="margin-bottom:var(--space-lg);">
+                        <span class="content-meta-item">
+                            <span class="content-meta-label">Effective date:</span>
+                            <time datetime="2024-01-01">1 January 2024</time>
+                        </span>
+                        <span class="content-meta-item">
+                            <span class="content-meta-label">Last updated:</span>
+                            <time datetime="2026-02-08">8 February 2026</time>
+                        </span>
+                    </div>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">4. User Responsibilities</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    By using our service, you agree to:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                    <li>Use the calculator for lawful purposes only</li>
-                    <li>Not attempt to disrupt or interfere with the website's operation</li>
-                    <li>Not use automated systems or software to extract data from the website</li>
-                    <li>Not copy, reproduce, or distribute our content without permission</li>
-                    <li>Verify calculation results independently for critical financial decisions</li>
-                    <li>Comply with all applicable laws and regulations</li>
-                </ul>
-            </section>
+                    <p>These Terms of Use (&ldquo;Terms&rdquo;) govern your access to and use of the CashCalc website at <a href="https://cashdenominationcalculator.github.io/">cashdenominationcalculator.github.io</a> (&ldquo;the Site&rdquo;), including all content, tools, and services provided. By accessing or using the Site, you agree to be bound by these Terms. If you do not agree, please do not use the Site.</p>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">5. Intellectual Property</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    All content on this website, including but not limited to text, graphics, logos, icons, images, audio clips, and software, is the property of Indian Cash Denomination Calculator or its content suppliers and is protected by Indian and international copyright laws.
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                    You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our website without our prior written consent.
-                </p>
-            </section>
+                    <h2>1. About CashCalc</h2>
+                    <p>CashCalc is a free, browser-based Indian cash denomination calculator. It is operated by Vikram Mehta and Omprakash from Jaipur, Rajasthan, India. The tool calculates denomination-wise totals for Indian currency (&#8377;) and provides features including print, PDF export, copy, and share.</p>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">6. Limitation of Liability</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    To the fullest extent permitted by applicable law, Indian Cash Denomination Calculator shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:
-                </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                    <li>Loss of profits, revenue, or data</li>
-                    <li>Financial losses based on calculator results</li>
-                    <li>Errors in calculations</li>
-                    <li>Service interruptions or unavailability</li>
-                    <li>Any damages arising from your use of the service</li>
-                </ul>
-                <p class="text-gray-600 leading-relaxed mt-4">
-                    This limitation applies regardless of the legal theory under which such damages are sought.
-                </p>
-            </section>
+                    <h2>2. Acceptance of Terms</h2>
+                    <p>By using CashCalc, you confirm that you are at least 13 years of age and capable of entering into a legally binding agreement. If you are using the Site on behalf of an organisation, you represent that you have authority to bind that organisation to these Terms.</p>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">7. Third-Party Links and Services</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Our website may contain links to third-party websites or services that are not owned or controlled by us. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                    We use third-party services including Google AdSense for advertising. These services are governed by their own terms and privacy policies.
-                </p>
-            </section>
+                    <h2>3. Tool Usage Disclaimer</h2>
+                    <p>CashCalc is provided as a <strong>convenience tool for informational and personal use only</strong>. While we strive for accuracy:</p>
+                    <ul>
+                        <li>The calculator is not a substitute for professional accounting, auditing, or financial software</li>
+                        <li>Results should be independently verified before submission to any bank, tax authority, or financial institution</li>
+                        <li>The denomination sheet generated by the Print/PDF feature is a convenience document, not an official bank form</li>
+                        <li>We do not guarantee that the tool will be error-free, uninterrupted, or compatible with all devices and browsers</li>
+                    </ul>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">8. Indemnification</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    You agree to defend, indemnify, and hold harmless Indian Cash Denomination Calculator and its affiliates, licensors, and service providers from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the website.
-                </p>
-            </section>
+                    <h2>4. Intellectual Property</h2>
+                    <p>All content on CashCalc &mdash; including text, articles, guides, images, logos, page design, CSS stylesheets, JavaScript code, and structured data &mdash; is the intellectual property of CashCalc and its creators, unless otherwise attributed. You may:</p>
+                    <ul>
+                        <li><strong>Use</strong> the calculator freely for personal and commercial purposes</li>
+                        <li><strong>Share</strong> links to CashCalc pages</li>
+                        <li><strong>Print</strong> denomination sheets for personal, business, and banking use</li>
+                    </ul>
+                    <p>You may <strong>not</strong>:</p>
+                    <ul>
+                        <li>Copy, reproduce, or republish substantial portions of our content (articles, guides, data analysis) without written permission</li>
+                        <li>Embed or iframe CashCalc pages on other websites without permission</li>
+                        <li>Remove or alter copyright notices, author attributions, or source citations</li>
+                        <li>Use the CashCalc brand name, logo, or domain in a way that implies endorsement</li>
+                    </ul>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">9. Modifications to Service</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    We reserve the right to modify, suspend, or discontinue the service (or any part thereof) at any time, with or without notice. We shall not be liable to you or any third party for any modification, suspension, or discontinuance of the service.
-                </p>
-            </section>
+                    <h2>5. User Conduct</h2>
+                    <p>When using CashCalc, you agree not to:</p>
+                    <ul>
+                        <li>Attempt to reverse-engineer, decompile, or extract the source code for commercial replication</li>
+                        <li>Use automated scripts, bots, or scrapers to access the Site at scale</li>
+                        <li>Interfere with the Site&rsquo;s operation or attempt to gain unauthorised access to any system</li>
+                        <li>Submit false, misleading, or abusive content through our contact form</li>
+                        <li>Use the Site for any purpose that violates Indian law or the laws of your jurisdiction</li>
+                    </ul>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">10. Governing Law</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any disputes arising under or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts located in India.
-                </p>
-            </section>
+                    <h2>6. Content Accuracy</h2>
+                    <p>CashCalc content is researched, fact-checked, and reviewed as described in our <a href="/about/#editorial-process">editorial process</a>. However:</p>
+                    <ul>
+                        <li>RBI policies, circulars, and denomination structures may change without notice</li>
+                        <li>We update content within 30 days of known RBI policy changes, but cannot guarantee real-time accuracy</li>
+                        <li>Legal references (IT Act, NI Act, etc.) are provided for informational purposes and may not reflect the most recent amendments</li>
+                        <li>You should always verify critical financial information against the original source (RBI.org.in, indiacode.nic.in, etc.)</li>
+                    </ul>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">11. Severability</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    If any provision of these Terms is held to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect. The invalid provision shall be modified to the minimum extent necessary to make it valid and enforceable.
-                </p>
-            </section>
+                    <h2>7. Limitation of Liability</h2>
+                    <p>To the maximum extent permitted by applicable law, CashCalc and its creators shall not be liable for:</p>
+                    <ul>
+                        <li>Any direct, indirect, incidental, consequential, or punitive damages arising from your use of or inability to use the Site</li>
+                        <li>Errors in denomination calculations, totals, or amount-in-words output</li>
+                        <li>Financial losses resulting from reliance on information or calculations provided by the Site</li>
+                        <li>Rejection of printed denomination sheets by any bank or institution</li>
+                        <li>Loss of data stored in your browser&rsquo;s localStorage</li>
+                        <li>Actions of third parties, including Google AdSense or Formspree</li>
+                    </ul>
+                    <p>The Site is provided <strong>&ldquo;as is&rdquo;</strong> and <strong>&ldquo;as available&rdquo;</strong> without warranties of any kind, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">12. Contact Information</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    If you have any questions about these Terms of Service, please contact us:
-                </p>
-                <div class="bg-purple-50 rounded-lg p-4">
-                    <p class="text-gray-700"><strong>Email:</strong> terms@cashdenominationcalculator.github.io</p>
-                    <p class="text-gray-700"><strong>Website:</strong> cashdenominationcalculator.github.io</p>
+                    <h2>8. Third-Party Services</h2>
+                    <p>CashCalc uses the following third-party services, each governed by their own terms:</p>
+                    <ul>
+                        <li><strong>GitHub Pages:</strong> Website hosting &mdash; <a href="https://docs.github.com/en/site-policy" rel="nofollow noopener" target="_blank">GitHub Terms</a></li>
+                        <li><strong>Google AdSense:</strong> Advertising &mdash; <a href="https://policies.google.com/terms" rel="nofollow noopener" target="_blank">Google Terms</a></li>
+                        <li><strong>Google Fonts:</strong> Typography &mdash; <a href="https://developers.google.com/fonts/terms" rel="nofollow noopener" target="_blank">Google Fonts Terms</a></li>
+                        <li><strong>Formspree:</strong> Contact form processing &mdash; <a href="https://formspree.io/legal/terms-of-service" rel="nofollow noopener" target="_blank">Formspree Terms</a></li>
+                    </ul>
+
+                    <h2>9. Modifications to Terms</h2>
+                    <p>We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated &ldquo;Last updated&rdquo; date. Your continued use of the Site after changes constitutes acceptance. For material changes, we will make reasonable efforts to provide notice (e.g., a banner on the homepage).</p>
+
+                    <h2>10. Governing Law &amp; Jurisdiction</h2>
+                    <p>These Terms are governed by and construed in accordance with the laws of <strong>India</strong>. Any disputes arising from or related to these Terms or your use of the Site shall be subject to the exclusive jurisdiction of the courts in <strong>Jaipur, Rajasthan, India</strong>.</p>
+
+                    <h2>11. Severability</h2>
+                    <p>If any provision of these Terms is found to be unenforceable or invalid by a court of competent jurisdiction, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
+
+                    <h2>12. Contact</h2>
+                    <p>For questions about these Terms of Use, contact us at <a href="mailto:contact@cashcalc.in">contact@cashcalc.in</a> or via our <a href="/contact.html">contact page</a>.</p>
+
+                    <p style="margin-top:var(--space-xl);padding-top:var(--space-md);border-top:1px solid var(--color-border);font-size:var(--font-size-sm);color:var(--color-text-secondary);">These Terms of Use were last reviewed and updated on 8 February 2026. Governing law: India. Jurisdiction: Jaipur, Rajasthan.</p>
+
                 </div>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">13. Entire Agreement</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    These Terms of Service, together with our Privacy Policy, constitute the entire agreement between you and Indian Cash Denomination Calculator regarding your use of the website and supersede all prior and contemporaneous understandings, agreements, representations, and warranties.
-                </p>
-            </section>
-
-        </div>
-
-        <!-- Back to Calculator -->
-        <div class="text-center">
-            <a href="/" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
-                <i class="fas fa-calculator mr-2"></i>Back to Calculator
-            </a>
-        </div>
-
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 px-4 mt-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <p class="text-gray-400 text-sm mb-4">
-                © 2024-2025 Indian Cash Denomination Calculator. All rights reserved.
-            </p>
-            <div class="flex justify-center space-x-6 text-sm">
-                <a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a>
-                <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-                <a href="terms.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-                <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo" style="color:#fff;">
+                        <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                        <span>Cash<span style="color:#8ab4f8;">Calc</span>.in</span>
+                    </a>
+                    <p>Free online tools for Indian cash counting and currency denomination calculations.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="/" class="footer-link">Home</a>
+                        <a href="/about/" class="footer-link">About</a>
+                        <a href="/contact.html" class="footer-link">Contact</a>
+                        <a href="/blog/" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+                        <a href="/terms.html" class="footer-link">Terms of Use</a>
+                        <a href="/disclaimer.html" class="footer-link">Disclaimer</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Categories</h3>
+                    <div class="footer-links">
+                        <a href="/tools/" class="footer-link">Tools</a>
+                        <a href="/indian-currency/" class="footer-link">Indian Currency</a>
+                        <a href="/banking/" class="footer-link">Banking</a>
+                        <a href="/accounting/" class="footer-link">Accounting</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CashCalc. All rights reserved.</p>
+                <p class="disclaimer">Not affiliated with the Reserve Bank of India (RBI) or any government body.</p>
             </div>
         </div>
     </footer>
 
+    <script>
+    window.toggleTheme = function() {
+        var c = document.documentElement.getAttribute('data-theme');
+        var n = c === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', n);
+        localStorage.setItem('cashcalc_theme', n);
+    };
+    (function() {
+        var s = localStorage.getItem('cashcalc_theme');
+        if (s) document.documentElement.setAttribute('data-theme', s);
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+            document.documentElement.setAttribute('data-theme', 'dark');
+        var h = document.getElementById('hamburger-btn');
+        var m = document.getElementById('mobile-nav');
+        if (h && m) h.addEventListener('click', function() {
+            var o = m.classList.toggle('is-open');
+            h.classList.toggle('is-active');
+            h.setAttribute('aria-expanded', o);
+            document.body.classList.toggle('nav-open', o);
+        });
+    })();
+    </script>
 </body>
 </html>

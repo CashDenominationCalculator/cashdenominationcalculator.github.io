@@ -1,0 +1,7 @@
+# CashCalc — Indian Cash Denomination Calculator
+# https://cashdenominationcalculator.github.io/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://cashdenominationcalculator.github.io/sitemap.xml
