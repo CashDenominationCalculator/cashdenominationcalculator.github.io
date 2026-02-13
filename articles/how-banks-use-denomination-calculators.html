@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>How Banks Use Denomination Calculators for Cash Tallying</title>
+    <meta name="description" content="Learn how Indian banks use denomination calculators for daily cash tallying, vault management, and ATM replenishment.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://cashdenominationcalculator.github.io/articles/how-banks-use-denomination-calculators.html">
+    <meta property="og:title" content="How Banks Use Denomination Calculators for Daily Cash Tallying">
+    <meta property="og:description" content="Learn how Indian banks use denomination calculators for daily cash tallying, vault management, and ATM replenishment.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cashdenominationcalculator.github.io/articles/how-banks-use-denomination-calculators.html">
+    <meta property="og:image" content="https://cashdenominationcalculator.github.io/images/bank-cash-tallying.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How Banks Use Denomination Calculators for Cash Tallying">
+    <meta name="twitter:description" content="Complete guide to how Indian banks use denomination calculators for daily cash operations.">
+    <meta name="theme-color" content="#1a73e8">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cashdenominationcalculator.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cashdenominationcalculator.github.io/blog/" },
+            { "@type": "ListItem", "position": 3, "name": "How Banks Use Denomination Calculators", "item": "https://cashdenominationcalculator.github.io/articles/how-banks-use-denomination-calculators.html" }
+        ]
+    }
+    </script>
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How Banks Use Denomination Calculators for Daily Cash Tallying",
+        "description": "Learn how Indian banks use denomination calculators for daily cash tallying, vault management, and ATM replenishment.",
+        "author": { "@type": "Person", "name": "Supraja", "url": "https://cashdenominationcalculator.github.io/about/#supraja", "jobTitle": "Lead Content Editor" },
+        "reviewer": { "@type": "Person", "name": "Omprakash", "url": "https://cashdenominationcalculator.github.io/about/#omprakash", "jobTitle": "Senior Banker & Financial Reviewer" },
+        "publisher": { "@type": "Organization", "name": "Cash Denomination Calculator", "url": "https://cashdenominationcalculator.github.io/" },
+        "datePublished": "2026-02-13",
+        "dateModified": "2026-02-13",
+        "mainEntityOfPage": "https://cashdenominationcalculator.github.io/articles/how-banks-use-denomination-calculators.html",
+        "image": "https://cashdenominationcalculator.github.io/images/bank-cash-tallying.webp",
+        "wordCount": 1850
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Do all bank branches use digital denomination calculators?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Not all branches use digital tools. Many rural cooperative banks and gramin bank branches still rely on manual denomination sheets and paper registers. Mid-tier branches often use Excel-based calculators, while large scheduled commercial bank branches use enterprise cash management modules within their core banking software such as TCS BaNCS or Infosys Finacle." }
+            },
+            {
+                "@type": "Question",
+                "name": "How often do banks report denomination-wise cash holdings to RBI?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Banks with currency chests must submit daily denomination-wise cash balance reports to the RBI. Regular branches reconcile denomination holdings at the end of each business day internally and submit consolidated reports to their regional or zonal offices as per the bank's internal policy, typically on a daily or weekly basis." }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use a free denomination calculator instead of the bank's form?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can use our free online Cash Denomination Calculator to prepare your denomination breakdown before visiting the bank. The printed output from the calculator matches the format banks expect. However, most banks will still require you to fill their official deposit slip at the counter." }
+            },
+            {
+                "@type": "Question",
+                "name": "What happens if my denomination count doesn't match at the bank?",
+                "acceptedAnswer": { "@type": "Answer", "text": "If the teller's count differs from your denomination slip, the transaction is paused. The teller will recount the cash in your presence and update the amounts. The deposit is processed based on the teller's verified count, and you will be asked to sign a corrected slip acknowledging the revised total." }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <header class="site-header" role="banner">
+        <nav class="nav-inner" aria-label="Primary navigation">
+            <a href="/" class="logo" aria-label="Cash Denomination Calculator Home">
+                <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                <span>Cash<span class="logo-text-accent">Denomination</span>Calculator</span>
+            </a>
+            <div class="nav-links" role="menubar">
+                <a href="/" class="nav-link" role="menuitem">Home</a>
+                <a href="/tools/" class="nav-link" role="menuitem">Tools</a>
+                <a href="/indian-currency/" class="nav-link" role="menuitem">Indian Currency</a>
+                <a href="/banking/" class="nav-link" role="menuitem">Banking</a>
+                <a href="/accounting/" class="nav-link" role="menuitem">Accounting</a>
+                <a href="/blog/" class="nav-link active" role="menuitem">Blog</a>
+                <a href="/about/" class="nav-link" role="menuitem">About</a>
+                <a href="/contact.html" class="nav-link" role="menuitem">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="icon-moon" aria-hidden="true">&#9790;</span>
+                    <span class="icon-sun" aria-hidden="true">&#9728;&#65039;</span>
+                </button>
+                <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+                    <span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <div class="mobile-nav-links">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="/tools/" class="mobile-nav-link">Tools</a>
+            <a href="/indian-currency/" class="mobile-nav-link">Indian Currency</a>
+            <a href="/banking/" class="mobile-nav-link">Banking</a>
+            <a href="/accounting/" class="mobile-nav-link">Accounting</a>
+            <a href="/blog/" class="mobile-nav-link">Blog</a>
+            <a href="/about/" class="mobile-nav-link">About</a>
+            <a href="/contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="padding:var(--space-md) 0 0;">
+            <div class="container">
+                <a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span>
+                <a href="/blog/">Blog</a> <span aria-hidden="true">&rsaquo;</span>
+                <span>How Banks Use Denomination Calculators</span>
+            </div>
+        </nav>
+
+        <section class="section" style="padding-top:var(--space-lg);">
+            <div class="article-layout">
+
+                <!-- ARTICLE BODY -->
+                <article class="section-card content-block" itemscope itemtype="https://schema.org/Article">
+
+                    <div class="article-header">
+                        <a href="/banking/" class="article-category-tag">Banking</a>
+                        <h1 itemprop="headline">How Banks Use Denomination Calculators for Daily Cash Tallying</h1>
+                        <div class="article-meta">
+                            <span class="article-meta-item" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                By <a href="/about/#supraja" itemprop="url"><span itemprop="name">Supraja</span></a>
+                            </span>
+                            <span class="article-meta-item">
+                                <time datetime="2026-02-13" itemprop="datePublished">13 February 2026</time>
+                            </span>
+                            <span class="article-meta-item">10 min read</span>
+                            <span class="reviewed-by">
+                                &#10003; Reviewed by <a href="/about/#omprakash">Omprakash</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile TOC -->
+                    <div class="toc-mobile" id="toc-mobile">
+                        <button class="toc-mobile-toggle" onclick="this.parentElement.classList.toggle('is-open')">
+                            Table of Contents <span>&#9662;</span>
+                        </button>
+                        <div class="toc-mobile-content">
+                            <ul class="toc-list" id="toc-list-mobile"></ul>
+                        </div>
+                    </div>
+
+                    <!-- Introduction -->
+                    <p>Cash management is one of the most operationally critical functions in Indian banking. Every branch, from a State Bank of India metro office processing thousands of transactions daily to a small regional rural bank serving a cluster of villages, must account for every single note and coin that moves through its counters. Denomination calculators &mdash; both physical paper sheets and digital tools &mdash; sit at the centre of this process, ensuring that the denomination-wise breakdown of cash is accurate at every stage of the daily cycle.</p>
+
+                    <p>In this guide, we explain how Indian bank branches manage cash from vault to teller and back, why denomination-level tracking is mandated by the Reserve Bank of India, and how modern digital calculators are replacing the paper-based systems that have dominated Indian banking for decades.</p>
+
+                    <h2 id="daily-cash-cycle">The Daily Cash Cycle in an Indian Bank Branch</h2>
+
+                    <p>The lifecycle of cash inside a bank branch follows a precise, tightly controlled routine that begins before the branch opens its doors to customers and ends long after the last customer leaves.</p>
+
+                    <p>Each morning, the vault custodian &mdash; a designated officer who holds one of two keys required to open the vault (the other is held by the branch manager or a second authorised officer) &mdash; opens the vault in the presence of a witness. The cash officer then prepares denomination-wise packets for each teller based on their expected requirements for the day. A teller at a busy SBI metro branch might receive &#8377;5,00,000 in a mix of &#8377;500, &#8377;200, and &#8377;100 notes, while a teller at a smaller branch might receive &#8377;1,50,000. Every packet issued is recorded denomination-wise in the vault register: the exact number of &#8377;500 notes, &#8377;200 notes, &#8377;100 notes, and so on. This is the first point where denomination counting matters.</p>
+
+                    <p>Throughout the day, tellers accept deposits, process withdrawals, and exchange soiled notes. Each of these transactions alters the denomination mix in their drawer. At the end of the business day, every teller must reconcile their drawer against the day&rsquo;s transactions. The closing denomination count, minus the opening denomination count, must match the net of all deposits received and withdrawals paid. Any mismatch &mdash; even &#8377;10 &mdash; triggers an investigation, a written explanation, and in many banks, an entry in the teller&rsquo;s personal discrepancy register.</p>
+
+                    <h2 id="denomination-wise-counting">Why Denomination-Wise Counting Matters in Banking</h2>
+
+                    <p>Banks cannot simply count total amounts and call it a day. They must track every denomination separately, and there are several compelling reasons for this requirement.</p>
+
+                    <p>First, the RBI requires scheduled commercial banks to report denomination-wise cash holdings as part of its currency management framework. This reporting feeds into the central bank&rsquo;s understanding of how different denominations circulate through the economy and helps inform decisions about how many notes of each denomination to print. The RBI&rsquo;s Annual Report 2023&ndash;24 notes that there were 13,054 crore banknotes in circulation at the end of March 2024, and the denomination-wise distribution of these notes is a key monetary statistic <sup>[1]</sup>.</p>
+
+                    <p>Second, currency chests &mdash; the large storage facilities operated by banks on behalf of the RBI &mdash; must maintain denomination-wise records for every deposit and withdrawal. Third, banks must segregate soiled and mutilated notes by denomination for return to the RBI for destruction and replacement. Fourth, ATM cassettes must be loaded with specific denominations, which requires knowing exactly how many notes of each type are available. Finally, denomination tracking is essential for detecting internal fraud: a teller who replaces genuine &#8377;500 notes with counterfeit ones will be caught when the physical count matches but the denomination quality check fails.</p>
+
+                    <h2 id="types-calculators">Types of Denomination Calculators Used by Banks</h2>
+
+                    <p>The tools banks use for denomination counting span a wide spectrum, and the choice depends on the bank&rsquo;s size, technology infrastructure, and geographic location.</p>
+
+                    <p>At the simplest end are manual denomination sheets &mdash; printed paper forms with rows for each denomination, columns for count and amount, and a grand total at the bottom. These are still widely used in rural cooperative banks, gramin banks, and smaller branches of nationalised banks where digital infrastructure is limited. A teller fills in the count for each denomination by hand, multiplies to calculate the subtotal, and adds up the grand total. This method is slow, prone to arithmetic errors, and produces a paper trail that is difficult to audit electronically.</p>
+
+                    <p>Mid-tier branches often use Excel-based denomination calculators &mdash; spreadsheets with pre-built formulas that automatically calculate subtotals and grand totals when the teller enters the note count. These are a significant improvement over paper, but they require a computer at each teller station and basic spreadsheet literacy.</p>
+
+                    <p>Large scheduled commercial banks use enterprise cash management modules integrated into their core banking software. Systems like TCS BaNCS, Infosys Finacle, and Oracle FLEXCUBE include denomination tracking as part of their teller and vault management modules. When a teller processes a cash deposit, the system automatically prompts for a denomination-wise breakdown and validates the entries against the total amount. These enterprise systems also generate automated reports for RBI compliance.</p>
+
+                    <p>Our <a href="/">free online Cash Denomination Calculator</a> serves as a lightweight alternative for smaller branches, <a href="/articles/cash-denomination-calculator-cooperative-banks.html">cooperative societies</a>, non-banking financial companies (NBFCs), and microfinance institutions that lack enterprise software but need accurate denomination tracking. The tool runs entirely in the browser, requires no installation, and produces print-ready denomination sheets that match the format banks expect.</p>
+
+                    <h2 id="currency-chests">How Currency Chests Manage Denominations</h2>
+
+                    <p>A currency chest is a storage facility maintained by a scheduled commercial bank on behalf of the Reserve Bank of India. It serves as the distribution point for fresh currency notes and coins within a defined geographic area, and as the collection point for soiled and mutilated notes that need to be returned to the RBI for destruction.</p>
+
+                    <p>As of 2024, there are approximately 4,100 currency chests across India, operated by banks such as SBI, PNB, Bank of Baroda, and major private banks. Each chest maintains a detailed denomination-wise ledger that records every note entering and leaving the facility. When a bank branch needs fresh notes for ATM loading or counter operations, it places an indent with the currency chest specifying the denominations required. The chest fulfils the order and updates its records accordingly.</p>
+
+                    <p>The RBI&rsquo;s Master Circular on Currency Distribution and Exchange mandates that currency chests maintain accurate denomination-wise records and submit daily reports to the RBI&rsquo;s Issue Department. These reports form the backbone of India&rsquo;s currency supply chain data, and any discrepancy in denomination counts at the chest level can trigger an RBI inspection <sup>[2]</sup>.</p>
+
+                    <h2 id="atm-replenishment">ATM Cash Replenishment and Denomination Planning</h2>
+
+                    <p>India has approximately 2,60,000 ATMs, and each one must be loaded with carefully planned denomination mixes. Most ATMs dispense only &#8377;500 and &#8377;100 notes, though some machines in semi-urban and rural areas are configured to dispense &#8377;200 notes as well. The denomination mix loaded into an ATM depends on the withdrawal patterns at that specific location.</p>
+
+                    <p>An ATM in a commercial district where the average withdrawal is &#8377;10,000&ndash;&#8377;20,000 might be loaded primarily with &#8377;500 notes for efficiency. An ATM near a vegetable market or railway station where smaller withdrawals of &#8377;500&ndash;&#8377;2,000 are common might carry a heavier mix of &#8377;100 and &#8377;200 notes. This is why an ATM sometimes dispenses only &#8377;500 notes even when you request &#8377;1,500 &mdash; it is not a malfunction but a reflection of the denomination availability at that machine.</p>
+
+                    <p>Cash management companies like CMS Info Systems, Writer Safeguard, and Brink&rsquo;s India handle the physical loading of ATMs for most banks. These companies use denomination planning tools to determine the optimal note mix for each ATM cassette, and they rely on denomination-wise counts to reconcile cash after every loading cycle. Any discrepancy between the notes issued from the currency chest and the notes loaded into the ATM must be investigated and resolved before the next cycle.</p>
+
+                    <h2 id="customer-deposits">Cash Deposit Processing &mdash; The Customer Side</h2>
+
+                    <p>When you walk into a bank branch with a cash deposit, you are required to fill a deposit slip and, for amounts above a certain threshold, a denomination breakdown slip. This is where the customer-side denomination calculator becomes relevant.</p>
+
+                    <p>The process works as follows: you sort your cash by denomination, count each pile, fill in the denomination slip with the count and amount for each denomination, and write the grand total. The teller then accepts your cash and verifies it &mdash; typically by running the notes through a counting machine that tallies each denomination separately. The teller&rsquo;s machine count is compared against your denomination slip. If the counts match, the deposit is processed immediately. If there is a discrepancy, the teller recounts the specific denomination that does not match, updates the slip, and asks you to initial the correction.</p>
+
+                    <p>Preparing an accurate denomination breakdown before visiting the bank saves considerable time. Using our <a href="/articles/cash-denomination-calculator-bank-deposits.html">denomination calculator for bank deposits</a> eliminates arithmetic errors and produces a print-ready sheet that you can attach to your deposit slip. Many experienced depositors &mdash; especially shopkeepers who make daily deposits &mdash; use this workflow to reduce their time at the bank counter from 15&ndash;20 minutes to under 5 minutes.</p>
+
+                    <h2 id="faq">Frequently Asked Questions</h2>
+
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="this.parentElement.classList.toggle('is-open')">
+                                <span>Do all bank branches use digital denomination calculators?</span>
+                                <span class="faq-icon">&#9662;</span>
+                            </button>
+                            <div class="faq-answer"><div class="faq-answer-inner">
+                                <p>Not all branches use digital tools. Many rural cooperative banks and gramin bank branches still rely on manual denomination sheets and paper registers. Mid-tier branches often use Excel-based calculators, while large scheduled commercial bank branches use enterprise cash management modules within their core banking software such as TCS BaNCS or Infosys Finacle. The trend, however, is firmly toward digital tools &mdash; the RBI has been encouraging banks to modernise their cash management infrastructure as part of broader financial inclusion and operational efficiency goals.</p>
+                            </div></div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="this.parentElement.classList.toggle('is-open')">
+                                <span>How often do banks report denomination-wise cash holdings to RBI?</span>
+                                <span class="faq-icon">&#9662;</span>
+                            </button>
+                            <div class="faq-answer"><div class="faq-answer-inner">
+                                <p>Banks with currency chests must submit daily denomination-wise cash balance reports to the RBI. Regular branches reconcile denomination holdings at the end of each business day internally and submit consolidated reports to their regional or zonal offices as per the bank&rsquo;s internal policy, typically on a daily or weekly basis. These reports feed into the RBI&rsquo;s currency management system and help the central bank monitor the distribution of denominations across the country.</p>
+                            </div></div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="this.parentElement.classList.toggle('is-open')">
+                                <span>Can I use a free denomination calculator instead of the bank&rsquo;s form?</span>
+                                <span class="faq-icon">&#9662;</span>
+                            </button>
+                            <div class="faq-answer"><div class="faq-answer-inner">
+                                <p>Yes. You can use our <a href="/">free online Cash Denomination Calculator</a> to prepare your denomination breakdown before visiting the bank. The printed output from the calculator matches the format banks expect. However, most banks will still require you to fill their official deposit slip at the counter. The calculator output serves as your reference and working document, ensuring that your figures are accurate when you transfer them to the bank&rsquo;s form.</p>
+                            </div></div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="this.parentElement.classList.toggle('is-open')">
+                                <span>What happens if my denomination count doesn&rsquo;t match at the bank?</span>
+                                <span class="faq-icon">&#9662;</span>
+                            </button>
+                            <div class="faq-answer"><div class="faq-answer-inner">
+                                <p>If the teller&rsquo;s count differs from your denomination slip, the transaction is paused. The teller will recount the cash in your presence and update the amounts. The deposit is processed based on the teller&rsquo;s verified count, and you will be asked to sign a corrected slip acknowledging the revised total. This is standard procedure and happens frequently &mdash; minor discrepancies of &#8377;10&ndash;&#8377;50 are common due to stuck notes or miscounts.</p>
+                            </div></div>
+                        </div>
+                    </div>
+
+                    <h2 id="conclusion">Conclusion</h2>
+
+                    <p>Denomination-wise cash counting is not merely an administrative convenience &mdash; it is a regulatory requirement, an operational necessity, and a critical control mechanism for fraud prevention in Indian banking. Whether a branch uses paper sheets, Excel spreadsheets, or enterprise software, the underlying principle is the same: every note must be accounted for by denomination at every stage of its journey through the banking system.</p>
+
+                    <p>For customers, understanding this process helps you prepare better for bank visits. Use our <a href="/">free Cash Denomination Calculator</a> to count your cash denomination-wise before heading to the branch &mdash; it will save you time, eliminate errors, and make the deposit process significantly smoother. If you are preparing a large cash deposit, our <a href="/articles/cash-denomination-calculator-bank-deposits.html">complete guide to denomination calculators for bank deposits</a> covers everything from PAN requirements to bank-specific procedures.</p>
+
+                    <!-- Sources -->
+                    <div style="margin-top:var(--space-2xl);padding-top:var(--space-md);border-top:1px solid var(--color-border-light);font-size:var(--font-size-xs);color:var(--color-text-muted);">
+                        <p><strong>Sources:</strong></p>
+                        <p>[1] RBI Annual Report 2023&ndash;24, Chapter VIII: Currency Management &mdash; <a href="https://www.rbi.org.in/Scripts/AnnualReportPublications.aspx" rel="nofollow noopener" target="_blank">rbi.org.in</a></p>
+                        <p>[2] RBI Master Circular on Currency Distribution and Exchange &mdash; <a href="https://www.rbi.org.in/Scripts/BS_ViewMasCirculardetails.aspx?id=9488" rel="nofollow noopener" target="_blank">rbi.org.in</a></p>
+                    </div>
+
+                    <!-- Share Bar -->
+                    <div class="share-bar">
+                        <span class="share-label">Share this article:</span>
+                        <a href="https://twitter.com/intent/tweet?text=How%20Banks%20Use%20Denomination%20Calculators%20for%20Cash%20Tallying&url=https://cashdenominationcalculator.github.io/articles/how-banks-use-denomination-calculators.html" target="_blank" rel="noopener" class="share-btn share-btn--twitter">Twitter</a>
+                        <a href="https://api.whatsapp.com/send?text=How%20Banks%20Use%20Denomination%20Calculators%20https://cashdenominationcalculator.github.io/articles/how-banks-use-denomination-calculators.html" target="_blank" rel="noopener" class="share-btn share-btn--whatsapp">WhatsApp</a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://cashdenominationcalculator.github.io/articles/how-banks-use-denomination-calculators.html" target="_blank" rel="noopener" class="share-btn share-btn--linkedin">LinkedIn</a>
+                        <button class="share-btn" onclick="navigator.clipboard.writeText(window.location.href).then(()=>this.textContent='Copied!')">Copy Link</button>
+                    </div>
+
+                    <!-- Author Bio Box -->
+                    <div class="author-bio-box">
+                        <div class="author-bio-avatar">S</div>
+                        <div>
+                            <div class="author-bio-name">Supraja</div>
+                            <div class="author-bio-role">Lead Content Editor &amp; Developer, Cash Denomination Calculator</div>
+                            <p class="author-bio-text">Supraja has spent 6+ years writing about Indian banking, RBI policy, and personal finance. She built Cash Denomination Calculator to make denomination counting faster and error-free for every Indian. Every factual claim is sourced from RBI publications and reviewed by a banking professional.</p>
+                            <a href="/about/#supraja" class="author-bio-link">Read full bio &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Related Articles -->
+                    <div class="related-articles">
+                        <h2>Related Articles</h2>
+                        <div class="related-grid">
+                            <a href="/articles/what-is-cash-denomination-calculator.html" class="related-card">
+                                <div class="related-card-title">What Is a Cash Denomination Calculator?</div>
+                                <div class="related-card-desc">Learn what a denomination calculator is, how it works, and who uses it in India.</div>
+                            </a>
+                            <a href="/articles/cash-denomination-sheet-format-template.html" class="related-card">
+                                <div class="related-card-title">Cash Denomination Sheet: Format &amp; Template</div>
+                                <div class="related-card-desc">Download free denomination sheet templates and learn the correct format for bank deposits.</div>
+                            </a>
+                            <a href="/articles/denomination-calculator-vs-counting-machine.html" class="related-card">
+                                <div class="related-card-title">Denomination Calculator vs Counting Machine</div>
+                                <div class="related-card-desc">Compare denomination calculators and counting machines: features, costs, and use cases.</div>
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- SIDEBAR TOC -->
+                <aside class="toc-sidebar">
+                    <div class="toc-card">
+                        <div class="toc-title">Table of Contents</div>
+                        <ul class="toc-list" id="toc-list-desktop">
+                            <li><a href="#daily-cash-cycle">The Daily Cash Cycle</a></li>
+                            <li><a href="#denomination-wise-counting">Why Denomination-Wise Counting Matters</a></li>
+                            <li><a href="#types-calculators">Types of Calculators Used by Banks</a></li>
+                            <li><a href="#currency-chests">Currency Chest Management</a></li>
+                            <li><a href="#atm-replenishment">ATM Cash Replenishment</a></li>
+                            <li><a href="#customer-deposits">Cash Deposit Processing</a></li>
+                            <li><a href="#faq">FAQs</a></li>
+                            <li><a href="#conclusion">Conclusion</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo" style="color:#fff;">
+                        <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                        <span>Cash<span style="color:#8ab4f8;">Denomination</span>Calculator</span>
+                    </a>
+                    <p>Free online tools for Indian cash counting and currency denomination calculations.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="/" class="footer-link">Home</a>
+                        <a href="/about/" class="footer-link">About</a>
+                        <a href="/contact.html" class="footer-link">Contact</a>
+                        <a href="/blog/" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+                        <a href="/terms.html" class="footer-link">Terms of Use</a>
+                        <a href="/disclaimer.html" class="footer-link">Disclaimer</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Categories</h3>
+                    <div class="footer-links">
+                        <a href="/tools/" class="footer-link">Tools</a>
+                        <a href="/indian-currency/" class="footer-link">Indian Currency</a>
+                        <a href="/banking/" class="footer-link">Banking</a>
+                        <a href="/accounting/" class="footer-link">Accounting</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cash Denomination Calculator. All rights reserved.</p>
+                <p class="disclaimer">Not affiliated with the Reserve Bank of India (RBI) or any government body.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    window.toggleTheme = function() {
+        const c = document.documentElement.getAttribute('data-theme');
+        const n = c === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', n);
+        localStorage.setItem('cashcalc_theme', n);
+    };
+    (function() {
+        const s = localStorage.getItem('cashcalc_theme');
+        if (s) document.documentElement.setAttribute('data-theme', s);
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+            document.documentElement.setAttribute('data-theme', 'dark');
+        const h = document.getElementById('hamburger-btn');
+        const m = document.getElementById('mobile-nav');
+        if (h && m) h.addEventListener('click', () => {
+            const o = m.classList.toggle('is-open');
+            h.classList.toggle('is-active');
+            h.setAttribute('aria-expanded', o);
+            document.body.classList.toggle('nav-open', o);
+        });
+    })();
+    </script>
+</body>
+</html>

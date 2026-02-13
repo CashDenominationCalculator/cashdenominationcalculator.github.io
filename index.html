@@ -332,9 +332,31 @@
             <!-- Desktop Navigation Links -->
             <div class="nav-links" role="menubar">
                 <a href="/" class="nav-link active" role="menuitem">Home</a>
-                <a href="/tools/" class="nav-link" role="menuitem">Tools</a>
-                <a href="/indian-currency/" class="nav-link" role="menuitem">Indian Currency</a>
-                <a href="/banking/" class="nav-link" role="menuitem">Banking</a>
+                <div class="nav-dropdown" role="menuitem">
+                    <a href="/tools/" class="nav-link">Tools <span aria-hidden="true">&#9662;</span></a>
+                    <div class="nav-dropdown-content">
+                        <a href="/articles/what-is-cash-denomination-calculator.html">What Is a Denomination Calculator?</a>
+                        <a href="/articles/how-to-use-indian-cash-denomination-calculator.html">How to Use the Calculator</a>
+                        <a href="/articles/cash-denomination-sheet-format-template.html">Denomination Sheet Templates</a>
+                        <a href="/articles/denomination-calculator-vs-counting-machine.html">Calculator vs Counting Machine</a>
+                        <a href="/articles/free-online-cash-denomination-calculators-comparison.html">Free Tools Comparison</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown" role="menuitem">
+                    <a href="/banking/" class="nav-link">Banking <span aria-hidden="true">&#9662;</span></a>
+                    <div class="nav-dropdown-content">
+                        <a href="/articles/cash-denomination-calculator-bank-deposits.html">Calculator for Bank Deposits</a>
+                        <a href="/articles/how-banks-use-denomination-calculators.html">How Banks Use Calculators</a>
+                        <a href="/articles/cash-denomination-calculator-cooperative-banks.html">Cooperative Banks &amp; Rural Banking</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown" role="menuitem">
+                    <a href="/indian-currency/" class="nav-link">Indian Currency <span aria-hidden="true">&#9662;</span></a>
+                    <div class="nav-dropdown-content">
+                        <a href="/articles/how-to-calculate-mixed-currency-notes.html">Count Mixed Currency Notes</a>
+                        <a href="/#currency-reference">Currency Quick Reference</a>
+                    </div>
+                </div>
                 <a href="/accounting/" class="nav-link" role="menuitem">Accounting</a>
                 <a href="/blog/" class="nav-link" role="menuitem">Blog</a>
                 <a href="/about/" class="nav-link" role="menuitem">About</a>
@@ -366,12 +388,27 @@
         <div class="mobile-nav-links">
             <a href="/" class="mobile-nav-link">Home</a>
             <a href="/tools/" class="mobile-nav-link">Tools</a>
-            <a href="/indian-currency/" class="mobile-nav-link">Indian Currency</a>
+            <a href="/articles/what-is-cash-denomination-calculator.html" class="mobile-nav-link" style="padding-left:2rem;font-size:0.9em;">What Is a Denomination Calculator?</a>
+            <a href="/articles/how-to-use-indian-cash-denomination-calculator.html" class="mobile-nav-link" style="padding-left:2rem;font-size:0.9em;">How to Use the Calculator</a>
+            <a href="/articles/cash-denomination-sheet-format-template.html" class="mobile-nav-link" style="padding-left:2rem;font-size:0.9em;">Denomination Sheet Templates</a>
+            <a href="/articles/free-online-cash-denomination-calculators-comparison.html" class="mobile-nav-link" style="padding-left:2rem;font-size:0.9em;">Free Tools Comparison</a>
             <a href="/banking/" class="mobile-nav-link">Banking</a>
+            <a href="/articles/cash-denomination-calculator-bank-deposits.html" class="mobile-nav-link" style="padding-left:2rem;font-size:0.9em;">Calculator for Bank Deposits</a>
+            <a href="/articles/how-banks-use-denomination-calculators.html" class="mobile-nav-link" style="padding-left:2rem;font-size:0.9em;">How Banks Use Calculators</a>
+            <a href="/articles/cash-denomination-calculator-cooperative-banks.html" class="mobile-nav-link" style="padding-left:2rem;font-size:0.9em;">Cooperative Banks</a>
+            <a href="/indian-currency/" class="mobile-nav-link">Indian Currency</a>
+            <a href="/articles/how-to-calculate-mixed-currency-notes.html" class="mobile-nav-link" style="padding-left:2rem;font-size:0.9em;">Count Mixed Currency Notes</a>
             <a href="/accounting/" class="mobile-nav-link">Accounting</a>
             <a href="/blog/" class="mobile-nav-link">Blog</a>
             <a href="/about/" class="mobile-nav-link">About</a>
             <a href="/contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="padding:var(--space-sm) 0 0;">
+        <div class="container">
+            <span><strong>Home</strong></span>
         </div>
     </nav>
 
@@ -663,7 +700,7 @@
                         <figcaption>A bank cashier uses the fan-and-count method to verify &#8377;500 notes &mdash; the same technique described in Step 1 below. <em>Image: Cash Denomination Calculator Editorial Team.</em></figcaption>
                     </figure>
 
-                    <p>This guide walks you through using our calculator step by step, but more importantly, it explains <em>why</em> each step exists, what real-world mistakes it prevents, and how the tool aligns with the denomination-slip format that Indian banks actually require at the counter.</p>
+                    <p>This guide walks you through using our calculator step by step, but more importantly, it explains <em>why</em> each step exists, what real-world mistakes it prevents, and how the tool aligns with the denomination-slip format that Indian banks actually require at the counter. For a deeper tutorial, see our <a href="/articles/how-to-use-indian-cash-denomination-calculator.html">complete step-by-step guide to using the calculator</a>. If you need printable denomination sheets, check our <a href="/articles/cash-denomination-sheet-format-template.html">cash denomination sheet format and template guide</a>.</p>
 
                     <h3>Step 1: Enter the Number of Notes or Coins for Each Denomination</h3>
 
@@ -727,9 +764,9 @@
                         <figcaption>A retailer uses Cash Denomination Calculator on a smartphone to tally the day&rsquo;s cash collection &mdash; no app download or internet needed after the initial page load. <em>Image: Cash Denomination Calculator Editorial Team.</em></figcaption>
                     </figure>
 
-                    <p><strong>Bank cashiers and tellers</strong> reconcile their cash drawers at the start and end of every shift. The standard bank procedure requires counting each denomination separately, recording the count on a denomination register, and tallying it against the system-generated cash position report. A senior cashier at a busy urban SBI branch may handle 200&ndash;400 cash transactions per day<a href="#sources" class="source-ref" title="See source 2">[2]</a>. Using a digital denomination calculator instead of a handheld calculator reduces the shift-end reconciliation from approximately 15&ndash;20 minutes of manual arithmetic to under 3 minutes of data entry, freeing time for customer service and reducing overtime.</p>
+                    <p><strong>Bank cashiers and tellers</strong> &mdash; learn <a href="/articles/how-banks-use-denomination-calculators.html">how banks use denomination calculators</a> for daily cash tallying. They reconcile their cash drawers at the start and end of every shift. The standard bank procedure requires counting each denomination separately, recording the count on a denomination register, and tallying it against the system-generated cash position report. A senior cashier at a busy urban SBI branch may handle 200&ndash;400 cash transactions per day<a href="#sources" class="source-ref" title="See source 2">[2]</a>. Using a digital denomination calculator instead of a handheld calculator reduces the shift-end reconciliation from approximately 15&ndash;20 minutes of manual arithmetic to under 3 minutes of data entry, freeing time for customer service and reducing overtime.</p>
 
-                    <p><strong>Retail shopkeepers and kirana store owners</strong> handle mixed-denomination cash throughout the day. At closing, they must count the register, separate the next day&rsquo;s opening float (typically &#8377;2,000&ndash;&#8377;5,000 in small denominations for making change), and calculate the day&rsquo;s net collection. The RBI&rsquo;s 2023 &ldquo;Payments Vision 2025&rdquo; document<a href="#sources" class="source-ref" title="See source 5">[5]</a> acknowledged that cash still accounts for a significant share of retail transactions in India, particularly in Tier-2 and Tier-3 cities. For these businesses, a denomination calculator that runs on a basic smartphone &mdash; without requiring an app download or internet after initial load &mdash; is more practical than any desktop accounting software.</p>
+                    <p><strong>Retail shopkeepers and kirana store owners</strong> &mdash; discover <a href="/articles/why-cashiers-need-denomination-calculator.html">why every cashier needs a denomination calculator</a>. They handle mixed-denomination cash throughout the day. At closing, they must count the register, separate the next day&rsquo;s opening float (typically &#8377;2,000&ndash;&#8377;5,000 in small denominations for making change), and calculate the day&rsquo;s net collection. The RBI&rsquo;s 2023 &ldquo;Payments Vision 2025&rdquo; document<a href="#sources" class="source-ref" title="See source 5">[5]</a> acknowledged that cash still accounts for a significant share of retail transactions in India, particularly in Tier-2 and Tier-3 cities. For these businesses, a denomination calculator that runs on a basic smartphone &mdash; without requiring an app download or internet after initial load &mdash; is more practical than any desktop accounting software.</p>
 
                     <p><strong>Accountants and bookkeepers</strong> who manage petty cash imprest funds must perform periodic physical verification. Under <strong>Indian Accounting Standard (Ind AS) 7</strong> and the ICAI&rsquo;s Guidance Note on Audit of Cash and Bank Balances, the auditor is required to verify physical cash at the close of the accounting period and document the denomination-wise count<a href="#sources" class="source-ref" title="See source 6">[6]</a>. Our printable denomination sheet serves exactly this documentation purpose &mdash; it is timestamped, shows the individual denomination breakdowns, and presents the total in words, which auditors require.</p>
 
@@ -984,6 +1021,7 @@
 
                     <p class="text-center mt-lg">
                         <a href="/indian-currency/" class="view-all-btn">Learn More About Indian Currency Denominations &rarr;</a>
+                        &nbsp; <a href="/articles/how-to-calculate-mixed-currency-notes.html" class="view-all-btn" style="margin-left:var(--space-sm);">How to Count Mixed Currency Notes &rarr;</a>
                     </p>
                 </div>
             </div>
@@ -1003,54 +1041,60 @@
                         <article class="blog-card">
                             <div class="blog-card-thumb" aria-hidden="true">&#128176;</div>
                             <div class="blog-card-body">
-                                <h3 class="blog-card-title">How to Fill a Cash Deposit Slip with Denomination Details</h3>
-                                <p class="blog-card-excerpt">A step-by-step guide to filling out denomination slips correctly for hassle-free bank deposits across all major Indian banks.</p>
-                                <a href="/blog/how-to-fill-cash-deposit-slip/" class="blog-card-link">Read More &rarr;</a>
+                                <span class="blog-card-category">Tools</span>
+                                <h3 class="blog-card-title">What Is a Cash Denomination Calculator?</h3>
+                                <p class="blog-card-excerpt">Learn what a denomination calculator is, how it works, who uses it, and why it matters in India&rsquo;s cash-heavy economy.</p>
+                                <a href="/articles/what-is-cash-denomination-calculator.html" class="blog-card-link">Read More &rarr;</a>
                             </div>
                         </article>
                         <!-- Article Card 2 -->
                         <article class="blog-card">
                             <div class="blog-card-thumb" aria-hidden="true">&#127970;</div>
                             <div class="blog-card-body">
-                                <h3 class="blog-card-title">Petty Cash Management: Best Practices for Small Businesses</h3>
-                                <p class="blog-card-excerpt">Learn how to set up, maintain, and reconcile a petty cash fund using denomination tracking and proper accounting procedures.</p>
-                                <a href="/blog/petty-cash-management/" class="blog-card-link">Read More &rarr;</a>
+                                <span class="blog-card-category">Banking</span>
+                                <h3 class="blog-card-title">Denomination Calculator for Bank Cash Deposits</h3>
+                                <p class="blog-card-excerpt">Complete guide to preparing denomination slips for deposits at SBI, HDFC, ICICI, and other Indian banks.</p>
+                                <a href="/articles/cash-denomination-calculator-bank-deposits.html" class="blog-card-link">Read More &rarr;</a>
                             </div>
                         </article>
                         <!-- Article Card 3 -->
                         <article class="blog-card">
                             <div class="blog-card-thumb" aria-hidden="true">&#128200;</div>
                             <div class="blog-card-body">
-                                <h3 class="blog-card-title">Understanding the Indian Numbering System: Lakhs and Crores</h3>
-                                <p class="blog-card-excerpt">Everything you need to know about how India formats large numbers differently from the Western system and why it matters.</p>
-                                <a href="/blog/indian-numbering-system/" class="blog-card-link">Read More &rarr;</a>
+                                <span class="blog-card-category">Banking</span>
+                                <h3 class="blog-card-title">How Banks Use Denomination Calculators for Cash Tallying</h3>
+                                <p class="blog-card-excerpt">Discover how Indian bank branches use denomination calculators for vault management, ATM replenishment, and daily reconciliation.</p>
+                                <a href="/articles/how-banks-use-denomination-calculators.html" class="blog-card-link">Read More &rarr;</a>
                             </div>
                         </article>
                         <!-- Article Card 4 -->
                         <article class="blog-card">
-                            <div class="blog-card-thumb" aria-hidden="true">&#128178;</div>
+                            <div class="blog-card-thumb" aria-hidden="true">&#128196;</div>
                             <div class="blog-card-body">
-                                <h3 class="blog-card-title">RBI Cash Deposit Rules: Limits, PAN Requirements &amp; TDS</h3>
-                                <p class="blog-card-excerpt">Know the current rules around large cash deposits, PAN requirements, and tax deducted at source to stay compliant.</p>
-                                <a href="/blog/rbi-cash-deposit-rules/" class="blog-card-link">Read More &rarr;</a>
+                                <span class="blog-card-category">Tools</span>
+                                <h3 class="blog-card-title">Cash Denomination Sheet: Format, Template &amp; Guide</h3>
+                                <p class="blog-card-excerpt">Download free denomination sheet templates in PDF and Excel. Learn the correct format for filling bank deposit slips.</p>
+                                <a href="/articles/cash-denomination-sheet-format-template.html" class="blog-card-link">Read More &rarr;</a>
                             </div>
                         </article>
                         <!-- Article Card 5 -->
                         <article class="blog-card">
-                            <div class="blog-card-thumb" aria-hidden="true">&#128179;</div>
+                            <div class="blog-card-thumb" aria-hidden="true">&#128178;</div>
                             <div class="blog-card-body">
-                                <h3 class="blog-card-title">History of Indian Currency: From Cowrie Shells to Digital Rupee</h3>
-                                <p class="blog-card-excerpt">Trace the fascinating journey of Indian currency through centuries of trade, colonisation, independence, and digital transformation.</p>
-                                <a href="/blog/history-of-indian-currency/" class="blog-card-link">Read More &rarr;</a>
+                                <span class="blog-card-category">Tools</span>
+                                <h3 class="blog-card-title">Free Online Denomination Calculators &mdash; Features Comparison</h3>
+                                <p class="blog-card-excerpt">Compare the best free online cash denomination calculator tools by features, privacy, mobile support, and export options.</p>
+                                <a href="/articles/free-online-cash-denomination-calculators-comparison.html" class="blog-card-link">Read More &rarr;</a>
                             </div>
                         </article>
                         <!-- Article Card 6 -->
                         <article class="blog-card">
-                            <div class="blog-card-thumb" aria-hidden="true">&#128270;</div>
+                            <div class="blog-card-thumb" aria-hidden="true">&#128181;</div>
                             <div class="blog-card-body">
-                                <h3 class="blog-card-title">How to Detect Counterfeit Indian Currency Notes</h3>
-                                <p class="blog-card-excerpt">Learn the security features of genuine Indian banknotes and practical tips to identify fake notes before accepting them.</p>
-                                <a href="/blog/detect-counterfeit-notes/" class="blog-card-link">Read More &rarr;</a>
+                                <span class="blog-card-category">Indian Currency</span>
+                                <h3 class="blog-card-title">How to Count Mixed Currency Notes Quickly</h3>
+                                <p class="blog-card-excerpt">Proven techniques to count mixed Indian currency notes without errors &mdash; sorting, counting, recording, and cross-verifying.</p>
+                                <a href="/articles/how-to-calculate-mixed-currency-notes.html" class="blog-card-link">Read More &rarr;</a>
                             </div>
                         </article>
                     </div>

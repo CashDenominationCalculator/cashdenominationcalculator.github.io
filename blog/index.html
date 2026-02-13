@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>Blog | Cash Denomination Calculator</title>
-    <meta name="description" content="Articles on Indian currency, RBI policies, and cash management.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://cashdenominationcalculator.github.io//blog/">
+    <title>Blog &mdash; Cash Denomination Calculator Articles &amp; Guides</title>
+    <meta name="description" content="Expert articles on cash denomination calculators, Indian currency, banking tips, and denomination sheet guides. Free resources for cashiers, shopkeepers, and accountants.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://cashdenominationcalculator.github.io/blog/">
+    <meta property="og:title" content="Blog &mdash; Cash Denomination Calculator Articles &amp; Guides">
+    <meta property="og:description" content="Expert articles on cash denomination calculators, Indian currency, banking tips, and denomination sheet guides.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cashdenominationcalculator.github.io/blog/">
+    <meta property="og:image" content="https://cashdenominationcalculator.github.io/images/indian-currency-notes.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog &mdash; Cash Denomination Calculator Articles &amp; Guides">
+    <meta name="twitter:description" content="Expert articles on cash denomination calculators, Indian currency, banking tips, and denomination sheet guides.">
     <meta name="theme-color" content="#1a73e8">
-        <!-- Favicon & PWA -->
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon-192.png">
@@ -17,9 +24,89 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cashdenominationcalculator.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cashdenominationcalculator.github.io/blog/" }
+        ]
+    }
+    </script>
+
+    <!-- CollectionPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Blog &mdash; Cash Denomination Calculator Articles & Guides",
+        "description": "Expert articles on cash denomination calculators, Indian currency, banking tips, and denomination sheet guides.",
+        "url": "https://cashdenominationcalculator.github.io/blog/",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Cash Denomination Calculator",
+            "url": "https://cashdenominationcalculator.github.io/"
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": 10,
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "url": "https://cashdenominationcalculator.github.io/articles/what-is-cash-denomination-calculator.html", "name": "What Is a Cash Denomination Calculator?" },
+                { "@type": "ListItem", "position": 2, "url": "https://cashdenominationcalculator.github.io/articles/how-to-use-indian-cash-denomination-calculator.html", "name": "How to Use the Indian Cash Denomination Calculator" },
+                { "@type": "ListItem", "position": 3, "url": "https://cashdenominationcalculator.github.io/articles/why-cashiers-need-denomination-calculator.html", "name": "Why Every Cashier Needs a Denomination Calculator" },
+                { "@type": "ListItem", "position": 4, "url": "https://cashdenominationcalculator.github.io/articles/cash-denomination-calculator-bank-deposits.html", "name": "Denomination Calculator for Bank Cash Deposits" },
+                { "@type": "ListItem", "position": 5, "url": "https://cashdenominationcalculator.github.io/articles/how-banks-use-denomination-calculators.html", "name": "How Banks Use Denomination Calculators for Daily Cash Tallying" },
+                { "@type": "ListItem", "position": 6, "url": "https://cashdenominationcalculator.github.io/articles/cash-denomination-sheet-format-template.html", "name": "Cash Denomination Sheet: Format, Template, and How to Fill It" },
+                { "@type": "ListItem", "position": 7, "url": "https://cashdenominationcalculator.github.io/articles/denomination-calculator-vs-counting-machine.html", "name": "Denomination Calculator vs Counting Machine" },
+                { "@type": "ListItem", "position": 8, "url": "https://cashdenominationcalculator.github.io/articles/free-online-cash-denomination-calculators-comparison.html", "name": "Free Online Cash Denomination Calculators Comparison" },
+                { "@type": "ListItem", "position": 9, "url": "https://cashdenominationcalculator.github.io/articles/cash-denomination-calculator-cooperative-banks.html", "name": "Cash Denomination Calculator for Cooperative Banks" },
+                { "@type": "ListItem", "position": 10, "url": "https://cashdenominationcalculator.github.io/articles/how-to-calculate-mixed-currency-notes.html", "name": "How to Calculate Mixed Currency Notes Quickly" }
+            ]
+        }
+    }
+    </script>
+
+    <style>
+        .blog-hero { background: linear-gradient(135deg, var(--color-primary) 0%, #1557b0 100%); color: #fff; padding: var(--space-2xl) 0; text-align: center; }
+        .blog-hero h1 { color: #fff; font-size: clamp(1.5rem, 4vw, 2.25rem); margin-bottom: var(--space-sm); }
+        .blog-hero p { color: rgba(255,255,255,0.9); font-size: var(--font-size-md); max-width: 640px; margin: 0 auto; }
+        .category-tabs { display: flex; flex-wrap: wrap; gap: var(--space-xs); justify-content: center; margin: var(--space-lg) 0; }
+        .category-tab { padding: var(--space-sm) var(--space-md); border-radius: 999px; border: 1px solid var(--color-border-light); background: var(--color-bg); color: var(--color-text-secondary); font-size: var(--font-size-sm); font-weight: 500; cursor: pointer; transition: all var(--transition-base); text-decoration: none; }
+        .category-tab:hover, .category-tab.active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); text-decoration: none; }
+        .blog-index-layout { display: grid; grid-template-columns: 1fr; gap: var(--space-xl); }
+        @media (min-width: 1024px) { .blog-index-layout { grid-template-columns: 1fr 320px; } }
+        .article-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-lg); }
+        .article-card { background: var(--color-bg); border: 1px solid var(--color-border-light); border-radius: var(--radius-lg); overflow: hidden; transition: box-shadow var(--transition-base), transform var(--transition-base); text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+        .article-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.1); transform: translateY(-2px); text-decoration: none; }
+        .article-card-img { width: 100%; height: 180px; background: var(--color-primary-light); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .article-card-body { padding: var(--space-md); flex: 1; display: flex; flex-direction: column; }
+        .article-card-category { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-primary); margin-bottom: var(--space-xs); }
+        .article-card-title { font-size: var(--font-size-md); font-weight: 700; color: var(--color-text); margin-bottom: var(--space-xs); line-height: 1.3; }
+        .article-card-excerpt { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5; flex: 1; }
+        .article-card-meta { font-size: 0.75rem; color: var(--color-text-muted); margin-top: var(--space-sm); padding-top: var(--space-sm); border-top: 1px solid var(--color-border-light); }
+        .sidebar-card { background: var(--color-bg); border: 1px solid var(--color-border-light); border-radius: var(--radius-lg); padding: var(--space-md); margin-bottom: var(--space-lg); }
+        .sidebar-card h3 { font-size: var(--font-size-md); margin-bottom: var(--space-sm); }
+        .sidebar-search { width: 100%; padding: var(--space-sm); border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: var(--font-size-sm); background: var(--color-bg); color: var(--color-text); }
+        .sidebar-list { list-style: none; padding: 0; margin: 0; }
+        .sidebar-list li { padding: var(--space-xs) 0; border-bottom: 1px solid var(--color-border-light); }
+        .sidebar-list li:last-child { border-bottom: none; }
+        .sidebar-list a { color: var(--color-text-secondary); font-size: var(--font-size-sm); text-decoration: none; }
+        .sidebar-list a:hover { color: var(--color-primary); }
+        .sidebar-cta { background: linear-gradient(135deg, var(--color-primary) 0%, #1557b0 100%); color: #fff; border-radius: var(--radius-lg); padding: var(--space-lg); text-align: center; }
+        .sidebar-cta h3 { color: #fff; margin-bottom: var(--space-sm); }
+        .sidebar-cta p { color: rgba(255,255,255,0.9); font-size: var(--font-size-sm); margin-bottom: var(--space-md); }
+        .sidebar-cta a { display: inline-block; padding: var(--space-sm) var(--space-lg); background: #fff; color: var(--color-primary); border-radius: var(--radius-md); font-weight: 600; text-decoration: none; }
+        .sidebar-cta a:hover { background: rgba(255,255,255,0.9); }
+        .pagination-placeholder { text-align: center; padding: var(--space-xl) 0; color: var(--color-text-muted); font-size: var(--font-size-sm); }
+    </style>
 </head>
 <body>
+
     <a href="#main-content" class="skip-link">Skip to Content</a>
+
     <header class="site-header" role="banner">
         <nav class="nav-inner" aria-label="Primary navigation">
             <a href="/" class="logo" aria-label="Cash Denomination Calculator Home">
@@ -47,6 +134,7 @@
             </div>
         </nav>
     </header>
+
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
         <div class="mobile-nav-links">
             <a href="/" class="mobile-nav-link">Home</a>
@@ -59,38 +147,304 @@
             <a href="/contact.html" class="mobile-nav-link">Contact</a>
         </div>
     </nav>
+
     <main id="main-content">
-        <section class="section" style="padding-top:var(--space-3xl);">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="padding:var(--space-md) 0 0;">
             <div class="container">
-                <div class="section-card content-block">
-                    <div class="coming-soon-page">
-                        <div class="coming-soon-icon" aria-hidden="true">&#128240;</div>
-                        <h1>Cash Denomination Calculator Blog</h1>
-                        <p style="font-size:var(--font-size-lg);color:var(--color-text-secondary);max-width:600px;margin:var(--space-md) auto;">Articles on Indian currency, RBI policies, and cash management. Reviewed by Omprakash, our senior banking expert.</p>
-                        <div style="text-align:left;max-width:600px;margin:var(--space-lg) auto;"><h3 style="text-align:center;">Articles Coming Soon</h3><div style="display:grid;gap:var(--space-md);"><div style="padding:var(--space-md);background:var(--color-bg);border:1px solid var(--color-border-light);border-radius:var(--radius-md);"><strong><a href="/blog/how-to-fill-cash-deposit-slip/">How to Fill a Cash Deposit Slip</a></strong></div><div style="padding:var(--space-md);background:var(--color-bg);border:1px solid var(--color-border-light);border-radius:var(--radius-md);"><strong><a href="/blog/petty-cash-management/">Petty Cash Management</a></strong></div><div style="padding:var(--space-md);background:var(--color-bg);border:1px solid var(--color-border-light);border-radius:var(--radius-md);"><strong><a href="/blog/indian-numbering-system/">Indian Numbering System</a></strong></div><div style="padding:var(--space-md);background:var(--color-bg);border:1px solid var(--color-border-light);border-radius:var(--radius-md);"><strong><a href="/blog/rbi-cash-deposit-rules/">RBI Cash Deposit Rules</a></strong></div><div style="padding:var(--space-md);background:var(--color-bg);border:1px solid var(--color-border-light);border-radius:var(--radius-md);"><strong><a href="/blog/history-of-indian-currency/">History of Indian Currency</a></strong></div><div style="padding:var(--space-md);background:var(--color-bg);border:1px solid var(--color-border-light);border-radius:var(--radius-md);"><strong><a href="/blog/detect-counterfeit-notes/">Detect Counterfeit Notes</a></strong></div></div></div>
-                        <p style="margin-top:var(--space-xl);"><a href="/" class="hero-cta" style="display:inline-block;">&#8592; Back to Calculator</a></p>
+                <a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span>
+                <span><strong>Blog</strong></span>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="blog-hero">
+            <div class="container">
+                <h1>Cash Denomination Calculator Blog</h1>
+                <p>Expert guides on cash counting, Indian currency denominations, banking procedures, and denomination sheet formats &mdash; all sourced from RBI publications and reviewed by banking professionals.</p>
+            </div>
+        </section>
+
+        <!-- Category Filter Tabs -->
+        <div class="container">
+            <div class="category-tabs" role="tablist" aria-label="Filter articles by category">
+                <button class="category-tab active" role="tab" data-category="all" onclick="filterArticles('all', this)">All Articles</button>
+                <button class="category-tab" role="tab" data-category="tools" onclick="filterArticles('tools', this)">Tools</button>
+                <button class="category-tab" role="tab" data-category="banking" onclick="filterArticles('banking', this)">Banking</button>
+                <button class="category-tab" role="tab" data-category="indian-currency" onclick="filterArticles('indian-currency', this)">Indian Currency</button>
+                <button class="category-tab" role="tab" data-category="business" onclick="filterArticles('business', this)">Business &amp; Retail</button>
+                <button class="category-tab" role="tab" data-category="tutorial" onclick="filterArticles('tutorial', this)">Tutorial</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <section class="section" style="padding-top:0;">
+            <div class="container">
+                <div class="blog-index-layout">
+
+                    <!-- Article Grid -->
+                    <div>
+                        <div class="article-cards" id="article-grid">
+
+                            <!-- Article 1 -->
+                            <a href="/articles/what-is-cash-denomination-calculator.html" class="article-card" data-category="tools">
+                                <div class="article-card-img" aria-hidden="true">&#128176;</div>
+                                <div class="article-card-body">
+                                    <span class="article-card-category">Tools &amp; Guides</span>
+                                    <h2 class="article-card-title">What Is a Cash Denomination Calculator and How Does It Work?</h2>
+                                    <p class="article-card-excerpt">Learn what a denomination calculator is, how it works, who uses it, and why it matters in India&rsquo;s cash-heavy economy.</p>
+                                    <div class="article-card-meta">By Supraja &bull; 8 Feb 2026 &bull; 10 min read</div>
+                                </div>
+                            </a>
+
+                            <!-- Article 2 -->
+                            <a href="/articles/how-to-use-indian-cash-denomination-calculator.html" class="article-card" data-category="tutorial">
+                                <div class="article-card-img" aria-hidden="true">&#128218;</div>
+                                <div class="article-card-body">
+                                    <span class="article-card-category">Tutorial</span>
+                                    <h2 class="article-card-title">How to Use the Indian Cash Denomination Calculator &mdash; Step-by-Step Guide</h2>
+                                    <p class="article-card-excerpt">Complete tutorial covering every feature: counting, subtotals, printing bank-ready slips, PDF export, calculation history, and mobile tips.</p>
+                                    <div class="article-card-meta">By Supraja &bull; 8 Feb 2026 &bull; 12 min read</div>
+                                </div>
+                            </a>
+
+                            <!-- Article 3 -->
+                            <a href="/articles/why-cashiers-need-denomination-calculator.html" class="article-card" data-category="business">
+                                <div class="article-card-img" aria-hidden="true">&#127970;</div>
+                                <div class="article-card-body">
+                                    <span class="article-card-category">Business &amp; Retail</span>
+                                    <h2 class="article-card-title">Why Every Cashier and Shopkeeper Needs a Cash Denomination Calculator</h2>
+                                    <p class="article-card-excerpt">Save time, prevent errors, and simplify end-of-day reconciliation. Real-world scenarios, cost analysis, and theft detection tips.</p>
+                                    <div class="article-card-meta">By Supraja &bull; 8 Feb 2026 &bull; 10 min read</div>
+                                </div>
+                            </a>
+
+                            <!-- Article 4 -->
+                            <a href="/articles/cash-denomination-calculator-bank-deposits.html" class="article-card" data-category="banking">
+                                <div class="article-card-img" aria-hidden="true">&#127974;</div>
+                                <div class="article-card-body">
+                                    <span class="article-card-category">Banking</span>
+                                    <h2 class="article-card-title">Denomination Calculator for Bank Cash Deposits &mdash; Complete Guide</h2>
+                                    <p class="article-card-excerpt">Step-by-step guide to preparing denomination slips for deposits at SBI, HDFC, ICICI, PNB, and other Indian banks.</p>
+                                    <div class="article-card-meta">By Supraja &bull; 8 Feb 2026 &bull; 12 min read</div>
+                                </div>
+                            </a>
+
+                            <!-- Article 5 -->
+                            <a href="/articles/how-banks-use-denomination-calculators.html" class="article-card" data-category="banking">
+                                <div class="article-card-img" aria-hidden="true">&#128200;</div>
+                                <div class="article-card-body">
+                                    <span class="article-card-category">Banking</span>
+                                    <h2 class="article-card-title">How Banks Use Denomination Calculators for Daily Cash Tallying</h2>
+                                    <p class="article-card-excerpt">Inside the daily cash cycle of an Indian bank branch: vault management, currency chests, ATM replenishment, and denomination planning.</p>
+                                    <div class="article-card-meta">By Supraja &bull; 13 Feb 2026 &bull; 10 min read</div>
+                                </div>
+                            </a>
+
+                            <!-- Article 6 -->
+                            <a href="/articles/cash-denomination-sheet-format-template.html" class="article-card" data-category="tools">
+                                <div class="article-card-img" aria-hidden="true">&#128196;</div>
+                                <div class="article-card-body">
+                                    <span class="article-card-category">Tools</span>
+                                    <h2 class="article-card-title">Cash Denomination Sheet: Format, Template, and How to Fill It Correctly</h2>
+                                    <p class="article-card-excerpt">Download free denomination sheet templates in PDF and Excel. Learn the standard Indian format and avoid common filling mistakes.</p>
+                                    <div class="article-card-meta">By Supraja &bull; 13 Feb 2026 &bull; 12 min read</div>
+                                </div>
+                            </a>
+
+                            <!-- Article 7 -->
+                            <a href="/articles/denomination-calculator-vs-counting-machine.html" class="article-card" data-category="tools">
+                                <div class="article-card-img" aria-hidden="true">&#9878;</div>
+                                <div class="article-card-body">
+                                    <span class="article-card-category">Tools</span>
+                                    <h2 class="article-card-title">Denomination Calculator vs Counting Machine &mdash; Key Differences</h2>
+                                    <p class="article-card-excerpt">Compare features, costs, and use cases. HTML comparison table, cost-benefit analysis for small businesses, and when to use both together.</p>
+                                    <div class="article-card-meta">By Supraja &bull; 13 Feb 2026 &bull; 9 min read</div>
+                                </div>
+                            </a>
+
+                            <!-- Article 8 -->
+                            <a href="/articles/free-online-cash-denomination-calculators-comparison.html" class="article-card" data-category="tools">
+                                <div class="article-card-img" aria-hidden="true">&#128178;</div>
+                                <div class="article-card-body">
+                                    <span class="article-card-category">Tools</span>
+                                    <h2 class="article-card-title">Free Online Cash Denomination Calculator Tools &mdash; Features Comparison</h2>
+                                    <p class="article-card-excerpt">Compare the best free denomination calculator tools by features, privacy, mobile support, and export options. Detailed feature comparison table.</p>
+                                    <div class="article-card-meta">By Supraja &bull; 13 Feb 2026 &bull; 11 min read</div>
+                                </div>
+                            </a>
+
+                            <!-- Article 9 -->
+                            <a href="/articles/cash-denomination-calculator-cooperative-banks.html" class="article-card" data-category="banking">
+                                <div class="article-card-img" aria-hidden="true">&#127968;</div>
+                                <div class="article-card-body">
+                                    <span class="article-card-category">Banking</span>
+                                    <h2 class="article-card-title">Cash Denomination Calculator for Cooperative Banks and Rural Banking</h2>
+                                    <p class="article-card-excerpt">How cooperative banks, DCCBs, StCBs, and PACS use denomination calculators for daily operations and RBI compliance.</p>
+                                    <div class="article-card-meta">By Supraja &bull; 13 Feb 2026 &bull; 10 min read</div>
+                                </div>
+                            </a>
+
+                            <!-- Article 10 -->
+                            <a href="/articles/how-to-calculate-mixed-currency-notes.html" class="article-card" data-category="indian-currency">
+                                <div class="article-card-img" aria-hidden="true">&#128181;</div>
+                                <div class="article-card-body">
+                                    <span class="article-card-category">Indian Currency</span>
+                                    <h2 class="article-card-title">How to Calculate Mixed Currency Notes Quickly Without Errors</h2>
+                                    <p class="article-card-excerpt">Proven 4-step method: sort, count, record, and cross-verify. Professional tips from bank tellers, common mistakes, and digital tools.</p>
+                                    <div class="article-card-meta">By Supraja &bull; 13 Feb 2026 &bull; 11 min read</div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <!-- Pagination Placeholder -->
+                        <div class="pagination-placeholder">
+                            <p>Showing all 10 articles &bull; More articles coming soon</p>
+                        </div>
                     </div>
+
+                    <!-- Sidebar -->
+                    <aside>
+                        <!-- Search -->
+                        <div class="sidebar-card">
+                            <h3>&#128270; Search Articles</h3>
+                            <input type="search" class="sidebar-search" id="blog-search" placeholder="Search articles..." aria-label="Search blog articles" oninput="searchArticles(this.value)">
+                        </div>
+
+                        <!-- Categories -->
+                        <div class="sidebar-card">
+                            <h3>Categories</h3>
+                            <ul class="sidebar-list">
+                                <li><a href="#" onclick="filterArticles('tools',document.querySelector('[data-category=tools]'));return false;">Tools &amp; Guides (4)</a></li>
+                                <li><a href="#" onclick="filterArticles('banking',document.querySelector('[data-category=banking]'));return false;">Banking (3)</a></li>
+                                <li><a href="#" onclick="filterArticles('indian-currency',document.querySelector('[data-category=indian-currency]'));return false;">Indian Currency (1)</a></li>
+                                <li><a href="#" onclick="filterArticles('business',document.querySelector('[data-category=business]'));return false;">Business &amp; Retail (1)</a></li>
+                                <li><a href="#" onclick="filterArticles('tutorial',document.querySelector('[data-category=tutorial]'));return false;">Tutorial (1)</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Popular Articles -->
+                        <div class="sidebar-card">
+                            <h3>&#128293; Popular Articles</h3>
+                            <ul class="sidebar-list">
+                                <li><a href="/articles/what-is-cash-denomination-calculator.html">What Is a Cash Denomination Calculator?</a></li>
+                                <li><a href="/articles/how-to-use-indian-cash-denomination-calculator.html">How to Use the Calculator</a></li>
+                                <li><a href="/articles/cash-denomination-calculator-bank-deposits.html">Calculator for Bank Deposits</a></li>
+                                <li><a href="/articles/cash-denomination-sheet-format-template.html">Denomination Sheet Templates</a></li>
+                                <li><a href="/articles/how-to-calculate-mixed-currency-notes.html">Count Mixed Currency Notes</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="sidebar-cta">
+                            <h3>&#8377; Try the Calculator</h3>
+                            <p>Count your Indian currency notes and coins instantly. Free, private, works offline.</p>
+                            <a href="/">Open Calculator</a>
+                        </div>
+                    </aside>
+
                 </div>
             </div>
         </section>
+
     </main>
+
     <footer class="site-footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="/" class="logo" style="color:#fff;"><span class="logo-icon" aria-hidden="true">&#8377;</span><span>Cash<span style="color:#8ab4f8;">Denomination</span>Calculator</span></a>
-                    <p>Free online tools for Indian cash counting and currency denomination calculations.</p>
+                    <a href="/" class="logo" style="color:#fff;">
+                        <span class="logo-icon" aria-hidden="true">&#8377;</span>
+                        <span>Cash<span style="color:#8ab4f8;">Denomination</span>Calculator</span>
+                    </a>
+                    <p>Free online tools for Indian cash counting and currency denomination calculations. Trusted by thousands of users across India.</p>
                 </div>
-                <div><h3 class="footer-heading">Quick Links</h3><div class="footer-links"><a href="/" class="footer-link">Home</a><a href="/about/" class="footer-link">About</a><a href="/contact.html" class="footer-link">Contact</a><a href="/blog/" class="footer-link">Blog</a></div></div>
-                <div><h3 class="footer-heading">Legal</h3><div class="footer-links"><a href="/privacy.html" class="footer-link">Privacy Policy</a><a href="/terms.html" class="footer-link">Terms of Use</a><a href="/disclaimer.html" class="footer-link">Disclaimer</a></div></div>
-                <div><h3 class="footer-heading">Categories</h3><div class="footer-links"><a href="/tools/" class="footer-link">Tools</a><a href="/indian-currency/" class="footer-link">Indian Currency</a><a href="/banking/" class="footer-link">Banking</a><a href="/accounting/" class="footer-link">Accounting</a></div></div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="/" class="footer-link">Home</a>
+                        <a href="/about/" class="footer-link">About</a>
+                        <a href="/contact.html" class="footer-link">Contact</a>
+                        <a href="/blog/" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+                        <a href="/terms.html" class="footer-link">Terms of Use</a>
+                        <a href="/disclaimer.html" class="footer-link">Disclaimer</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Categories</h3>
+                    <div class="footer-links">
+                        <a href="/tools/" class="footer-link">Tools</a>
+                        <a href="/indian-currency/" class="footer-link">Indian Currency</a>
+                        <a href="/banking/" class="footer-link">Banking</a>
+                        <a href="/accounting/" class="footer-link">Accounting</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-bottom"><p>&copy; 2025 Cash Denomination Calculator. All rights reserved.</p><p class="disclaimer">Not affiliated with the Reserve Bank of India (RBI) or any government body.</p></div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cash Denomination Calculator. All rights reserved.</p>
+                <p class="disclaimer">Not affiliated with the Reserve Bank of India (RBI) or any government body. Currency information is provided for educational purposes and is sourced from publicly available RBI publications.</p>
+            </div>
         </div>
     </footer>
+
     <script>
-    window.toggleTheme=function(){var c=document.documentElement.getAttribute("data-theme"),n=c==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",n);localStorage.setItem("cashcalc_theme",n)};
-    (function(){var s=localStorage.getItem("cashcalc_theme");if(s)document.documentElement.setAttribute("data-theme",s);else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme:dark)").matches)document.documentElement.setAttribute("data-theme","dark");var h=document.getElementById("hamburger-btn"),m=document.getElementById("mobile-nav");if(h&&m)h.addEventListener("click",function(){var o=m.classList.toggle("is-open");h.classList.toggle("is-active");h.setAttribute("aria-expanded",o);document.body.classList.toggle("nav-open",o)})})();
+    // Theme toggle
+    window.toggleTheme = function() {
+        const c = document.documentElement.getAttribute('data-theme');
+        const n = c === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', n);
+        localStorage.setItem('cashcalc_theme', n);
+    };
+    (function() {
+        const s = localStorage.getItem('cashcalc_theme');
+        if (s) document.documentElement.setAttribute('data-theme', s);
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+            document.documentElement.setAttribute('data-theme', 'dark');
+        const h = document.getElementById('hamburger-btn');
+        const m = document.getElementById('mobile-nav');
+        if (h && m) h.addEventListener('click', () => {
+            const o = m.classList.toggle('is-open');
+            h.classList.toggle('is-active');
+            h.setAttribute('aria-expanded', o);
+            document.body.classList.toggle('nav-open', o);
+        });
+    })();
+
+    // Category filter
+    function filterArticles(category, btn) {
+        const cards = document.querySelectorAll('.article-card');
+        const tabs = document.querySelectorAll('.category-tab');
+        tabs.forEach(t => t.classList.remove('active'));
+        if (btn) btn.classList.add('active');
+        cards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Search
+    function searchArticles(query) {
+        const q = query.toLowerCase().trim();
+        const cards = document.querySelectorAll('.article-card');
+        cards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+            card.style.display = (!q || text.includes(q)) ? '' : 'none';
+        });
+        // Reset category tabs
+        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+        document.querySelector('[data-category="all"]').classList.add('active');
+    }
     </script>
 </body>
 </html>
