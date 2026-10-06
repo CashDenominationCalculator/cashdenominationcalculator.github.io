@@ -1,7 +1,7 @@
 # Internal Linking Architecture Map
 
-**Last updated:** 13 February 2026  
-**Total pages:** 12 (1 homepage + 1 blog index + 10 articles)
+**Last updated:** 6 October 2026  
+**Total pages:** 14 (1 homepage + 1 tools index + 1 tool page + 1 blog index + 10 articles)
 
 ---
 
@@ -10,6 +10,7 @@
 ### Navigation Dropdown Links (Desktop + Mobile)
 | Target | Section |
 |--------|---------|
+| `/tools/500-notes-calculator/` | Tools dropdown (first item) |
 | `/articles/what-is-cash-denomination-calculator.html` | Tools dropdown |
 | `/articles/how-to-use-indian-cash-denomination-calculator.html` | Tools dropdown |
 | `/articles/cash-denomination-sheet-format-template.html` | Tools dropdown |
@@ -32,6 +33,7 @@
 | Target | Context |
 |--------|---------|
 | `/articles/how-to-calculate-mixed-currency-notes.html` | "How to Count Mixed Currency Notes" button |
+| `/tools/500-notes-calculator/` | "₹500 Notes Calculator" button |
 
 ### Latest from Blog Section (6 Article Cards)
 | Target | Card Title |
@@ -42,6 +44,42 @@
 | `/articles/cash-denomination-sheet-format-template.html` | Cash Denomination Sheet: Format, Template & Guide |
 | `/articles/free-online-cash-denomination-calculators-comparison.html` | Free Online Denomination Calculators Comparison |
 | `/articles/how-to-calculate-mixed-currency-notes.html` | How to Count Mixed Currency Notes Quickly |
+
+---
+
+## Tools Index (`/tools/index.html`)
+
+### Available Tools List
+| Target | Title |
+|--------|-------|
+| `/` | Cash Denomination Calculator |
+| `/tools/500-notes-calculator/` | ₹500 Notes Calculator |
+
+---
+
+## Tool: ₹500 Notes Calculator
+**File:** `/tools/500-notes-calculator/index.html`  
+**Category:** Tools  
+**Schema:** BreadcrumbList, WebApplication, FAQPage, HowTo
+
+### Body Links (Contextual)
+| Target | Context |
+|--------|---------|
+| `/` (homepage calculator) | "Cash Denomination Calculator" in Verify section and Tips list |
+| `/articles/cash-denomination-sheet-format-template.html` | "denomination sheet" in guide intro |
+| `/articles/cash-denomination-calculator-bank-deposits.html` | "bank deposit" in guide intro and Who Uses list |
+| `/articles/why-cashiers-need-denomination-calculator.html` | "why cashiers need a denomination calculator" in Who Uses |
+| `/blog/petty-cash-management/` | "petty cash float" in Who Uses |
+| `/blog/detect-counterfeit-notes/` | "security features" in Tips |
+| `/privacy.html` | FAQ privacy answer |
+
+### Related Tools & Guides Section (4 cards)
+| Target | Title |
+|--------|-------|
+| `/` | Cash Denomination Calculator |
+| `/articles/how-to-calculate-mixed-currency-notes.html` | How to Count Mixed Currency Notes |
+| `/articles/cash-denomination-sheet-format-template.html` | Cash Denomination Sheet Format |
+| `/blog/indian-numbering-system/` | Indian Numbering System Explained |
 
 ---
 
