@@ -62,11 +62,6 @@
       bundles();
       setStatus('Calculated locally in your browser.');
       announce(rs(t) + ' needs ' + cnt(n) + ' five hundred rupee notes' + (rem ? ' with ' + rs(rem) + ' remaining' : ''));
-      try {
-        var url = new URL(window.location.href);
-        url.searchParams.set('amount', t);
-        history.replaceState(null, '', url.pathname + url.search + url.hash);
-      } catch (e) { /* ignore */ }
     } catch (e) {
       setStatus(e.message);
     }
@@ -214,14 +209,20 @@
       if (b) { $('bundleSize').value = b.getAttribute('data-bundle'); bundles(); }
     });
 
-    // Deep link: ?amount=120000
+    renderCommon();
+
+    // Accept an incoming ?amount= link once, then strip the query string so
+    // the address bar stays clean (keeps a single canonical URL).
+    var preset = null;
     try {
       var q = new URLSearchParams(window.location.search).get('amount');
-      if (q) { var v = num(q); setTarget(v); }
+      if (q) preset = num(q);
     } catch (e) { /* ignore bad query */ }
+    if (window.location.search) {
+      try { history.replaceState(null, '', window.location.pathname + window.location.hash); } catch (e) { /* ignore */ }
+    }
 
-    renderCommon();
-    calculate();
+    if (preset !== null) setTarget(preset); else calculate();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
