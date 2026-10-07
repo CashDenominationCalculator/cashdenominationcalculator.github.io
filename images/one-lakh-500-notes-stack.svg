@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" role="img" aria-labelledby="t d">
+  <title id="t">₹1 lakh in different Indian note denominations: count, stack height and weight</title>
+  <desc id="d">Bar chart comparing how many notes make ₹1,00,000 in ₹500, ₹200 and ₹100 denominations, with approximate stack height and weight derived from RBI note dimensions.</desc>
+  <defs>
+    <linearGradient id="g500" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9ca3af"/><stop offset="1" stop-color="#6b7280"/></linearGradient>
+    <linearGradient id="g200" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#facc15"/><stop offset="1" stop-color="#ca8a04"/></linearGradient>
+    <linearGradient id="g100" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+    <style>
+      .h{font:800 40px Inter,Arial,sans-serif;fill:#101828}
+      .s{font:500 20px Inter,Arial,sans-serif;fill:#475467}
+      .l{font:800 26px Inter,Arial,sans-serif;fill:#101828}
+      .v{font:700 20px Inter,Arial,sans-serif;fill:#344054}
+      .n{font:600 16px Inter,Arial,sans-serif;fill:#667085}
+      .w{font:800 22px Inter,Arial,sans-serif;fill:#fff}
+    </style>
+  </defs>
+  <rect width="1200" height="640" rx="24" fill="#f8fafc"/>
+  <text x="60" y="78" class="h">₹1,00,000 — same value, very different pile</text>
+  <text x="60" y="112" class="s">Notes needed, approximate stack height and weight (new, flat notes; derived from RBI dimensions ~0.1 mm thick, ~0.9 g each)</text>
+
+  <!-- baseline -->
+  <line x1="60" y1="520" x2="1140" y2="520" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- ₹500 : 200 notes -> 2 cm  (scale: 1 cm = 32 px) -->
+  <g>
+    <rect x="140" y="456" width="220" height="64" rx="8" fill="url(#g500)"/>
+    <text x="250" y="497" text-anchor="middle" class="w">≈ 2 cm</text>
+    <text x="250" y="420" text-anchor="middle" class="l">200 notes</text>
+    <text x="250" y="446" text-anchor="middle" class="n">2 bank packets · ≈ 180 g</text>
+    <text x="250" y="562" text-anchor="middle" class="v">₹500 notes</text>
+    <text x="250" y="588" text-anchor="middle" class="n">66 × 150 mm · stone grey</text>
+  </g>
+
+  <!-- ₹200 : 500 notes -> 5 cm -->
+  <g>
+    <rect x="490" y="360" width="220" height="160" rx="8" fill="url(#g200)"/>
+    <text x="600" y="449" text-anchor="middle" class="w">≈ 5 cm</text>
+    <text x="600" y="324" text-anchor="middle" class="l">500 notes</text>
+    <text x="600" y="350" text-anchor="middle" class="n">5 bank packets · ≈ 430 g</text>
+    <text x="600" y="562" text-anchor="middle" class="v">₹200 notes</text>
+    <text x="600" y="588" text-anchor="middle" class="n">66 × 146 mm · bright yellow</text>
+  </g>
+
+  <!-- ₹100 : 1000 notes -> 10 cm -->
+  <g>
+    <rect x="840" y="200" width="220" height="320" rx="8" fill="url(#g100)"/>
+    <text x="950" y="370" text-anchor="middle" class="w">≈ 10 cm</text>
+    <text x="950" y="164" text-anchor="middle" class="l">1,000 notes</text>
+    <text x="950" y="190" text-anchor="middle" class="n">10 bank packets · ≈ 830 g</text>
+    <text x="950" y="562" text-anchor="middle" class="v">₹100 notes</text>
+    <text x="950" y="588" text-anchor="middle" class="n">66 × 142 mm · lavender</text>
+  </g>
+
+  <text x="1140" y="626" text-anchor="end" class="n">cashdenominationcalculator.github.io · ₹500 Notes Calculator</text>
+</svg>
