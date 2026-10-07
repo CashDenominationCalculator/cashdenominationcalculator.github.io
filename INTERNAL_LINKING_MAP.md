@@ -1,7 +1,7 @@
 # Internal Linking Architecture Map
 
 **Last updated:** 6 October 2026  
-**Total pages:** 14 (1 homepage + 1 tools index + 1 tool page + 1 blog index + 10 articles)
+**Total pages:** 15 (1 homepage + 1 tools index + 1 tool page + 1 blog index + 11 articles)
 
 ---
 
@@ -77,9 +77,45 @@
 | Target | Title |
 |--------|-------|
 | `/` | Cash Denomination Calculator |
+| `/articles/how-many-500-notes-in-1-lakh.html` | How Many ₹500 Notes Are in ₹1 Lakh? |
 | `/articles/how-to-calculate-mixed-currency-notes.html` | How to Count Mixed Currency Notes |
 | `/articles/cash-denomination-sheet-format-template.html` | Cash Denomination Sheet Format |
 | `/blog/indian-numbering-system/` | Indian Numbering System Explained |
+
+---
+
+## Article 11: How Many ₹500 Notes Are in ₹1 Lakh? A Practical Cash Breakdown
+**File:** `/articles/how-many-500-notes-in-1-lakh.html`  
+**Category:** Indian Currency  
+**Schema:** BreadcrumbList, Article, FAQPage  
+**Image:** `/images/one-lakh-500-notes-stack.svg` (original infographic)
+
+### Body Links (Contextual)
+| Target | Context |
+|--------|---------|
+| `/tools/500-notes-calculator/` | Short-answer box, checklist step 7 |
+| `/articles/denomination-calculator-vs-counting-machine.html` | "counting machine" in physical section |
+| `/articles/how-to-calculate-mixed-currency-notes.html` | "guide to counting mixed notes" in 199-note trap |
+| `/articles/cash-denomination-sheet-format-template.html` | "denomination sheet" in other-denominations section |
+| `/` (homepage calculator) | "denomination calculator" in other-denominations section |
+| `/blog/rbi-cash-deposit-rules/` | "RBI cash deposit rules" in legal section |
+| `/articles/cash-denomination-calculator-bank-deposits.html` | "denomination slip" in scenario 1 |
+| `/blog/detect-counterfeit-notes/` | "counterfeit detection guide" in checklist |
+| `/blog/indian-numbering-system/` | "Indian numbering system guide" in closing paragraph |
+
+### Related Section (4 cards)
+| Target | Title |
+|--------|-------|
+| `/tools/500-notes-calculator/` | ₹500 Notes Calculator |
+| `/articles/how-to-calculate-mixed-currency-notes.html` | How to Count Mixed Currency Notes Quickly |
+| `/articles/cash-denomination-calculator-bank-deposits.html` | Denomination Calculator for Bank Deposits |
+| `/articles/cash-denomination-sheet-format-template.html` | Cash Denomination Sheet Format |
+
+### Inbound Links
+| Source | Context |
+|--------|---------|
+| `/blog/index.html` | Article card (newest, first position) + Popular Articles sidebar |
+| `/tools/500-notes-calculator/` | Related tools & guides card + FAQ answer |
 
 ---
 
