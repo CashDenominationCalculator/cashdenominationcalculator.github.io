@@ -165,6 +165,26 @@
         ]
     }
     </script>
+    <!-- 5. Dataset Schema (downloadable conversion table) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "₹500 Notes Conversion Table: ₹500 to ₹10,00,000 in steps of ₹500",
+        "description": "Table of 2,000 rows listing every amount from ₹500 to ₹10,00,000 in increments of ₹500, the amount in words (Indian numbering system), and the exact number of ₹500 notes required (amount ÷ 500).",
+        "url": "https://cashdenominationcalculator.github.io/tools/500-notes-calculator/#conversion-table",
+        "license": "https://cashdenominationcalculator.github.io/terms.html",
+        "isAccessibleForFree": true,
+        "inLanguage": "en-IN",
+        "keywords": ["500 notes conversion table", "how many 500 notes", "Indian rupee denomination table", "500 rupee notes chart"],
+        "creator": { "@type": "Organization", "name": "Cash Denomination Calculator", "url": "https://cashdenominationcalculator.github.io/" },
+        "variableMeasured": ["Total amount (INR)", "Amount in words", "Number of ₹500 notes"],
+        "distribution": [
+            { "@type": "DataDownload", "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "contentUrl": "https://cashdenominationcalculator.github.io/downloads/500-notes-conversion-table-500-to-10-lakh.xlsx" },
+            { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://cashdenominationcalculator.github.io/downloads/500-notes-conversion-table-500-to-10-lakh.csv" }
+        ]
+    }
+    </script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to Content</a>
@@ -544,6 +564,117 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== ₹500 CONVERSION TABLE (₹500 – ₹10 LAKH) ==================== -->
+        <section class="section" id="conversion-table" aria-labelledby="conversion-title" style="padding-top:0;">
+            <div class="container">
+                <div class="section-card content-block tool-prose">
+                    <h2 id="conversion-title" style="margin-top:0;">&#8377;500 Notes Conversion Table: &#8377;500 to &#8377;10,00,000 (Steps of &#8377;500)</h2>
+                    <p>This &#8377;500 denomination conversion table runs from <strong>&#8377;500 to &#8377;10,00,000 (&#8377;10 lakh)</strong>, increasing in steps of &#8377;500. Every amount in that range is an exact multiple of &#8377;500, so the table shows <strong>exactly how many &#8377;500 notes are required for each amount</strong> &mdash; with no remainder &mdash; along with the amount written in words in the Indian numbering system, ready to copy on to a deposit slip or denomination sheet.</p>
+
+                    <div class="example-box" style="text-align:left;">
+                        <strong>Calculation:</strong> Total amount &divide; 500 = Number of &#8377;500 notes. Because every row is a multiple of 500, the result is always a whole number.
+                    </div>
+
+                    <h3>Examples from the table</h3>
+                    <ul class="conv-examples">
+                        <li>&#8377;500 = 1 note</li>
+                        <li>&#8377;1,000 = 2 notes</li>
+                        <li>&#8377;5,000 = 10 notes</li>
+                        <li>&#8377;20,000 = 40 notes</li>
+                        <li>&#8377;50,000 = 100 notes (one bank packet)</li>
+                        <li>&#8377;1,00,000 = 200 notes (two bank packets)</li>
+                        <li>&#8377;5,00,000 = 1,000 notes (one brick of ten packets)</li>
+                        <li>&#8377;10,00,000 = 2,000 notes (two bricks)</li>
+                    </ul>
+
+                    <h3 id="complete-table">Complete &#8377;500 notes table</h3>
+                    <p>All 2,000 rows are available below. Type an amount to jump straight to it, use the range buttons to browse a band, or download the full table as Excel or CSV for offline use.</p>
+
+                    <div class="conv-controls" role="group" aria-label="Browse the conversion table">
+                        <label class="tool-label" for="convJump" style="margin-bottom:0;">Jump to amount (&#8377;)</label>
+                        <input id="convJump" class="tool-input" inputmode="numeric" autocomplete="off" placeholder="e.g. 2,35,000" aria-describedby="convJumpHint">
+                        <div class="tool-chips" style="margin-top:var(--space-sm);" role="group" aria-label="Amount ranges">
+                            <button type="button" class="tool-chip is-active" data-range="500-50000">&#8377;500 &ndash; &#8377;50,000</button>
+                            <button type="button" class="tool-chip" data-range="50500-100000">&#8377;50,500 &ndash; &#8377;1 lakh</button>
+                            <button type="button" class="tool-chip" data-range="100500-250000">&#8377;1 lakh &ndash; &#8377;2.5 lakh</button>
+                            <button type="button" class="tool-chip" data-range="250500-500000">&#8377;2.5 lakh &ndash; &#8377;5 lakh</button>
+                            <button type="button" class="tool-chip" data-range="500500-1000000">&#8377;5 lakh &ndash; &#8377;10 lakh</button>
+                        </div>
+                        <p class="tool-hint" id="convJumpHint" style="margin-bottom:0;">Amounts that are not multiples of &#8377;500 are rounded down to the nearest row; the remainder is shown.</p>
+                    </div>
+
+                    <div class="table-responsive conv-table-wrap" id="convTableWrap">
+                        <table class="comparison-table conv-table" id="convTable">
+                            <caption class="sr-only">Number of &#8377;500 notes required for each amount from &#8377;500 to &#8377;10,00,000 in steps of &#8377;500</caption>
+                            <thead>
+                                <tr><th scope="col">Total amount</th><th scope="col">Amount in words</th><th scope="col">&#8377;500 notes required</th></tr>
+                            </thead>
+                            <tbody id="convBody">
+                                <tr><td>&#8377;500</td><td>Rupees Five Hundred Only</td><td><strong>1</strong> note</td></tr>
+                                <tr><td>&#8377;1,000</td><td>Rupees One Thousand Only</td><td><strong>2</strong> notes</td></tr>
+                                <tr><td>&#8377;1,500</td><td>Rupees One Thousand Five Hundred Only</td><td><strong>3</strong> notes</td></tr>
+                                <tr><td>&#8377;2,000</td><td>Rupees Two Thousand Only</td><td><strong>4</strong> notes</td></tr>
+                                <tr><td>&#8377;2,500</td><td>Rupees Two Thousand Five Hundred Only</td><td><strong>5</strong> notes</td></tr>
+                                <tr><td>&#8377;3,000</td><td>Rupees Three Thousand Only</td><td><strong>6</strong> notes</td></tr>
+                                <tr><td>&#8377;3,500</td><td>Rupees Three Thousand Five Hundred Only</td><td><strong>7</strong> notes</td></tr>
+                                <tr><td>&#8377;4,000</td><td>Rupees Four Thousand Only</td><td><strong>8</strong> notes</td></tr>
+                                <tr><td>&#8377;4,500</td><td>Rupees Four Thousand Five Hundred Only</td><td><strong>9</strong> notes</td></tr>
+                                <tr><td>&#8377;5,000</td><td>Rupees Five Thousand Only</td><td><strong>10</strong> notes</td></tr>
+                                <tr><td>&#8377;5,500</td><td>Rupees Five Thousand Five Hundred Only</td><td><strong>11</strong> notes</td></tr>
+                                <tr><td>&#8377;6,000</td><td>Rupees Six Thousand Only</td><td><strong>12</strong> notes</td></tr>
+                                <tr><td>&#8377;6,500</td><td>Rupees Six Thousand Five Hundred Only</td><td><strong>13</strong> notes</td></tr>
+                                <tr><td>&#8377;7,000</td><td>Rupees Seven Thousand Only</td><td><strong>14</strong> notes</td></tr>
+                                <tr><td>&#8377;7,500</td><td>Rupees Seven Thousand Five Hundred Only</td><td><strong>15</strong> notes</td></tr>
+                                <tr><td>&#8377;8,000</td><td>Rupees Eight Thousand Only</td><td><strong>16</strong> notes</td></tr>
+                                <tr><td>&#8377;8,500</td><td>Rupees Eight Thousand Five Hundred Only</td><td><strong>17</strong> notes</td></tr>
+                                <tr><td>&#8377;9,000</td><td>Rupees Nine Thousand Only</td><td><strong>18</strong> notes</td></tr>
+                                <tr><td>&#8377;9,500</td><td>Rupees Nine Thousand Five Hundred Only</td><td><strong>19</strong> notes</td></tr>
+                                <tr><td>&#8377;10,000</td><td>Rupees Ten Thousand Only</td><td><strong>20</strong> notes</td></tr>
+                                <tr><td>&#8377;10,500</td><td>Rupees Ten Thousand Five Hundred Only</td><td><strong>21</strong> notes</td></tr>
+                                <tr><td>&#8377;11,000</td><td>Rupees Eleven Thousand Only</td><td><strong>22</strong> notes</td></tr>
+                                <tr><td>&#8377;11,500</td><td>Rupees Eleven Thousand Five Hundred Only</td><td><strong>23</strong> notes</td></tr>
+                                <tr><td>&#8377;12,000</td><td>Rupees Twelve Thousand Only</td><td><strong>24</strong> notes</td></tr>
+                                <tr><td>&#8377;12,500</td><td>Rupees Twelve Thousand Five Hundred Only</td><td><strong>25</strong> notes</td></tr>
+                                <tr><td>&#8377;13,000</td><td>Rupees Thirteen Thousand Only</td><td><strong>26</strong> notes</td></tr>
+                                <tr><td>&#8377;13,500</td><td>Rupees Thirteen Thousand Five Hundred Only</td><td><strong>27</strong> notes</td></tr>
+                                <tr><td>&#8377;14,000</td><td>Rupees Fourteen Thousand Only</td><td><strong>28</strong> notes</td></tr>
+                                <tr><td>&#8377;14,500</td><td>Rupees Fourteen Thousand Five Hundred Only</td><td><strong>29</strong> notes</td></tr>
+                                <tr><td>&#8377;15,000</td><td>Rupees Fifteen Thousand Only</td><td><strong>30</strong> notes</td></tr>
+                                <tr><td>&#8377;15,500</td><td>Rupees Fifteen Thousand Five Hundred Only</td><td><strong>31</strong> notes</td></tr>
+                                <tr><td>&#8377;16,000</td><td>Rupees Sixteen Thousand Only</td><td><strong>32</strong> notes</td></tr>
+                                <tr><td>&#8377;16,500</td><td>Rupees Sixteen Thousand Five Hundred Only</td><td><strong>33</strong> notes</td></tr>
+                                <tr><td>&#8377;17,000</td><td>Rupees Seventeen Thousand Only</td><td><strong>34</strong> notes</td></tr>
+                                <tr><td>&#8377;17,500</td><td>Rupees Seventeen Thousand Five Hundred Only</td><td><strong>35</strong> notes</td></tr>
+                                <tr><td>&#8377;18,000</td><td>Rupees Eighteen Thousand Only</td><td><strong>36</strong> notes</td></tr>
+                                <tr><td>&#8377;18,500</td><td>Rupees Eighteen Thousand Five Hundred Only</td><td><strong>37</strong> notes</td></tr>
+                                <tr><td>&#8377;19,000</td><td>Rupees Nineteen Thousand Only</td><td><strong>38</strong> notes</td></tr>
+                                <tr><td>&#8377;19,500</td><td>Rupees Nineteen Thousand Five Hundred Only</td><td><strong>39</strong> notes</td></tr>
+                                <tr><td>&#8377;20,000</td><td>Rupees Twenty Thousand Only</td><td><strong>40</strong> notes</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="conv-footer">
+                        <span class="tool-hint" id="convStatus" style="margin:0;">Showing &#8377;500 &ndash; &#8377;20,000 (rows 1&ndash;40 of 2,000)</span>
+                        <button type="button" class="tool-btn tool-btn--ghost" id="convMore">Show next 100 rows</button>
+                    </div>
+
+                    <h3>Download the full table</h3>
+                    <p>Prefer a copy you can print or paste into your own cash book? The complete 2,000-row table (amount, amount in words, number of &#8377;500 notes) is available in both formats:</p>
+                    <p class="conv-downloads">
+                        <a href="/downloads/500-notes-conversion-table-500-to-10-lakh.xlsx" class="tool-btn tool-btn--primary" download>Download Excel (.xlsx)</a>
+                        <a href="/downloads/500-notes-conversion-table-500-to-10-lakh.csv" class="tool-btn tool-btn--ghost" download>Download CSV</a>
+                    </p>
+
+                    <h3>How to use this &#8377;500 conversion table</h3>
+                    <ul>
+                        <li><strong>Bank deposits:</strong> find your total, copy the note count into the &#8377;500 row of the <a href="/articles/cash-denomination-sheet-format-template.html">denomination slip</a> and the words column into the &ldquo;amount in words&rdquo; field.</li>
+                        <li><strong>Cash withdrawals:</strong> know in advance how many notes (and bank packets of 100) you should receive, so you can count them at the counter.</li>
+                        <li><strong>Salary or vendor payouts:</strong> look up each payee&rsquo;s amount to see how many &#8377;500 notes go into every envelope.</li>
+                        <li><strong>Amounts above &#8377;10 lakh or not divisible by 500:</strong> use the <a href="#calculator">calculator at the top of this page</a>, which handles any value and shows the remainder in smaller denominations.</li>
+                    </ul>
                 </div>
             </div>
         </section>
