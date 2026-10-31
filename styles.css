@@ -3665,3 +3665,17 @@ html {
   .tool-result-panel { background: #fff !important; color: #000 !important; border: 1px solid #000; }
   .tool-result-panel::after { display: none; }
 }
+
+/* ₹500 conversion table (tool page) */
+.conv-examples { columns: 2; column-gap: var(--space-xl); }
+@media (max-width: 600px) { .conv-examples { columns: 1; } }
+.conv-controls { margin: var(--space-md) 0; }
+.conv-controls .tool-input { max-width: 320px; margin-top: var(--space-xs); }
+.tool-chip.is-active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+.conv-table-wrap { max-height: 520px; overflow-y: auto; }
+.conv-table th { position: sticky; top: 0; z-index: 1; }
+.conv-table td:first-child, .conv-table td:last-child { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.conv-highlight td { background: var(--color-warning-light) !important; }
+.conv-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-sm); margin: var(--space-sm) 0 var(--space-lg); }
+.conv-downloads { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+.conv-downloads .tool-btn { text-decoration: none; display: inline-flex; align-items: center; }
