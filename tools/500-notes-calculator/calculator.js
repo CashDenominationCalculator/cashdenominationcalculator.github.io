@@ -227,89 +227,40 @@
   }
 
 
-  /* ---------- ₹500 conversion table (₹500 – ₹10,00,000) ---------- */
-  var CONV_MAX = 1000000, CONV_STEP = 500, CONV_PAGE = 100;
-  var convStart = 500, convEnd = 20000; // currently rendered band
-  var convTimer = null;
-
-  var W_ONES = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'];
-  var W_TENS = ['', '', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'];
-  function w2(n) { return n < 20 ? W_ONES[n] : W_TENS[Math.floor(n / 10)] + (n % 10 ? ' ' + W_ONES[n % 10] : ''); }
-  function w3(n) { if (!n) return ''; if (n < 100) return w2(n); return W_ONES[Math.floor(n / 100)] + ' Hundred' + (n % 100 ? ' ' + w2(n % 100) : ''); }
-  function rupeesInWords(n) {
-    var p = [];
-    if (n >= 10000000) { p.push(w2(Math.floor(n / 10000000)) + ' Crore'); n %= 10000000; }
-    if (n >= 100000) { p.push(w2(Math.floor(n / 100000)) + ' Lakh'); n %= 100000; }
-    if (n >= 1000) { p.push(w2(Math.floor(n / 1000)) + ' Thousand'); n %= 1000; }
-    if (n) p.push(w3(n));
-    return 'Rupees ' + p.join(' ') + ' Only';
-  }
-
-  function convRow(amount, hl) {
-    var notes = amount / CONV_STEP;
-    return '<tr' + (hl ? ' class="conv-highlight" id="convTarget"' : '') + '><td>' + rs(amount) + '</td><td>' + rupeesInWords(amount) +
-      '</td><td><strong>' + cnt(notes) + '</strong> ' + plural(notes, 'note') + '</td></tr>';
-  }
-
-  function convRender(start, end, highlight) {
-    start = Math.max(CONV_STEP, start); end = Math.min(CONV_MAX, end);
-    var html = [];
-    for (var a = start; a <= end; a += CONV_STEP) html.push(convRow(a, a === highlight));
-    $('convBody').innerHTML = html.join('');
-    convStart = start; convEnd = end;
-    var r1 = start / CONV_STEP, r2 = end / CONV_STEP;
-    $('convStatus').textContent = 'Showing ' + rs(start) + ' \u2013 ' + rs(end) + ' (rows ' + cnt(r1) + '\u2013' + cnt(r2) + ' of ' + cnt(CONV_MAX / CONV_STEP) + ')';
-    $('convMore').style.display = end >= CONV_MAX ? 'none' : '';
-    document.querySelectorAll('[data-range]').forEach(function (b) {
-      var p = b.getAttribute('data-range').split('-');
-      b.classList.toggle('is-active', start >= Number(p[0]) && end <= Number(p[1]));
-    });
-  }
+  /* ---------- ₹500 conversion table (all 2,000 rows are static HTML) ---------- */
+  var CONV_MAX = 1000000, CONV_STEP = 500, convTimer = null;
 
   function convJumpTo(value) {
-    if (!value) return;
+    var status = $('convStatus');
+    var prev = document.querySelector('.conv-highlight');
+    if (prev) prev.classList.remove('conv-highlight');
+    if (!value) { status.textContent = 'Showing all 2,000 rows: \u20B9500 to \u20B910,00,000 in steps of \u20B9500.'; return; }
     var v = Math.floor(value / CONV_STEP) * CONV_STEP;
-    if (v < CONV_STEP) { $('convStatus').textContent = 'Amounts below \u20B9500 need less than one \u20B9500 note.'; return; }
-    if (v > CONV_MAX) { $('convStatus').textContent = rs(value) + ' is above \u20B910 lakh \u2014 use the calculator at the top of the page.'; return; }
-    var start = Math.max(CONV_STEP, v - 10 * CONV_STEP), end = Math.min(CONV_MAX, v + 10 * CONV_STEP);
-    convRender(start, end, v);
+    if (v < CONV_STEP) { status.textContent = 'Amounts below \u20B9500 need less than one \u20B9500 note.'; return; }
+    if (v > CONV_MAX) { status.textContent = rs(value) + ' is above \u20B910 lakh \u2014 use the calculator at the top of the page.'; return; }
+    var row = $('r' + v);
+    if (!row) return;
+    row.classList.add('conv-highlight');
+    var wrap = $('convTableWrap');
+    wrap.scrollTop = Math.max(0, row.offsetTop - wrap.clientHeight / 2);
     var rem = value - v;
-    $('convStatus').textContent = rs(v) + ' = ' + cnt(v / CONV_STEP) + ' \u20B9500 notes' + (rem ? ' (your amount ' + rs(value) + ' leaves ' + rs(rem) + ' in smaller notes)' : '') +
-      ' \u2014 showing rows ' + cnt(start / CONV_STEP) + '\u2013' + cnt(end / CONV_STEP) + ' of ' + cnt(CONV_MAX / CONV_STEP);
-    var row = $('convTarget');
-    if (row) {
-      var wrap = $('convTableWrap');
-      wrap.scrollTop = Math.max(0, row.offsetTop - wrap.clientHeight / 2);
-      if (!/^#?conversion/.test(window.location.hash)) wrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
+    status.textContent = 'Row ' + cnt(v / CONV_STEP) + ' of 2,000: ' + rs(v) + ' = ' + cnt(v / CONV_STEP) + ' \u20B9500 ' + plural(v / CONV_STEP, 'note') +
+      (rem ? ' (your amount ' + rs(value) + ' leaves ' + rs(rem) + ' in smaller notes)' : '') + '.';
   }
 
   function initConversionTable() {
-    if (!$('convBody')) return;
-    $('convMore').addEventListener('click', function () {
-      var end = Math.min(CONV_MAX, convEnd + CONV_PAGE * CONV_STEP);
-      // append rather than re-render so the user keeps their place
-      var html = [];
-      for (var a = convEnd + CONV_STEP; a <= end; a += CONV_STEP) html.push(convRow(a, false));
-      $('convBody').insertAdjacentHTML('beforeend', html.join(''));
-      convEnd = end;
-      $('convStatus').textContent = 'Showing ' + rs(convStart) + ' \u2013 ' + rs(convEnd) + ' (rows ' + cnt(convStart / CONV_STEP) + '\u2013' + cnt(convEnd / CONV_STEP) + ' of ' + cnt(CONV_MAX / CONV_STEP) + ')';
-      $('convMore').style.display = convEnd >= CONV_MAX ? 'none' : '';
-    });
-    document.querySelectorAll('[data-range]').forEach(function (b) {
-      b.addEventListener('click', function () {
-        var p = b.getAttribute('data-range').split('-');
-        convRender(Number(p[0]), Number(p[1]), null);
-        $('convTableWrap').scrollTop = 0;
-      });
-    });
+    if (!$('convJump')) return;
     $('convJump').addEventListener('input', function () {
       clearTimeout(convTimer);
       convTimer = setTimeout(function () {
-        try { convJumpTo(num($('convJump').value)); } catch (e) { $('convStatus').textContent = e.message; }
+        var raw = $('convJump').value.trim();
+        if (!raw) { convJumpTo(0); return; }
+        try { convJumpTo(num(raw)); } catch (e) { $('convStatus').textContent = e.message; }
       }, 250);
     });
-    $('convJump').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); clearTimeout(convTimer); try { convJumpTo(num($('convJump').value)); } catch (err) { $('convStatus').textContent = err.message; } } });
+    $('convJump').addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); clearTimeout(convTimer); try { convJumpTo(num($('convJump').value)); } catch (err) { $('convStatus').textContent = err.message; } }
+    });
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

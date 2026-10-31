@@ -3672,7 +3672,7 @@ html {
 .conv-controls { margin: var(--space-md) 0; }
 .conv-controls .tool-input { max-width: 320px; margin-top: var(--space-xs); }
 .tool-chip.is-active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
-.conv-table-wrap { max-height: 520px; overflow-y: auto; }
+.conv-table-wrap { max-height: 70vh; min-height: 360px; overflow-y: auto; }
 .conv-table th { position: sticky; top: 0; z-index: 1; }
 .conv-table td:first-child, .conv-table td:last-child { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .conv-highlight td { background: var(--color-warning-light) !important; }
